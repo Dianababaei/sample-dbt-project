@@ -23,11 +23,13 @@ vars:
   default_lookback_days: 90
   ytd_lookback_days: 365
 
+seeds:
+  bain_capital_portfolio_analytics:
+
 models:
   bain_capital_portfolio_analytics:
     # Pipeline A: Simple cashflow pipeline
     pipeline_a:
-      +schema: pipeline_a
       staging:
         +materialized: view
       marts:
@@ -35,22 +37,21 @@ models:
 
     # Pipeline B: Medium complexity trade analytics
     pipeline_b:
-      +schema: pipeline_b
       staging:
         +materialized: view
       intermediate:
         +materialized: ephemeral
       marts:
         +materialized: table
+        +enabled: false
 
     # Pipeline C: Complex portfolio analytics
     pipeline_c:
-      +schema: pipeline_c
       staging:
         +materialized: view
       intermediate:
         +materialized: view
+        +enabled: false
       marts:
         +materialized: table
-        +post-hook:
-          - "ANALYZE TABLE {{ this }}"
+        +enabled: false

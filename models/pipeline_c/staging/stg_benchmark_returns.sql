@@ -8,12 +8,11 @@
 
 with source as (
     select
-        benchmark_id,
+        'BM' || lpad(benchmark_id, 3, '0') as benchmark_id,
         return_date,
         daily_return,
-        index_level,
         created_at
-    from {{ source('raw', 'benchmark_returns') }}
+    from {{ source('raw', 'sample_benchmark_returns') }}
     where return_date >= '{{ var("start_date") }}'
 ),
 
@@ -23,7 +22,6 @@ with_cumulative as (
         benchmark_id,
         return_date,
         daily_return,
-        index_level,
         -- ISSUE: Separate window functions for each period
         exp(sum(ln(1 + daily_return)) over (
             partition by benchmark_id
@@ -40,11 +38,6 @@ with_cumulative as (
             order by return_date
             rows between 89 preceding and current row
         )) - 1 as return_90d,
-        exp(sum(ln(1 + daily_return)) over (
-            partition by benchmark_id
-            order by return_date
-            rows between 364 preceding and current row
-        )) - 1 as return_1y,
         stddev(daily_return) over (
             partition by benchmark_id
             order by return_date

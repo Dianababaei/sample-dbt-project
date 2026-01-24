@@ -1,0 +1,6 @@
+broker_id,broker_name,created_at
+1,Goldman Sachs,2020-01-01T00:00:00Z
+2,Morgan Stanley,2020-01-01T00:00:00Z
+3,JP Morgan,2020-01-01T00:00:00Z
+4,Deutsche Bank,2020-01-01T00:00:00Z
+5,Barclays,2020-01-01T00:00:00Z

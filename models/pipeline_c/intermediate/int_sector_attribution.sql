@@ -19,11 +19,7 @@ sector_daily as (
         sector,
         count(distinct security_id) as position_count,
         sum(market_value_usd) as sector_market_value,
-        sum(weight_pct) as sector_weight,
-        sum(contribution_to_return) as sector_contribution,
-        sum(allocation_effect) as sector_allocation_effect,
-        sum(position_pnl) as sector_pnl,
-        avg(security_return) as avg_security_return
+        sum(position_pnl) as sector_pnl
     from position_attribution
     group by 1, 2, 3
 ),
@@ -32,20 +28,15 @@ sector_daily as (
 with_rolling as (
     select
         *,
-        sum(sector_contribution) over (
+        sum(sector_pnl) over (
             partition by portfolio_id, sector
             order by position_date
             rows between 29 preceding and current row
-        ) as sector_contribution_30d,
-        avg(sector_weight) over (
+        ) as sector_pnl_30d,
+        lag(sector_market_value, 1) over (
             partition by portfolio_id, sector
             order by position_date
-            rows between 29 preceding and current row
-        ) as avg_sector_weight_30d,
-        lag(sector_weight, 1) over (
-            partition by portfolio_id, sector
-            order by position_date
-        ) as prior_sector_weight
+        ) as prior_sector_market_value
     from sector_daily
 )
 

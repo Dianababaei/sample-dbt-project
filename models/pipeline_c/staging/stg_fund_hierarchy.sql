@@ -9,10 +9,8 @@ with source as (
         entity_type,
         parent_entity_id,
         hierarchy_level,
-        is_active,
-        created_at,
-        updated_at
-    from {{ source('raw', 'fund_hierarchy') }}
+        is_active
+    from {{ source('raw', 'sample_fund_hierarchy') }}
 )
 
 select
@@ -21,8 +19,6 @@ select
     upper(entity_type) as entity_type,
     parent_entity_id,
     hierarchy_level,
-    is_active,
-    created_at,
-    updated_at
+    is_active
 from source
 where is_active = true

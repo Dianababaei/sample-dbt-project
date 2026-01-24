@@ -6,9 +6,9 @@ bain_capital:
       account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
       user: "{{ env_var('SNOWFLAKE_USER') }}"
       password: "{{ env_var('SNOWFLAKE_PASSWORD') }}"
-      role: ANALYST
+      role: ACCOUNTADMIN
       database: BAIN_ANALYTICS
-      warehouse: ANALYTICS_WH
+      warehouse: COMPUTE_WH
       schema: DEV
       threads: 4
       client_session_keep_alive: False
@@ -18,9 +18,9 @@ bain_capital:
       account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
       user: "{{ env_var('SNOWFLAKE_USER') }}"
       password: "{{ env_var('SNOWFLAKE_PASSWORD') }}"
-      role: ANALYST
+      role: ACCOUNTADMIN
       database: BAIN_ANALYTICS
-      warehouse: ANALYTICS_WH
+      warehouse: COMPUTE_WH
       schema: PROD
       threads: 8
       client_session_keep_alive: False

@@ -9,22 +9,8 @@ with source as (
         benchmark_ticker,
         benchmark_type,
         currency,
-        is_active,
-        created_at,
-        updated_at
-    from {{ source('raw', 'benchmarks') }}
-),
-
--- ISSUE: Subquery for deduplication
-deduplicated as (
-    select *
-    from (
-        select
-            *,
-            row_number() over (partition by benchmark_id order by updated_at desc) as rn
-        from source
-    )
-    where rn = 1
+        is_active
+    from {{ source('raw', 'sample_benchmarks') }}
 )
 
 select
@@ -33,8 +19,6 @@ select
     upper(trim(benchmark_ticker)) as benchmark_ticker,
     upper(benchmark_type) as benchmark_type,
     upper(currency) as currency,
-    is_active,
-    created_at,
-    updated_at
-from deduplicated
+    is_active
+from source
 where is_active = true

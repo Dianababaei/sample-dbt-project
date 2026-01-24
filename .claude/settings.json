@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(export SNOWFLAKE_ACCOUNT=\"iutimnf.lnb78386\")",
+      "Bash(export SNOWFLAKE_USER:*)"
+    ]
+  }
+}

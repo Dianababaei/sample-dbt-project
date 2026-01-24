@@ -12,38 +12,14 @@ with source as (
         portfolio_name,
         portfolio_type,
         fund_id,
-        inception_date,
         status,
-        aum_usd,
-        created_at,
-        updated_at,
-        row_number() over (
-            partition by portfolio_id
-            order by updated_at desc
-        ) as rn
-    from {{ source('raw', 'portfolios') }}
+        aum_usd
+    from {{ source('raw', 'sample_portfolios') }}
 ),
 
--- ISSUE: Using subquery filter instead of QUALIFY
-deduplicated as (
-    select
-        portfolio_id,
-        portfolio_name,
-        portfolio_type,
-        fund_id,
-        inception_date,
-        status,
-        aum_usd,
-        created_at,
-        updated_at
-    from source
-    where rn = 1  -- ISSUE: Should use QUALIFY in Snowflake
-),
-
--- ISSUE: Another pass just for active filter
 active_only as (
     select *
-    from deduplicated
+    from source
     where status = 'ACTIVE'
 )
 

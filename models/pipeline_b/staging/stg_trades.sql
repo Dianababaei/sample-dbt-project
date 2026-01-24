@@ -10,25 +10,16 @@
 with source as (
     select
         trade_id,
-        portfolio_id,
-        security_id,
+        'PF' || lpad(portfolio_id, 3, '0') as portfolio_id,
+        'SEC' || lpad(security_id, 3, '0') as security_id,
         trade_date,
-        settlement_date,
         trade_type,
         quantity,
         price,
-        gross_amount,
-        commission,
-        fees,
         net_amount,
-        currency,
-        counterparty_id,
         broker_id,
-        trader_id,
-        trade_status,
-        created_at,
-        updated_at
-    from {{ source('raw', 'trades') }}
+        created_at
+    from {{ source('raw', 'sample_trades') }}
 ),
 
 -- ISSUE: Repeated CASE statements for trade categorization
@@ -49,9 +40,7 @@ categorized as (
             else 'MICRO'
         end as trade_size_bucket,
         -- ISSUE: Redundant string manipulation
-        upper(trim(trade_type)) as trade_type_clean,
-        upper(trim(currency)) as currency_clean,
-        upper(trim(trade_status)) as status_clean
+        upper(trim(trade_type)) as trade_type_clean
     from source
 ),
 
@@ -59,7 +48,6 @@ categorized as (
 with_dates as (
     select
         *,
-        datediff('day', trade_date, settlement_date) as settlement_days,
         date_trunc('month', trade_date) as trade_month,
         date_trunc('quarter', trade_date) as trade_quarter,
         extract(year from trade_date) as trade_year,
@@ -73,7 +61,6 @@ filtered as (
     select *
     from with_dates
     where trade_date >= '{{ var("start_date") }}'
-      and trade_status != 'CANCELLED'
 )
 
 select * from filtered

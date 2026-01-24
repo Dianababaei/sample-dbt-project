@@ -4,10 +4,10 @@ sources:
   - name: raw
     description: Raw data from source systems
     database: BAIN_ANALYTICS
-    schema: RAW
+    schema: DEV
     tables:
       # Pipeline A Sources
-      - name: cashflows
+      - name: sample_cashflows
         description: Raw cashflow transactions (contributions, distributions, dividends, fees)
         columns:
           - name: cashflow_id
@@ -28,7 +28,7 @@ sources:
           - name: currency
             description: Currency of the cashflow
 
-      - name: portfolios
+      - name: sample_portfolios
         description: Portfolio master data
         columns:
           - name: portfolio_id
@@ -46,7 +46,7 @@ sources:
             description: Portfolio status (ACTIVE, INACTIVE, CLOSED)
 
       # Pipeline B Sources
-      - name: trades
+      - name: sample_trades
         description: Trade transaction records
         columns:
           - name: trade_id
@@ -69,7 +69,7 @@ sources:
           - name: net_amount
             description: Net settlement amount
 
-      - name: securities
+      - name: sample_securities
         description: Security master data
         columns:
           - name: security_id
@@ -90,7 +90,7 @@ sources:
           - name: industry
             description: GICS industry
 
-      - name: market_prices
+      - name: sample_market_prices
         description: Daily market price data
         columns:
           - name: security_id
@@ -102,7 +102,7 @@ sources:
           - name: volume
             description: Trading volume
 
-      - name: brokers
+      - name: sample_brokers
         description: Broker/counterparty information
         columns:
           - name: broker_id
@@ -114,7 +114,7 @@ sources:
             description: Broker display name
 
       # Pipeline C Sources
-      - name: positions_daily
+      - name: sample_positions_daily
         description: Daily position snapshots
         columns:
           - name: position_id
@@ -133,7 +133,7 @@ sources:
           - name: market_value_usd
             description: Market value in USD
 
-      - name: benchmarks
+      - name: sample_benchmarks
         description: Benchmark index definitions
         columns:
           - name: benchmark_id
@@ -146,7 +146,7 @@ sources:
           - name: benchmark_ticker
             description: Benchmark ticker (SPY, AGG, etc.)
 
-      - name: benchmark_returns
+      - name: sample_benchmark_returns
         description: Daily benchmark return data
         columns:
           - name: benchmark_id
@@ -156,7 +156,7 @@ sources:
           - name: daily_return
             description: Daily percentage return
 
-      - name: portfolio_benchmarks
+      - name: sample_portfolio_benchmarks
         description: Portfolio to benchmark mapping
         columns:
           - name: portfolio_id
@@ -166,7 +166,7 @@ sources:
           - name: is_primary
             description: Whether this is the primary benchmark
 
-      - name: fund_hierarchy
+      - name: sample_fund_hierarchy
         description: Fund/portfolio organizational hierarchy
         columns:
           - name: entity_id
@@ -181,7 +181,7 @@ sources:
           - name: hierarchy_level
             description: Depth in hierarchy (1=top)
 
-      - name: valuations
+      - name: sample_valuations
         description: Portfolio NAV and valuation data
         columns:
           - name: valuation_id

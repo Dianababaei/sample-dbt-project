@@ -34,16 +34,6 @@ positions as (
             order by trade_date, trade_id
             rows between unbounded preceding and current row
         ) as running_position,
-        sum(case
-            when trade_category = 'PURCHASE' then net_amount
-            when trade_category = 'SALE' then -net_amount
-            else 0
-        end) over (
-            partition by portfolio_id, security_id
-            order by trade_date, trade_id
-            rows between unbounded preceding and current row
-        ) as cumulative_cost,
-        -- ISSUE: Another separate window for purchase-only
         sum(case when trade_category = 'PURCHASE' then quantity else 0 end) over (
             partition by portfolio_id, security_id
             order by trade_date, trade_id

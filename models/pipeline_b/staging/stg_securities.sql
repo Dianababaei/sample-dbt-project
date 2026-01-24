@@ -16,30 +16,8 @@ with source as (
         sector,
         industry,
         country,
-        currency,
-        exchange,
-        isin,
-        cusip,
-        sedol,
-        is_active,
-        created_at,
-        updated_at
-    from {{ source('raw', 'securities') }}
-),
-
--- ISSUE: Complex deduplication using subquery
-deduplicated as (
-    select *
-    from (
-        select
-            *,
-            row_number() over (
-                partition by security_id
-                order by updated_at desc
-            ) as rn
-        from source
-    ) sub
-    where rn = 1  -- ISSUE: Should use QUALIFY
+        currency
+    from {{ source('raw', 'sample_securities') }}
 ),
 
 -- ISSUE: Separate CTE for type standardization
@@ -61,16 +39,8 @@ standardized as (
         sector,
         industry,
         upper(country) as country,
-        upper(currency) as currency,
-        exchange,
-        isin,
-        cusip,
-        sedol,
-        is_active,
-        created_at,
-        updated_at
-    from deduplicated
+        upper(currency) as currency
+    from source
 )
 
 select * from standardized
-where is_active = true

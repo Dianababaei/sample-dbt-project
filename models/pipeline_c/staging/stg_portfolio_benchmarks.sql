@@ -4,23 +4,16 @@
 
 with source as (
     select
-        portfolio_id,
-        benchmark_id,
-        benchmark_weight,
-        effective_from,
-        effective_to,
+        'PF' || lpad(portfolio_id, 3, '0') as portfolio_id,
+        'BM' || lpad(benchmark_id, 3, '0') as benchmark_id,
         is_primary,
         created_at
-    from {{ source('raw', 'portfolio_benchmarks') }}
+    from {{ source('raw', 'sample_portfolio_benchmarks') }}
 )
 
 select
     portfolio_id,
     benchmark_id,
-    cast(benchmark_weight as decimal(5,4)) as benchmark_weight,
-    cast(effective_from as date) as effective_from,
-    cast(effective_to as date) as effective_to,
     is_primary,
     created_at
 from source
-where effective_to is null or effective_to >= current_date()
