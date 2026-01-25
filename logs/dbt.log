@@ -37760,3 +37760,2769 @@ parsing.
 [0m13:31:34.075929 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7CFA71950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7D2CEF890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7BE443110>]}
 [0m13:31:34.080842 [debug] [MainThread]: Flushing usage events
 [0m13:31:36.037616 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:37:35.766954 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C901AEF090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C901AEF050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C901AEEFD0>]}
+
+
+============================== 13:37:35.778300 | c5c8703a-09a4-481e-a971-ba2def6f1163 ==============================
+[0m13:37:35.778300 [info ] [MainThread]: Running with dbt=1.11.2
+[0m13:37:35.781828 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'write_json': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'profiles_dir': 'I:\\dianababaei\\dbt\\sample-dbt-project', 'debug': 'False', 'static_parser': 'True', 'log_cache_events': 'False', 'empty': 'None', 'log_format': 'default', 'quiet': 'True', 'use_colors': 'True', 'partial_parse': 'True', 'version_check': 'True', 'log_path': 'I:\\dianababaei\\dbt\\sample-dbt-project\\logs', 'introspect': 'True', 'invocation_command': 'dbt test --quiet', 'fail_fast': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'target_path': 'None'}
+[0m13:37:37.777852 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m13:37:37.782433 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m13:37:37.784614 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m13:37:38.056296 [warn ] [MainThread]: [[33mWARNING[0m][MissingPlusPrefixDeprecation]: Deprecated functionality
+Missing '+' prefix on `bain_capital_portfolio_analytics` found at
+`bain_capital_portfolio_analytics` in file
+`I:\dianababaei\dbt\sample-dbt-project\dbt_project.yml`. Hierarchical config
+values without a '+' prefix are deprecated in dbt_project.yml.
+[0m13:37:38.058167 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'c5c8703a-09a4-481e-a971-ba2def6f1163', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C913EF3C10>]}
+[0m13:37:38.427447 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c5c8703a-09a4-481e-a971-ba2def6f1163', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C913F5A610>]}
+[0m13:37:38.649247 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c5c8703a-09a4-481e-a971-ba2def6f1163', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C97FADD650>]}
+[0m13:37:38.653837 [info ] [MainThread]: Registered adapter: snowflake=1.11.1
+[0m13:37:39.553483 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m13:37:40.185960 [debug] [MainThread]: Partial parsing enabled: 2 files deleted, 0 files added, 0 files changed.
+[0m13:37:41.238934 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c5c8703a-09a4-481e-a971-ba2def6f1163', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C914777650>]}
+[0m13:37:41.739892 [debug] [MainThread]: Wrote artifact WritableManifest to I:\dianababaei\dbt\sample-dbt-project\target\manifest.json
+[0m13:37:41.744988 [debug] [MainThread]: Wrote artifact SemanticManifest to I:\dianababaei\dbt\sample-dbt-project\target\semantic_manifest.json
+[0m13:37:41.817758 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c5c8703a-09a4-481e-a971-ba2def6f1163', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C914938210>]}
+[0m13:37:41.818755 [info ] [MainThread]: Found 16 models, 13 seeds, 35 data tests, 12 sources, 638 macros
+[0m13:37:41.819757 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c5c8703a-09a4-481e-a971-ba2def6f1163', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C91480CF10>]}
+[0m13:37:41.827648 [info ] [MainThread]: 
+[0m13:37:41.828645 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m13:37:41.828645 [info ] [MainThread]: 
+[0m13:37:41.829645 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m13:37:41.842886 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_BAIN_ANALYTICS_DEV'
+[0m13:37:42.002501 [debug] [ThreadPool]: Using snowflake connection "list_BAIN_ANALYTICS_DEV"
+[0m13:37:42.002501 [debug] [ThreadPool]: On list_BAIN_ANALYTICS_DEV: show objects in BAIN_ANALYTICS.DEV
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "connection_name": "list_BAIN_ANALYTICS_DEV"} */;
+[0m13:37:42.002501 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:37:45.241271 [debug] [ThreadPool]: SQL status: SUCCESS 34 in 3.232 seconds
+[0m13:37:45.254689 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c5c8703a-09a4-481e-a971-ba2def6f1163', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C91480CF10>]}
+[0m13:37:45.261681 [debug] [Thread-2 (]: Began running node test.bain_capital_portfolio_analytics.accepted_values_stg_cashflows_cashflow_type__CONTRIBUTION__DISTRIBUTION__DIVIDEND__FEE.d3b48fa192
+[0m13:37:45.267448 [debug] [Thread-3 (]: Began running node test.bain_capital_portfolio_analytics.accepted_values_stg_portfolios_status__ACTIVE__INACTIVE__CLOSED.7c5e49f046
+[0m13:37:45.269023 [debug] [Thread-4 (]: Began running node test.bain_capital_portfolio_analytics.dbt_utils_accepted_range_fact_cashflow_summary_transaction_count__0.4582b1b384
+[0m13:37:45.271034 [debug] [Thread-5 (]: Began running node test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_cashflow_summary_key.eda3fa76d3
+[0m13:37:45.271034 [info ] [Thread-2 (]: 1 of 35 START test accepted_values_stg_cashflows_cashflow_type__CONTRIBUTION__DISTRIBUTION__DIVIDEND__FEE  [RUN]
+[0m13:37:45.273040 [info ] [Thread-3 (]: 2 of 35 START test accepted_values_stg_portfolios_status__ACTIVE__INACTIVE__CLOSED  [RUN]
+[0m13:37:45.273040 [info ] [Thread-4 (]: 3 of 35 START test dbt_utils_accepted_range_fact_cashflow_summary_transaction_count__0  [RUN]
+[0m13:37:45.273040 [info ] [Thread-5 (]: 4 of 35 START test not_null_fact_cashflow_summary_cashflow_summary_key ......... [RUN]
+[0m13:37:45.276371 [debug] [Thread-2 (]: Acquiring new snowflake connection 'test.bain_capital_portfolio_analytics.accepted_values_stg_cashflows_cashflow_type__CONTRIBUTION__DISTRIBUTION__DIVIDEND__FEE.d3b48fa192'
+[0m13:37:45.276956 [debug] [Thread-3 (]: Acquiring new snowflake connection 'test.bain_capital_portfolio_analytics.accepted_values_stg_portfolios_status__ACTIVE__INACTIVE__CLOSED.7c5e49f046'
+[0m13:37:45.279636 [debug] [Thread-4 (]: Acquiring new snowflake connection 'test.bain_capital_portfolio_analytics.dbt_utils_accepted_range_fact_cashflow_summary_transaction_count__0.4582b1b384'
+[0m13:37:45.282697 [debug] [Thread-5 (]: Acquiring new snowflake connection 'test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_cashflow_summary_key.eda3fa76d3'
+[0m13:37:45.282697 [debug] [Thread-2 (]: Began compiling node test.bain_capital_portfolio_analytics.accepted_values_stg_cashflows_cashflow_type__CONTRIBUTION__DISTRIBUTION__DIVIDEND__FEE.d3b48fa192
+[0m13:37:45.282697 [debug] [Thread-3 (]: Began compiling node test.bain_capital_portfolio_analytics.accepted_values_stg_portfolios_status__ACTIVE__INACTIVE__CLOSED.7c5e49f046
+[0m13:37:45.282697 [debug] [Thread-4 (]: Began compiling node test.bain_capital_portfolio_analytics.dbt_utils_accepted_range_fact_cashflow_summary_transaction_count__0.4582b1b384
+[0m13:37:45.282697 [debug] [Thread-5 (]: Began compiling node test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_cashflow_summary_key.eda3fa76d3
+[0m13:37:45.317317 [debug] [Thread-2 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.accepted_values_stg_cashflows_cashflow_type__CONTRIBUTION__DISTRIBUTION__DIVIDEND__FEE.d3b48fa192"
+[0m13:37:45.329073 [debug] [Thread-3 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.accepted_values_stg_portfolios_status__ACTIVE__INACTIVE__CLOSED.7c5e49f046"
+[0m13:37:45.342734 [debug] [Thread-4 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.dbt_utils_accepted_range_fact_cashflow_summary_transaction_count__0.4582b1b384"
+[0m13:37:45.357025 [debug] [Thread-5 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_cashflow_summary_key.eda3fa76d3"
+[0m13:37:45.360834 [debug] [Thread-2 (]: Began executing node test.bain_capital_portfolio_analytics.accepted_values_stg_cashflows_cashflow_type__CONTRIBUTION__DISTRIBUTION__DIVIDEND__FEE.d3b48fa192
+[0m13:37:45.361899 [debug] [Thread-3 (]: Began executing node test.bain_capital_portfolio_analytics.accepted_values_stg_portfolios_status__ACTIVE__INACTIVE__CLOSED.7c5e49f046
+[0m13:37:45.363774 [debug] [Thread-4 (]: Began executing node test.bain_capital_portfolio_analytics.dbt_utils_accepted_range_fact_cashflow_summary_transaction_count__0.4582b1b384
+[0m13:37:45.390757 [debug] [Thread-5 (]: Began executing node test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_cashflow_summary_key.eda3fa76d3
+[0m13:37:45.409821 [debug] [Thread-2 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.accepted_values_stg_cashflows_cashflow_type__CONTRIBUTION__DISTRIBUTION__DIVIDEND__FEE.d3b48fa192"
+[0m13:37:45.413466 [debug] [Thread-3 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.accepted_values_stg_portfolios_status__ACTIVE__INACTIVE__CLOSED.7c5e49f046"
+[0m13:37:45.424290 [debug] [Thread-4 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.dbt_utils_accepted_range_fact_cashflow_summary_transaction_count__0.4582b1b384"
+[0m13:37:45.425428 [debug] [Thread-5 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_cashflow_summary_key.eda3fa76d3"
+[0m13:37:45.425428 [debug] [Thread-2 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.accepted_values_stg_cashflows_cashflow_type__CONTRIBUTION__DISTRIBUTION__DIVIDEND__FEE.d3b48fa192"
+[0m13:37:45.435739 [debug] [Thread-3 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.accepted_values_stg_portfolios_status__ACTIVE__INACTIVE__CLOSED.7c5e49f046"
+[0m13:37:45.435739 [debug] [Thread-4 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.dbt_utils_accepted_range_fact_cashflow_summary_transaction_count__0.4582b1b384"
+[0m13:37:45.435739 [debug] [Thread-2 (]: On test.bain_capital_portfolio_analytics.accepted_values_stg_cashflows_cashflow_type__CONTRIBUTION__DISTRIBUTION__DIVIDEND__FEE.d3b48fa192: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        cashflow_type as value_field,
+        count(*) as n_records
+
+    from BAIN_ANALYTICS.DEV.stg_cashflows
+    group by cashflow_type
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'CONTRIBUTION','DISTRIBUTION','DIVIDEND','FEE'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.accepted_values_stg_cashflows_cashflow_type__CONTRIBUTION__DISTRIBUTION__DIVIDEND__FEE.d3b48fa192"} */
+[0m13:37:45.435739 [debug] [Thread-5 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_cashflow_summary_key.eda3fa76d3"
+[0m13:37:45.435739 [debug] [Thread-3 (]: On test.bain_capital_portfolio_analytics.accepted_values_stg_portfolios_status__ACTIVE__INACTIVE__CLOSED.7c5e49f046: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        status as value_field,
+        count(*) as n_records
+
+    from BAIN_ANALYTICS.DEV.stg_portfolios
+    group by status
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'ACTIVE','INACTIVE','CLOSED'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.accepted_values_stg_portfolios_status__ACTIVE__INACTIVE__CLOSED.7c5e49f046"} */
+[0m13:37:45.435739 [debug] [Thread-4 (]: On test.bain_capital_portfolio_analytics.dbt_utils_accepted_range_fact_cashflow_summary_transaction_count__0.4582b1b384: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+
+with meet_condition as(
+  select *
+  from BAIN_ANALYTICS.DEV.fact_cashflow_summary
+),
+
+validation_errors as (
+  select *
+  from meet_condition
+  where
+    -- never true, defaults to an empty result set. Exists to ensure any combo of the `or` clauses below succeeds
+    1 = 2
+    -- records with a value >= min_value are permitted. The `not` flips this to find records that don't meet the rule.
+    or not transaction_count >= 0
+)
+
+select *
+from validation_errors
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.dbt_utils_accepted_range_fact_cashflow_summary_transaction_count__0.4582b1b384"} */
+[0m13:37:45.435739 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:37:45.445936 [debug] [Thread-5 (]: On test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_cashflow_summary_key.eda3fa76d3: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select cashflow_summary_key
+from BAIN_ANALYTICS.DEV.fact_cashflow_summary
+where cashflow_summary_key is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_cashflow_summary_key.eda3fa76d3"} */
+[0m13:37:45.446691 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m13:37:45.446691 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m13:37:45.446691 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m13:37:47.179963 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 1.733 seconds
+[0m13:37:47.194915 [info ] [Thread-4 (]: 3 of 35 PASS dbt_utils_accepted_range_fact_cashflow_summary_transaction_count__0  [[32mPASS[0m in 1.92s]
+[0m13:37:47.196919 [debug] [Thread-4 (]: Finished running node test.bain_capital_portfolio_analytics.dbt_utils_accepted_range_fact_cashflow_summary_transaction_count__0.4582b1b384
+[0m13:37:47.196919 [debug] [Thread-4 (]: Began running node test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_portfolio_id.625a7cad74
+[0m13:37:47.198923 [info ] [Thread-4 (]: 5 of 35 START test not_null_fact_cashflow_summary_portfolio_id ................. [RUN]
+[0m13:37:47.198923 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.dbt_utils_accepted_range_fact_cashflow_summary_transaction_count__0.4582b1b384, now test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_portfolio_id.625a7cad74)
+[0m13:37:47.201426 [debug] [Thread-4 (]: Began compiling node test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_portfolio_id.625a7cad74
+[0m13:37:47.204667 [debug] [Thread-4 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_portfolio_id.625a7cad74"
+[0m13:37:47.204667 [debug] [Thread-4 (]: Began executing node test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_portfolio_id.625a7cad74
+[0m13:37:47.217689 [debug] [Thread-4 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_portfolio_id.625a7cad74"
+[0m13:37:47.217689 [debug] [Thread-4 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_portfolio_id.625a7cad74"
+[0m13:37:47.217689 [debug] [Thread-4 (]: On test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_portfolio_id.625a7cad74: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select portfolio_id
+from BAIN_ANALYTICS.DEV.fact_cashflow_summary
+where portfolio_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_portfolio_id.625a7cad74"} */
+[0m13:37:47.397962 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 1.950 seconds
+[0m13:37:47.397962 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 1.949 seconds
+[0m13:37:47.404373 [info ] [Thread-3 (]: 2 of 35 PASS accepted_values_stg_portfolios_status__ACTIVE__INACTIVE__CLOSED ... [[32mPASS[0m in 2.13s]
+[0m13:37:47.406389 [info ] [Thread-5 (]: 4 of 35 PASS not_null_fact_cashflow_summary_cashflow_summary_key ............... [[32mPASS[0m in 2.13s]
+[0m13:37:47.406389 [debug] [Thread-3 (]: Finished running node test.bain_capital_portfolio_analytics.accepted_values_stg_portfolios_status__ACTIVE__INACTIVE__CLOSED.7c5e49f046
+[0m13:37:47.412528 [debug] [Thread-5 (]: Finished running node test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_cashflow_summary_key.eda3fa76d3
+[0m13:37:47.413923 [debug] [Thread-3 (]: Began running node test.bain_capital_portfolio_analytics.not_null_report_monthly_cashflows_portfolio_id.dbc5367687
+[0m13:37:47.415939 [debug] [Thread-5 (]: Began running node test.bain_capital_portfolio_analytics.not_null_stg_cashflows_amount.333b517880
+[0m13:37:47.415939 [info ] [Thread-3 (]: 6 of 35 START test not_null_report_monthly_cashflows_portfolio_id .............. [RUN]
+[0m13:37:47.415939 [info ] [Thread-5 (]: 7 of 35 START test not_null_stg_cashflows_amount ............................... [RUN]
+[0m13:37:47.421402 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.accepted_values_stg_portfolios_status__ACTIVE__INACTIVE__CLOSED.7c5e49f046, now test.bain_capital_portfolio_analytics.not_null_report_monthly_cashflows_portfolio_id.dbc5367687)
+[0m13:37:47.421402 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_cashflow_summary_key.eda3fa76d3, now test.bain_capital_portfolio_analytics.not_null_stg_cashflows_amount.333b517880)
+[0m13:37:47.424660 [debug] [Thread-3 (]: Began compiling node test.bain_capital_portfolio_analytics.not_null_report_monthly_cashflows_portfolio_id.dbc5367687
+[0m13:37:47.425194 [debug] [Thread-5 (]: Began compiling node test.bain_capital_portfolio_analytics.not_null_stg_cashflows_amount.333b517880
+[0m13:37:47.439206 [debug] [Thread-3 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.not_null_report_monthly_cashflows_portfolio_id.dbc5367687"
+[0m13:37:47.450530 [debug] [Thread-5 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.not_null_stg_cashflows_amount.333b517880"
+[0m13:37:47.450530 [debug] [Thread-3 (]: Began executing node test.bain_capital_portfolio_analytics.not_null_report_monthly_cashflows_portfolio_id.dbc5367687
+[0m13:37:47.465358 [debug] [Thread-3 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.not_null_report_monthly_cashflows_portfolio_id.dbc5367687"
+[0m13:37:47.468150 [debug] [Thread-5 (]: Began executing node test.bain_capital_portfolio_analytics.not_null_stg_cashflows_amount.333b517880
+[0m13:37:47.472088 [debug] [Thread-5 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.not_null_stg_cashflows_amount.333b517880"
+[0m13:37:47.480571 [debug] [Thread-3 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.not_null_report_monthly_cashflows_portfolio_id.dbc5367687"
+[0m13:37:47.484116 [debug] [Thread-3 (]: On test.bain_capital_portfolio_analytics.not_null_report_monthly_cashflows_portfolio_id.dbc5367687: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select portfolio_id
+from BAIN_ANALYTICS.DEV.report_monthly_cashflows
+where portfolio_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.not_null_report_monthly_cashflows_portfolio_id.dbc5367687"} */
+[0m13:37:47.484116 [debug] [Thread-5 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.not_null_stg_cashflows_amount.333b517880"
+[0m13:37:47.487735 [debug] [Thread-5 (]: On test.bain_capital_portfolio_analytics.not_null_stg_cashflows_amount.333b517880: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select amount
+from BAIN_ANALYTICS.DEV.stg_cashflows
+where amount is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.not_null_stg_cashflows_amount.333b517880"} */
+[0m13:37:47.521378 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 2.077 seconds
+[0m13:37:47.528557 [info ] [Thread-2 (]: 1 of 35 PASS accepted_values_stg_cashflows_cashflow_type__CONTRIBUTION__DISTRIBUTION__DIVIDEND__FEE  [[32mPASS[0m in 2.25s]
+[0m13:37:47.530564 [debug] [Thread-2 (]: Finished running node test.bain_capital_portfolio_analytics.accepted_values_stg_cashflows_cashflow_type__CONTRIBUTION__DISTRIBUTION__DIVIDEND__FEE.d3b48fa192
+[0m13:37:47.532207 [debug] [Thread-2 (]: Began running node test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_date.d05a251154
+[0m13:37:47.533783 [info ] [Thread-2 (]: 8 of 35 START test not_null_stg_cashflows_cashflow_date ........................ [RUN]
+[0m13:37:47.535131 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.accepted_values_stg_cashflows_cashflow_type__CONTRIBUTION__DISTRIBUTION__DIVIDEND__FEE.d3b48fa192, now test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_date.d05a251154)
+[0m13:37:47.537768 [debug] [Thread-2 (]: Began compiling node test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_date.d05a251154
+[0m13:37:47.549891 [debug] [Thread-2 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_date.d05a251154"
+[0m13:37:47.552257 [debug] [Thread-2 (]: Began executing node test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_date.d05a251154
+[0m13:37:47.561944 [debug] [Thread-2 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_date.d05a251154"
+[0m13:37:47.565002 [debug] [Thread-2 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_date.d05a251154"
+[0m13:37:47.565508 [debug] [Thread-2 (]: On test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_date.d05a251154: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select cashflow_date
+from BAIN_ANALYTICS.DEV.stg_cashflows
+where cashflow_date is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_date.d05a251154"} */
+[0m13:37:47.632544 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.410 seconds
+[0m13:37:47.639879 [info ] [Thread-4 (]: 5 of 35 PASS not_null_fact_cashflow_summary_portfolio_id ....................... [[32mPASS[0m in 0.44s]
+[0m13:37:47.641610 [debug] [Thread-4 (]: Finished running node test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_portfolio_id.625a7cad74
+[0m13:37:47.641610 [debug] [Thread-4 (]: Began running node test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_id.4176024898
+[0m13:37:47.643805 [info ] [Thread-4 (]: 9 of 35 START test not_null_stg_cashflows_cashflow_id .......................... [RUN]
+[0m13:37:47.647606 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_portfolio_id.625a7cad74, now test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_id.4176024898)
+[0m13:37:47.649622 [debug] [Thread-4 (]: Began compiling node test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_id.4176024898
+[0m13:37:47.660778 [debug] [Thread-4 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_id.4176024898"
+[0m13:37:47.662783 [debug] [Thread-4 (]: Began executing node test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_id.4176024898
+[0m13:37:47.669381 [debug] [Thread-4 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_id.4176024898"
+[0m13:37:47.671881 [debug] [Thread-4 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_id.4176024898"
+[0m13:37:47.671881 [debug] [Thread-4 (]: On test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_id.4176024898: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select cashflow_id
+from BAIN_ANALYTICS.DEV.stg_cashflows
+where cashflow_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_id.4176024898"} */
+[0m13:37:47.904632 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.418 seconds
+[0m13:37:47.908641 [info ] [Thread-3 (]: 6 of 35 PASS not_null_report_monthly_cashflows_portfolio_id .................... [[32mPASS[0m in 0.49s]
+[0m13:37:47.908641 [debug] [Thread-3 (]: Finished running node test.bain_capital_portfolio_analytics.not_null_report_monthly_cashflows_portfolio_id.dbc5367687
+[0m13:37:47.910647 [debug] [Thread-3 (]: Began running node test.bain_capital_portfolio_analytics.not_null_stg_cashflows_portfolio_id.cbd1d93e57
+[0m13:37:47.912488 [info ] [Thread-3 (]: 10 of 35 START test not_null_stg_cashflows_portfolio_id ........................ [RUN]
+[0m13:37:47.913767 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.not_null_report_monthly_cashflows_portfolio_id.dbc5367687, now test.bain_capital_portfolio_analytics.not_null_stg_cashflows_portfolio_id.cbd1d93e57)
+[0m13:37:47.915777 [debug] [Thread-3 (]: Began compiling node test.bain_capital_portfolio_analytics.not_null_stg_cashflows_portfolio_id.cbd1d93e57
+[0m13:37:47.924854 [debug] [Thread-3 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.not_null_stg_cashflows_portfolio_id.cbd1d93e57"
+[0m13:37:47.926870 [debug] [Thread-3 (]: Began executing node test.bain_capital_portfolio_analytics.not_null_stg_cashflows_portfolio_id.cbd1d93e57
+[0m13:37:47.934980 [debug] [Thread-3 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.not_null_stg_cashflows_portfolio_id.cbd1d93e57"
+[0m13:37:47.935317 [debug] [Thread-3 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.not_null_stg_cashflows_portfolio_id.cbd1d93e57"
+[0m13:37:47.935317 [debug] [Thread-3 (]: On test.bain_capital_portfolio_analytics.not_null_stg_cashflows_portfolio_id.cbd1d93e57: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select portfolio_id
+from BAIN_ANALYTICS.DEV.stg_cashflows
+where portfolio_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.not_null_stg_cashflows_portfolio_id.cbd1d93e57"} */
+[0m13:37:47.968355 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.479 seconds
+[0m13:37:47.968355 [info ] [Thread-5 (]: 7 of 35 PASS not_null_stg_cashflows_amount ..................................... [[32mPASS[0m in 0.55s]
+[0m13:37:47.968355 [debug] [Thread-5 (]: Finished running node test.bain_capital_portfolio_analytics.not_null_stg_cashflows_amount.333b517880
+[0m13:37:47.968355 [debug] [Thread-5 (]: Began running node test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_id.7126a480ec
+[0m13:37:47.968355 [info ] [Thread-5 (]: 11 of 35 START test not_null_stg_portfolios_portfolio_id ....................... [RUN]
+[0m13:37:47.979579 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.not_null_stg_cashflows_amount.333b517880, now test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_id.7126a480ec)
+[0m13:37:47.982383 [debug] [Thread-5 (]: Began compiling node test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_id.7126a480ec
+[0m13:37:47.993935 [debug] [Thread-5 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_id.7126a480ec"
+[0m13:37:47.995932 [debug] [Thread-5 (]: Began executing node test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_id.7126a480ec
+[0m13:37:48.004443 [debug] [Thread-5 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_id.7126a480ec"
+[0m13:37:48.008566 [debug] [Thread-5 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_id.7126a480ec"
+[0m13:37:48.009427 [debug] [Thread-5 (]: On test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_id.7126a480ec: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select portfolio_id
+from BAIN_ANALYTICS.DEV.stg_portfolios
+where portfolio_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_id.7126a480ec"} */
+[0m13:37:48.060172 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.494 seconds
+[0m13:37:48.063458 [info ] [Thread-2 (]: 8 of 35 PASS not_null_stg_cashflows_cashflow_date .............................. [[32mPASS[0m in 0.53s]
+[0m13:37:48.065471 [debug] [Thread-2 (]: Finished running node test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_date.d05a251154
+[0m13:37:48.065471 [debug] [Thread-2 (]: Began running node test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_name.667840ac9c
+[0m13:37:48.067487 [info ] [Thread-2 (]: 12 of 35 START test not_null_stg_portfolios_portfolio_name ..................... [RUN]
+[0m13:37:48.070705 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_date.d05a251154, now test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_name.667840ac9c)
+[0m13:37:48.072782 [debug] [Thread-2 (]: Began compiling node test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_name.667840ac9c
+[0m13:37:48.082953 [debug] [Thread-2 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_name.667840ac9c"
+[0m13:37:48.084801 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.409 seconds
+[0m13:37:48.088426 [info ] [Thread-4 (]: 9 of 35 PASS not_null_stg_cashflows_cashflow_id ................................ [[32mPASS[0m in 0.44s]
+[0m13:37:48.089538 [debug] [Thread-2 (]: Began executing node test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_name.667840ac9c
+[0m13:37:48.092449 [debug] [Thread-4 (]: Finished running node test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_id.4176024898
+[0m13:37:48.098423 [debug] [Thread-2 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_name.667840ac9c"
+[0m13:37:48.099432 [debug] [Thread-4 (]: Began running node test.bain_capital_portfolio_analytics.relationships_stg_cashflows_portfolio_id__portfolio_id__ref_stg_portfolios_.9f0a1fd1ba
+[0m13:37:48.101984 [info ] [Thread-4 (]: 13 of 35 START test relationships_stg_cashflows_portfolio_id__portfolio_id__ref_stg_portfolios_  [RUN]
+[0m13:37:48.104686 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_id.4176024898, now test.bain_capital_portfolio_analytics.relationships_stg_cashflows_portfolio_id__portfolio_id__ref_stg_portfolios_.9f0a1fd1ba)
+[0m13:37:48.106805 [debug] [Thread-2 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_name.667840ac9c"
+[0m13:37:48.107807 [debug] [Thread-4 (]: Began compiling node test.bain_capital_portfolio_analytics.relationships_stg_cashflows_portfolio_id__portfolio_id__ref_stg_portfolios_.9f0a1fd1ba
+[0m13:37:48.108805 [debug] [Thread-2 (]: On test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_name.667840ac9c: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select portfolio_name
+from BAIN_ANALYTICS.DEV.stg_portfolios
+where portfolio_name is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_name.667840ac9c"} */
+[0m13:37:48.125926 [debug] [Thread-4 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.relationships_stg_cashflows_portfolio_id__portfolio_id__ref_stg_portfolios_.9f0a1fd1ba"
+[0m13:37:48.130293 [debug] [Thread-4 (]: Began executing node test.bain_capital_portfolio_analytics.relationships_stg_cashflows_portfolio_id__portfolio_id__ref_stg_portfolios_.9f0a1fd1ba
+[0m13:37:48.139892 [debug] [Thread-4 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.relationships_stg_cashflows_portfolio_id__portfolio_id__ref_stg_portfolios_.9f0a1fd1ba"
+[0m13:37:48.143361 [debug] [Thread-4 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.relationships_stg_cashflows_portfolio_id__portfolio_id__ref_stg_portfolios_.9f0a1fd1ba"
+[0m13:37:48.144360 [debug] [Thread-4 (]: On test.bain_capital_portfolio_analytics.relationships_stg_cashflows_portfolio_id__portfolio_id__ref_stg_portfolios_.9f0a1fd1ba: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select portfolio_id as from_field
+    from BAIN_ANALYTICS.DEV.stg_cashflows
+    where portfolio_id is not null
+),
+
+parent as (
+    select portfolio_id as to_field
+    from BAIN_ANALYTICS.DEV.stg_portfolios
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.relationships_stg_cashflows_portfolio_id__portfolio_id__ref_stg_portfolios_.9f0a1fd1ba"} */
+[0m13:37:48.418102 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.476 seconds
+[0m13:37:48.419297 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.409 seconds
+[0m13:37:48.423070 [info ] [Thread-3 (]: 10 of 35 PASS not_null_stg_cashflows_portfolio_id .............................. [[32mPASS[0m in 0.51s]
+[0m13:37:48.429696 [info ] [Thread-5 (]: 11 of 35 PASS not_null_stg_portfolios_portfolio_id ............................. [[32mPASS[0m in 0.45s]
+[0m13:37:48.431536 [debug] [Thread-3 (]: Finished running node test.bain_capital_portfolio_analytics.not_null_stg_cashflows_portfolio_id.cbd1d93e57
+[0m13:37:48.433122 [debug] [Thread-5 (]: Finished running node test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_id.7126a480ec
+[0m13:37:48.434475 [debug] [Thread-3 (]: Began running node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_benchmarks_benchmark_id.ef7db0253c
+[0m13:37:48.436051 [debug] [Thread-5 (]: Began running node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_brokers_broker_id.96e4e75043
+[0m13:37:48.438788 [info ] [Thread-3 (]: 14 of 35 START test source_not_null_raw_sample_benchmarks_benchmark_id ......... [RUN]
+[0m13:37:48.439923 [info ] [Thread-5 (]: 15 of 35 START test source_not_null_raw_sample_brokers_broker_id ............... [RUN]
+[0m13:37:48.440429 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.not_null_stg_cashflows_portfolio_id.cbd1d93e57, now test.bain_capital_portfolio_analytics.source_not_null_raw_sample_benchmarks_benchmark_id.ef7db0253c)
+[0m13:37:48.442435 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_id.7126a480ec, now test.bain_capital_portfolio_analytics.source_not_null_raw_sample_brokers_broker_id.96e4e75043)
+[0m13:37:48.442435 [debug] [Thread-3 (]: Began compiling node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_benchmarks_benchmark_id.ef7db0253c
+[0m13:37:48.442435 [debug] [Thread-5 (]: Began compiling node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_brokers_broker_id.96e4e75043
+[0m13:37:48.458569 [debug] [Thread-3 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_benchmarks_benchmark_id.ef7db0253c"
+[0m13:37:48.471234 [debug] [Thread-5 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_brokers_broker_id.96e4e75043"
+[0m13:37:48.472884 [debug] [Thread-3 (]: Began executing node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_benchmarks_benchmark_id.ef7db0253c
+[0m13:37:48.483793 [debug] [Thread-5 (]: Began executing node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_brokers_broker_id.96e4e75043
+[0m13:37:48.485109 [debug] [Thread-3 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_benchmarks_benchmark_id.ef7db0253c"
+[0m13:37:48.493485 [debug] [Thread-5 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_brokers_broker_id.96e4e75043"
+[0m13:37:48.493485 [debug] [Thread-3 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_benchmarks_benchmark_id.ef7db0253c"
+[0m13:37:48.498310 [debug] [Thread-5 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_brokers_broker_id.96e4e75043"
+[0m13:37:48.498903 [debug] [Thread-3 (]: On test.bain_capital_portfolio_analytics.source_not_null_raw_sample_benchmarks_benchmark_id.ef7db0253c: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select benchmark_id
+from BAIN_ANALYTICS.DEV.sample_benchmarks
+where benchmark_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_benchmarks_benchmark_id.ef7db0253c"} */
+[0m13:37:48.499994 [debug] [Thread-5 (]: On test.bain_capital_portfolio_analytics.source_not_null_raw_sample_brokers_broker_id.96e4e75043: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select broker_id
+from BAIN_ANALYTICS.DEV.sample_brokers
+where broker_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_brokers_broker_id.96e4e75043"} */
+[0m13:37:48.570808 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.444 seconds
+[0m13:37:48.570808 [info ] [Thread-2 (]: 12 of 35 PASS not_null_stg_portfolios_portfolio_name ........................... [[32mPASS[0m in 0.50s]
+[0m13:37:48.570808 [debug] [Thread-2 (]: Finished running node test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_name.667840ac9c
+[0m13:37:48.579642 [debug] [Thread-2 (]: Began running node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_cashflow_id.c1b1e6d773
+[0m13:37:48.581769 [info ] [Thread-2 (]: 16 of 35 START test source_not_null_raw_sample_cashflows_cashflow_id ........... [RUN]
+[0m13:37:48.583961 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_name.667840ac9c, now test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_cashflow_id.c1b1e6d773)
+[0m13:37:48.583961 [debug] [Thread-2 (]: Began compiling node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_cashflow_id.c1b1e6d773
+[0m13:37:48.599886 [debug] [Thread-2 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_cashflow_id.c1b1e6d773"
+[0m13:37:48.604186 [debug] [Thread-2 (]: Began executing node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_cashflow_id.c1b1e6d773
+[0m13:37:48.616583 [debug] [Thread-2 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_cashflow_id.c1b1e6d773"
+[0m13:37:48.617089 [debug] [Thread-2 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_cashflow_id.c1b1e6d773"
+[0m13:37:48.621248 [debug] [Thread-2 (]: On test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_cashflow_id.c1b1e6d773: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select cashflow_id
+from BAIN_ANALYTICS.DEV.sample_cashflows
+where cashflow_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_cashflow_id.c1b1e6d773"} */
+[0m13:37:48.673353 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.527 seconds
+[0m13:37:48.673353 [info ] [Thread-4 (]: 13 of 35 PASS relationships_stg_cashflows_portfolio_id__portfolio_id__ref_stg_portfolios_  [[32mPASS[0m in 0.57s]
+[0m13:37:48.679656 [debug] [Thread-4 (]: Finished running node test.bain_capital_portfolio_analytics.relationships_stg_cashflows_portfolio_id__portfolio_id__ref_stg_portfolios_.9f0a1fd1ba
+[0m13:37:48.682666 [debug] [Thread-4 (]: Began running node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_portfolio_id.eb72ea03e5
+[0m13:37:48.683586 [info ] [Thread-4 (]: 17 of 35 START test source_not_null_raw_sample_cashflows_portfolio_id .......... [RUN]
+[0m13:37:48.683586 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.relationships_stg_cashflows_portfolio_id__portfolio_id__ref_stg_portfolios_.9f0a1fd1ba, now test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_portfolio_id.eb72ea03e5)
+[0m13:37:48.688103 [debug] [Thread-4 (]: Began compiling node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_portfolio_id.eb72ea03e5
+[0m13:37:48.699439 [debug] [Thread-4 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_portfolio_id.eb72ea03e5"
+[0m13:37:48.704602 [debug] [Thread-4 (]: Began executing node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_portfolio_id.eb72ea03e5
+[0m13:37:48.714273 [debug] [Thread-4 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_portfolio_id.eb72ea03e5"
+[0m13:37:48.719386 [debug] [Thread-4 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_portfolio_id.eb72ea03e5"
+[0m13:37:48.720390 [debug] [Thread-4 (]: On test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_portfolio_id.eb72ea03e5: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select portfolio_id
+from BAIN_ANALYTICS.DEV.sample_cashflows
+where portfolio_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_portfolio_id.eb72ea03e5"} */
+[0m13:37:48.875162 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.374 seconds
+[0m13:37:48.883129 [info ] [Thread-3 (]: 14 of 35 PASS source_not_null_raw_sample_benchmarks_benchmark_id ............... [[32mPASS[0m in 0.44s]
+[0m13:37:48.885297 [debug] [Thread-3 (]: Finished running node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_benchmarks_benchmark_id.ef7db0253c
+[0m13:37:48.886295 [debug] [Thread-3 (]: Began running node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_fund_hierarchy_entity_id.1719789752
+[0m13:37:48.887299 [info ] [Thread-3 (]: 18 of 35 START test source_not_null_raw_sample_fund_hierarchy_entity_id ........ [RUN]
+[0m13:37:48.889297 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.source_not_null_raw_sample_benchmarks_benchmark_id.ef7db0253c, now test.bain_capital_portfolio_analytics.source_not_null_raw_sample_fund_hierarchy_entity_id.1719789752)
+[0m13:37:48.890684 [debug] [Thread-3 (]: Began compiling node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_fund_hierarchy_entity_id.1719789752
+[0m13:37:48.905874 [debug] [Thread-3 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_fund_hierarchy_entity_id.1719789752"
+[0m13:37:48.908018 [debug] [Thread-3 (]: Began executing node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_fund_hierarchy_entity_id.1719789752
+[0m13:37:48.919028 [debug] [Thread-3 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_fund_hierarchy_entity_id.1719789752"
+[0m13:37:48.921025 [debug] [Thread-3 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_fund_hierarchy_entity_id.1719789752"
+[0m13:37:48.922611 [debug] [Thread-3 (]: On test.bain_capital_portfolio_analytics.source_not_null_raw_sample_fund_hierarchy_entity_id.1719789752: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select entity_id
+from BAIN_ANALYTICS.DEV.sample_fund_hierarchy
+where entity_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_fund_hierarchy_entity_id.1719789752"} */
+[0m13:37:49.008623 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.505 seconds
+[0m13:37:49.016433 [info ] [Thread-5 (]: 15 of 35 PASS source_not_null_raw_sample_brokers_broker_id ..................... [[32mPASS[0m in 0.57s]
+[0m13:37:49.018529 [debug] [Thread-5 (]: Finished running node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_brokers_broker_id.96e4e75043
+[0m13:37:49.019591 [debug] [Thread-5 (]: Began running node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_portfolios_portfolio_id.d6cc8f1cb4
+[0m13:37:49.020724 [info ] [Thread-5 (]: 19 of 35 START test source_not_null_raw_sample_portfolios_portfolio_id ......... [RUN]
+[0m13:37:49.022325 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.source_not_null_raw_sample_brokers_broker_id.96e4e75043, now test.bain_capital_portfolio_analytics.source_not_null_raw_sample_portfolios_portfolio_id.d6cc8f1cb4)
+[0m13:37:49.023734 [debug] [Thread-5 (]: Began compiling node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_portfolios_portfolio_id.d6cc8f1cb4
+[0m13:37:49.041413 [debug] [Thread-5 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_portfolios_portfolio_id.d6cc8f1cb4"
+[0m13:37:49.043612 [debug] [Thread-5 (]: Began executing node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_portfolios_portfolio_id.d6cc8f1cb4
+[0m13:37:49.054031 [debug] [Thread-5 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_portfolios_portfolio_id.d6cc8f1cb4"
+[0m13:37:49.059240 [debug] [Thread-5 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_portfolios_portfolio_id.d6cc8f1cb4"
+[0m13:37:49.062283 [debug] [Thread-5 (]: On test.bain_capital_portfolio_analytics.source_not_null_raw_sample_portfolios_portfolio_id.d6cc8f1cb4: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select portfolio_id
+from BAIN_ANALYTICS.DEV.sample_portfolios
+where portfolio_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_portfolios_portfolio_id.d6cc8f1cb4"} */
+[0m13:37:49.095200 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.472 seconds
+[0m13:37:49.100200 [info ] [Thread-2 (]: 16 of 35 PASS source_not_null_raw_sample_cashflows_cashflow_id ................. [[32mPASS[0m in 0.52s]
+[0m13:37:49.103585 [debug] [Thread-2 (]: Finished running node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_cashflow_id.c1b1e6d773
+[0m13:37:49.105911 [debug] [Thread-2 (]: Began running node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_positions_daily_position_id.72d2d30023
+[0m13:37:49.107914 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.387 seconds
+[0m13:37:49.108912 [info ] [Thread-2 (]: 20 of 35 START test source_not_null_raw_sample_positions_daily_position_id ..... [RUN]
+[0m13:37:49.113489 [info ] [Thread-4 (]: 17 of 35 PASS source_not_null_raw_sample_cashflows_portfolio_id ................ [[32mPASS[0m in 0.43s]
+[0m13:37:49.116542 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_cashflow_id.c1b1e6d773, now test.bain_capital_portfolio_analytics.source_not_null_raw_sample_positions_daily_position_id.72d2d30023)
+[0m13:37:49.118542 [debug] [Thread-4 (]: Finished running node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_portfolio_id.eb72ea03e5
+[0m13:37:49.119543 [debug] [Thread-2 (]: Began compiling node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_positions_daily_position_id.72d2d30023
+[0m13:37:49.120541 [debug] [Thread-4 (]: Began running node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_securities_security_id.2b1abce5fb
+[0m13:37:49.133530 [debug] [Thread-2 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_positions_daily_position_id.72d2d30023"
+[0m13:37:49.136468 [info ] [Thread-4 (]: 21 of 35 START test source_not_null_raw_sample_securities_security_id .......... [RUN]
+[0m13:37:49.139477 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_portfolio_id.eb72ea03e5, now test.bain_capital_portfolio_analytics.source_not_null_raw_sample_securities_security_id.2b1abce5fb)
+[0m13:37:49.141478 [debug] [Thread-2 (]: Began executing node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_positions_daily_position_id.72d2d30023
+[0m13:37:49.142477 [debug] [Thread-4 (]: Began compiling node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_securities_security_id.2b1abce5fb
+[0m13:37:49.152763 [debug] [Thread-2 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_positions_daily_position_id.72d2d30023"
+[0m13:37:49.163776 [debug] [Thread-4 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_securities_security_id.2b1abce5fb"
+[0m13:37:49.165775 [debug] [Thread-2 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_positions_daily_position_id.72d2d30023"
+[0m13:37:49.167774 [debug] [Thread-4 (]: Began executing node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_securities_security_id.2b1abce5fb
+[0m13:37:49.169263 [debug] [Thread-2 (]: On test.bain_capital_portfolio_analytics.source_not_null_raw_sample_positions_daily_position_id.72d2d30023: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select position_id
+from BAIN_ANALYTICS.DEV.sample_positions_daily
+where position_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_positions_daily_position_id.72d2d30023"} */
+[0m13:37:49.180871 [debug] [Thread-4 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_securities_security_id.2b1abce5fb"
+[0m13:37:49.188093 [debug] [Thread-4 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_securities_security_id.2b1abce5fb"
+[0m13:37:49.191496 [debug] [Thread-4 (]: On test.bain_capital_portfolio_analytics.source_not_null_raw_sample_securities_security_id.2b1abce5fb: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select security_id
+from BAIN_ANALYTICS.DEV.sample_securities
+where security_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_securities_security_id.2b1abce5fb"} */
+[0m13:37:49.371440 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.445 seconds
+[0m13:37:49.371440 [info ] [Thread-3 (]: 18 of 35 PASS source_not_null_raw_sample_fund_hierarchy_entity_id .............. [[32mPASS[0m in 0.48s]
+[0m13:37:49.371440 [debug] [Thread-3 (]: Finished running node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_fund_hierarchy_entity_id.1719789752
+[0m13:37:49.371440 [debug] [Thread-3 (]: Began running node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_trades_trade_id.87413071f5
+[0m13:37:49.379677 [info ] [Thread-3 (]: 22 of 35 START test source_not_null_raw_sample_trades_trade_id ................. [RUN]
+[0m13:37:49.380280 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.source_not_null_raw_sample_fund_hierarchy_entity_id.1719789752, now test.bain_capital_portfolio_analytics.source_not_null_raw_sample_trades_trade_id.87413071f5)
+[0m13:37:49.383524 [debug] [Thread-3 (]: Began compiling node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_trades_trade_id.87413071f5
+[0m13:37:49.395652 [debug] [Thread-3 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_trades_trade_id.87413071f5"
+[0m13:37:49.397653 [debug] [Thread-3 (]: Began executing node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_trades_trade_id.87413071f5
+[0m13:37:49.406616 [debug] [Thread-3 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_trades_trade_id.87413071f5"
+[0m13:37:49.409642 [debug] [Thread-3 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_trades_trade_id.87413071f5"
+[0m13:37:49.410636 [debug] [Thread-3 (]: On test.bain_capital_portfolio_analytics.source_not_null_raw_sample_trades_trade_id.87413071f5: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select trade_id
+from BAIN_ANALYTICS.DEV.sample_trades
+where trade_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_trades_trade_id.87413071f5"} */
+[0m13:37:49.582667 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.519 seconds
+[0m13:37:49.582667 [info ] [Thread-5 (]: 19 of 35 PASS source_not_null_raw_sample_portfolios_portfolio_id ............... [[32mPASS[0m in 0.56s]
+[0m13:37:49.582667 [debug] [Thread-5 (]: Finished running node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_portfolios_portfolio_id.d6cc8f1cb4
+[0m13:37:49.582667 [debug] [Thread-5 (]: Began running node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_valuations_valuation_id.8e2a190042
+[0m13:37:49.593750 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.400 seconds
+[0m13:37:49.595758 [info ] [Thread-5 (]: 23 of 35 START test source_not_null_raw_sample_valuations_valuation_id ......... [RUN]
+[0m13:37:49.599770 [info ] [Thread-4 (]: 21 of 35 PASS source_not_null_raw_sample_securities_security_id ................ [[32mPASS[0m in 0.46s]
+[0m13:37:49.602856 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.source_not_null_raw_sample_portfolios_portfolio_id.d6cc8f1cb4, now test.bain_capital_portfolio_analytics.source_not_null_raw_sample_valuations_valuation_id.8e2a190042)
+[0m13:37:49.604867 [debug] [Thread-4 (]: Finished running node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_securities_security_id.2b1abce5fb
+[0m13:37:49.604867 [debug] [Thread-5 (]: Began compiling node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_valuations_valuation_id.8e2a190042
+[0m13:37:49.608645 [debug] [Thread-4 (]: Began running node test.bain_capital_portfolio_analytics.source_unique_raw_sample_benchmarks_benchmark_id.41406c78b4
+[0m13:37:49.619689 [debug] [Thread-5 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_valuations_valuation_id.8e2a190042"
+[0m13:37:49.621699 [info ] [Thread-4 (]: 24 of 35 START test source_unique_raw_sample_benchmarks_benchmark_id ........... [RUN]
+[0m13:37:49.624232 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.source_not_null_raw_sample_securities_security_id.2b1abce5fb, now test.bain_capital_portfolio_analytics.source_unique_raw_sample_benchmarks_benchmark_id.41406c78b4)
+[0m13:37:49.627553 [debug] [Thread-4 (]: Began compiling node test.bain_capital_portfolio_analytics.source_unique_raw_sample_benchmarks_benchmark_id.41406c78b4
+[0m13:37:49.629560 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.446 seconds
+[0m13:37:49.629560 [debug] [Thread-5 (]: Began executing node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_valuations_valuation_id.8e2a190042
+[0m13:37:49.644600 [debug] [Thread-4 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.source_unique_raw_sample_benchmarks_benchmark_id.41406c78b4"
+[0m13:37:49.649003 [info ] [Thread-2 (]: 20 of 35 PASS source_not_null_raw_sample_positions_daily_position_id ........... [[32mPASS[0m in 0.53s]
+[0m13:37:49.654583 [debug] [Thread-5 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_valuations_valuation_id.8e2a190042"
+[0m13:37:49.659889 [debug] [Thread-2 (]: Finished running node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_positions_daily_position_id.72d2d30023
+[0m13:37:49.661518 [debug] [Thread-4 (]: Began executing node test.bain_capital_portfolio_analytics.source_unique_raw_sample_benchmarks_benchmark_id.41406c78b4
+[0m13:37:49.661518 [debug] [Thread-2 (]: Began running node test.bain_capital_portfolio_analytics.source_unique_raw_sample_brokers_broker_id.636249ebce
+[0m13:37:49.661518 [debug] [Thread-5 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_valuations_valuation_id.8e2a190042"
+[0m13:37:49.673198 [debug] [Thread-4 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.source_unique_raw_sample_benchmarks_benchmark_id.41406c78b4"
+[0m13:37:49.674693 [info ] [Thread-2 (]: 25 of 35 START test source_unique_raw_sample_brokers_broker_id ................. [RUN]
+[0m13:37:49.675488 [debug] [Thread-5 (]: On test.bain_capital_portfolio_analytics.source_not_null_raw_sample_valuations_valuation_id.8e2a190042: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select valuation_id
+from BAIN_ANALYTICS.DEV.sample_valuations
+where valuation_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_valuations_valuation_id.8e2a190042"} */
+[0m13:37:49.676827 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.source_not_null_raw_sample_positions_daily_position_id.72d2d30023, now test.bain_capital_portfolio_analytics.source_unique_raw_sample_brokers_broker_id.636249ebce)
+[0m13:37:49.680079 [debug] [Thread-4 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.source_unique_raw_sample_benchmarks_benchmark_id.41406c78b4"
+[0m13:37:49.682088 [debug] [Thread-2 (]: Began compiling node test.bain_capital_portfolio_analytics.source_unique_raw_sample_brokers_broker_id.636249ebce
+[0m13:37:49.686104 [debug] [Thread-4 (]: On test.bain_capital_portfolio_analytics.source_unique_raw_sample_benchmarks_benchmark_id.41406c78b4: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    benchmark_id as unique_field,
+    count(*) as n_records
+
+from BAIN_ANALYTICS.DEV.sample_benchmarks
+where benchmark_id is not null
+group by benchmark_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.source_unique_raw_sample_benchmarks_benchmark_id.41406c78b4"} */
+[0m13:37:49.693951 [debug] [Thread-2 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.source_unique_raw_sample_brokers_broker_id.636249ebce"
+[0m13:37:49.693951 [debug] [Thread-2 (]: Began executing node test.bain_capital_portfolio_analytics.source_unique_raw_sample_brokers_broker_id.636249ebce
+[0m13:37:49.701712 [debug] [Thread-2 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.source_unique_raw_sample_brokers_broker_id.636249ebce"
+[0m13:37:49.710124 [debug] [Thread-2 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.source_unique_raw_sample_brokers_broker_id.636249ebce"
+[0m13:37:49.710124 [debug] [Thread-2 (]: On test.bain_capital_portfolio_analytics.source_unique_raw_sample_brokers_broker_id.636249ebce: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    broker_id as unique_field,
+    count(*) as n_records
+
+from BAIN_ANALYTICS.DEV.sample_brokers
+where broker_id is not null
+group by broker_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.source_unique_raw_sample_brokers_broker_id.636249ebce"} */
+[0m13:37:49.851072 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.439 seconds
+[0m13:37:49.855272 [info ] [Thread-3 (]: 22 of 35 PASS source_not_null_raw_sample_trades_trade_id ....................... [[32mPASS[0m in 0.47s]
+[0m13:37:49.857136 [debug] [Thread-3 (]: Finished running node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_trades_trade_id.87413071f5
+[0m13:37:49.860442 [debug] [Thread-3 (]: Began running node test.bain_capital_portfolio_analytics.source_unique_raw_sample_cashflows_cashflow_id.b558db5773
+[0m13:37:49.861477 [info ] [Thread-3 (]: 26 of 35 START test source_unique_raw_sample_cashflows_cashflow_id ............. [RUN]
+[0m13:37:49.863554 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.source_not_null_raw_sample_trades_trade_id.87413071f5, now test.bain_capital_portfolio_analytics.source_unique_raw_sample_cashflows_cashflow_id.b558db5773)
+[0m13:37:49.864535 [debug] [Thread-3 (]: Began compiling node test.bain_capital_portfolio_analytics.source_unique_raw_sample_cashflows_cashflow_id.b558db5773
+[0m13:37:49.875951 [debug] [Thread-3 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.source_unique_raw_sample_cashflows_cashflow_id.b558db5773"
+[0m13:37:49.878077 [debug] [Thread-3 (]: Began executing node test.bain_capital_portfolio_analytics.source_unique_raw_sample_cashflows_cashflow_id.b558db5773
+[0m13:37:49.887235 [debug] [Thread-3 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.source_unique_raw_sample_cashflows_cashflow_id.b558db5773"
+[0m13:37:49.890825 [debug] [Thread-3 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.source_unique_raw_sample_cashflows_cashflow_id.b558db5773"
+[0m13:37:49.894222 [debug] [Thread-3 (]: On test.bain_capital_portfolio_analytics.source_unique_raw_sample_cashflows_cashflow_id.b558db5773: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    cashflow_id as unique_field,
+    count(*) as n_records
+
+from BAIN_ANALYTICS.DEV.sample_cashflows
+where cashflow_id is not null
+group by cashflow_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.source_unique_raw_sample_cashflows_cashflow_id.b558db5773"} */
+[0m13:37:50.083917 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.401 seconds
+[0m13:37:50.086166 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.389 seconds
+[0m13:37:50.090492 [info ] [Thread-5 (]: 23 of 35 PASS source_not_null_raw_sample_valuations_valuation_id ............... [[32mPASS[0m in 0.49s]
+[0m13:37:50.096230 [info ] [Thread-4 (]: 24 of 35 PASS source_unique_raw_sample_benchmarks_benchmark_id ................. [[32mPASS[0m in 0.47s]
+[0m13:37:50.098225 [debug] [Thread-5 (]: Finished running node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_valuations_valuation_id.8e2a190042
+[0m13:37:50.099342 [debug] [Thread-4 (]: Finished running node test.bain_capital_portfolio_analytics.source_unique_raw_sample_benchmarks_benchmark_id.41406c78b4
+[0m13:37:50.100357 [debug] [Thread-5 (]: Began running node test.bain_capital_portfolio_analytics.source_unique_raw_sample_fund_hierarchy_entity_id.a9746eaae1
+[0m13:37:50.101840 [debug] [Thread-4 (]: Began running node test.bain_capital_portfolio_analytics.source_unique_raw_sample_portfolios_portfolio_id.b1809722d7
+[0m13:37:50.105722 [info ] [Thread-5 (]: 27 of 35 START test source_unique_raw_sample_fund_hierarchy_entity_id .......... [RUN]
+[0m13:37:50.106125 [info ] [Thread-4 (]: 28 of 35 START test source_unique_raw_sample_portfolios_portfolio_id ........... [RUN]
+[0m13:37:50.108193 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.source_not_null_raw_sample_valuations_valuation_id.8e2a190042, now test.bain_capital_portfolio_analytics.source_unique_raw_sample_fund_hierarchy_entity_id.a9746eaae1)
+[0m13:37:50.109588 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.source_unique_raw_sample_benchmarks_benchmark_id.41406c78b4, now test.bain_capital_portfolio_analytics.source_unique_raw_sample_portfolios_portfolio_id.b1809722d7)
+[0m13:37:50.111106 [debug] [Thread-5 (]: Began compiling node test.bain_capital_portfolio_analytics.source_unique_raw_sample_fund_hierarchy_entity_id.a9746eaae1
+[0m13:37:50.112118 [debug] [Thread-4 (]: Began compiling node test.bain_capital_portfolio_analytics.source_unique_raw_sample_portfolios_portfolio_id.b1809722d7
+[0m13:37:50.122181 [debug] [Thread-5 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.source_unique_raw_sample_fund_hierarchy_entity_id.a9746eaae1"
+[0m13:37:50.132845 [debug] [Thread-4 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.source_unique_raw_sample_portfolios_portfolio_id.b1809722d7"
+[0m13:37:50.138920 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.425 seconds
+[0m13:37:50.140471 [debug] [Thread-5 (]: Began executing node test.bain_capital_portfolio_analytics.source_unique_raw_sample_fund_hierarchy_entity_id.a9746eaae1
+[0m13:37:50.143482 [info ] [Thread-2 (]: 25 of 35 PASS source_unique_raw_sample_brokers_broker_id ....................... [[32mPASS[0m in 0.47s]
+[0m13:37:50.144481 [debug] [Thread-4 (]: Began executing node test.bain_capital_portfolio_analytics.source_unique_raw_sample_portfolios_portfolio_id.b1809722d7
+[0m13:37:50.153348 [debug] [Thread-5 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.source_unique_raw_sample_fund_hierarchy_entity_id.a9746eaae1"
+[0m13:37:50.155229 [debug] [Thread-2 (]: Finished running node test.bain_capital_portfolio_analytics.source_unique_raw_sample_brokers_broker_id.636249ebce
+[0m13:37:50.164521 [debug] [Thread-4 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.source_unique_raw_sample_portfolios_portfolio_id.b1809722d7"
+[0m13:37:50.166521 [debug] [Thread-2 (]: Began running node test.bain_capital_portfolio_analytics.source_unique_raw_sample_positions_daily_position_id.550530e19d
+[0m13:37:50.168496 [debug] [Thread-5 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.source_unique_raw_sample_fund_hierarchy_entity_id.a9746eaae1"
+[0m13:37:50.171730 [info ] [Thread-2 (]: 29 of 35 START test source_unique_raw_sample_positions_daily_position_id ....... [RUN]
+[0m13:37:50.173823 [debug] [Thread-4 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.source_unique_raw_sample_portfolios_portfolio_id.b1809722d7"
+[0m13:37:50.174825 [debug] [Thread-5 (]: On test.bain_capital_portfolio_analytics.source_unique_raw_sample_fund_hierarchy_entity_id.a9746eaae1: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    entity_id as unique_field,
+    count(*) as n_records
+
+from BAIN_ANALYTICS.DEV.sample_fund_hierarchy
+where entity_id is not null
+group by entity_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.source_unique_raw_sample_fund_hierarchy_entity_id.a9746eaae1"} */
+[0m13:37:50.175822 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.source_unique_raw_sample_brokers_broker_id.636249ebce, now test.bain_capital_portfolio_analytics.source_unique_raw_sample_positions_daily_position_id.550530e19d)
+[0m13:37:50.176824 [debug] [Thread-4 (]: On test.bain_capital_portfolio_analytics.source_unique_raw_sample_portfolios_portfolio_id.b1809722d7: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    portfolio_id as unique_field,
+    count(*) as n_records
+
+from BAIN_ANALYTICS.DEV.sample_portfolios
+where portfolio_id is not null
+group by portfolio_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.source_unique_raw_sample_portfolios_portfolio_id.b1809722d7"} */
+[0m13:37:50.177825 [debug] [Thread-2 (]: Began compiling node test.bain_capital_portfolio_analytics.source_unique_raw_sample_positions_daily_position_id.550530e19d
+[0m13:37:50.190310 [debug] [Thread-2 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.source_unique_raw_sample_positions_daily_position_id.550530e19d"
+[0m13:37:50.197736 [debug] [Thread-2 (]: Began executing node test.bain_capital_portfolio_analytics.source_unique_raw_sample_positions_daily_position_id.550530e19d
+[0m13:37:50.202376 [debug] [Thread-2 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.source_unique_raw_sample_positions_daily_position_id.550530e19d"
+[0m13:37:50.202376 [debug] [Thread-2 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.source_unique_raw_sample_positions_daily_position_id.550530e19d"
+[0m13:37:50.209378 [debug] [Thread-2 (]: On test.bain_capital_portfolio_analytics.source_unique_raw_sample_positions_daily_position_id.550530e19d: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    position_id as unique_field,
+    count(*) as n_records
+
+from BAIN_ANALYTICS.DEV.sample_positions_daily
+where position_id is not null
+group by position_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.source_unique_raw_sample_positions_daily_position_id.550530e19d"} */
+[0m13:37:50.361413 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.466 seconds
+[0m13:37:50.364726 [info ] [Thread-3 (]: 26 of 35 PASS source_unique_raw_sample_cashflows_cashflow_id ................... [[32mPASS[0m in 0.50s]
+[0m13:37:50.366730 [debug] [Thread-3 (]: Finished running node test.bain_capital_portfolio_analytics.source_unique_raw_sample_cashflows_cashflow_id.b558db5773
+[0m13:37:50.369253 [debug] [Thread-3 (]: Began running node test.bain_capital_portfolio_analytics.source_unique_raw_sample_securities_security_id.a3549d9277
+[0m13:37:50.371325 [info ] [Thread-3 (]: 30 of 35 START test source_unique_raw_sample_securities_security_id ............ [RUN]
+[0m13:37:50.373236 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.source_unique_raw_sample_cashflows_cashflow_id.b558db5773, now test.bain_capital_portfolio_analytics.source_unique_raw_sample_securities_security_id.a3549d9277)
+[0m13:37:50.374275 [debug] [Thread-3 (]: Began compiling node test.bain_capital_portfolio_analytics.source_unique_raw_sample_securities_security_id.a3549d9277
+[0m13:37:50.385350 [debug] [Thread-3 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.source_unique_raw_sample_securities_security_id.a3549d9277"
+[0m13:37:50.387542 [debug] [Thread-3 (]: Began executing node test.bain_capital_portfolio_analytics.source_unique_raw_sample_securities_security_id.a3549d9277
+[0m13:37:50.395521 [debug] [Thread-3 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.source_unique_raw_sample_securities_security_id.a3549d9277"
+[0m13:37:50.397972 [debug] [Thread-3 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.source_unique_raw_sample_securities_security_id.a3549d9277"
+[0m13:37:50.398979 [debug] [Thread-3 (]: On test.bain_capital_portfolio_analytics.source_unique_raw_sample_securities_security_id.a3549d9277: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    security_id as unique_field,
+    count(*) as n_records
+
+from BAIN_ANALYTICS.DEV.sample_securities
+where security_id is not null
+group by security_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.source_unique_raw_sample_securities_security_id.a3549d9277"} */
+[0m13:37:50.560848 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.384 seconds
+[0m13:37:50.565111 [info ] [Thread-5 (]: 27 of 35 PASS source_unique_raw_sample_fund_hierarchy_entity_id ................ [[32mPASS[0m in 0.46s]
+[0m13:37:50.566105 [debug] [Thread-5 (]: Finished running node test.bain_capital_portfolio_analytics.source_unique_raw_sample_fund_hierarchy_entity_id.a9746eaae1
+[0m13:37:50.567107 [debug] [Thread-5 (]: Began running node test.bain_capital_portfolio_analytics.source_unique_raw_sample_trades_trade_id.3713acfd5c
+[0m13:37:50.569092 [info ] [Thread-5 (]: 31 of 35 START test source_unique_raw_sample_trades_trade_id ................... [RUN]
+[0m13:37:50.571959 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.source_unique_raw_sample_fund_hierarchy_entity_id.a9746eaae1, now test.bain_capital_portfolio_analytics.source_unique_raw_sample_trades_trade_id.3713acfd5c)
+[0m13:37:50.572971 [debug] [Thread-5 (]: Began compiling node test.bain_capital_portfolio_analytics.source_unique_raw_sample_trades_trade_id.3713acfd5c
+[0m13:37:50.582817 [debug] [Thread-5 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.source_unique_raw_sample_trades_trade_id.3713acfd5c"
+[0m13:37:50.582817 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.405 seconds
+[0m13:37:50.594449 [info ] [Thread-4 (]: 28 of 35 PASS source_unique_raw_sample_portfolios_portfolio_id ................. [[32mPASS[0m in 0.48s]
+[0m13:37:50.594926 [debug] [Thread-5 (]: Began executing node test.bain_capital_portfolio_analytics.source_unique_raw_sample_trades_trade_id.3713acfd5c
+[0m13:37:50.597001 [debug] [Thread-4 (]: Finished running node test.bain_capital_portfolio_analytics.source_unique_raw_sample_portfolios_portfolio_id.b1809722d7
+[0m13:37:50.598005 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.388 seconds
+[0m13:37:50.606454 [debug] [Thread-5 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.source_unique_raw_sample_trades_trade_id.3713acfd5c"
+[0m13:37:50.607454 [debug] [Thread-4 (]: Began running node test.bain_capital_portfolio_analytics.source_unique_raw_sample_valuations_valuation_id.c2f985557f
+[0m13:37:50.611465 [info ] [Thread-2 (]: 29 of 35 PASS source_unique_raw_sample_positions_daily_position_id ............. [[32mPASS[0m in 0.44s]
+[0m13:37:50.614060 [info ] [Thread-4 (]: 32 of 35 START test source_unique_raw_sample_valuations_valuation_id ........... [RUN]
+[0m13:37:50.616073 [debug] [Thread-5 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.source_unique_raw_sample_trades_trade_id.3713acfd5c"
+[0m13:37:50.618084 [debug] [Thread-2 (]: Finished running node test.bain_capital_portfolio_analytics.source_unique_raw_sample_positions_daily_position_id.550530e19d
+[0m13:37:50.618084 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.source_unique_raw_sample_portfolios_portfolio_id.b1809722d7, now test.bain_capital_portfolio_analytics.source_unique_raw_sample_valuations_valuation_id.c2f985557f)
+[0m13:37:50.620336 [debug] [Thread-5 (]: On test.bain_capital_portfolio_analytics.source_unique_raw_sample_trades_trade_id.3713acfd5c: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    trade_id as unique_field,
+    count(*) as n_records
+
+from BAIN_ANALYTICS.DEV.sample_trades
+where trade_id is not null
+group by trade_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.source_unique_raw_sample_trades_trade_id.3713acfd5c"} */
+[0m13:37:50.621877 [debug] [Thread-2 (]: Began running node test.bain_capital_portfolio_analytics.unique_fact_cashflow_summary_cashflow_summary_key.b4868fe991
+[0m13:37:50.623599 [debug] [Thread-4 (]: Began compiling node test.bain_capital_portfolio_analytics.source_unique_raw_sample_valuations_valuation_id.c2f985557f
+[0m13:37:50.624538 [info ] [Thread-2 (]: 33 of 35 START test unique_fact_cashflow_summary_cashflow_summary_key .......... [RUN]
+[0m13:37:50.640855 [debug] [Thread-4 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.source_unique_raw_sample_valuations_valuation_id.c2f985557f"
+[0m13:37:50.643258 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.source_unique_raw_sample_positions_daily_position_id.550530e19d, now test.bain_capital_portfolio_analytics.unique_fact_cashflow_summary_cashflow_summary_key.b4868fe991)
+[0m13:37:50.645721 [debug] [Thread-2 (]: Began compiling node test.bain_capital_portfolio_analytics.unique_fact_cashflow_summary_cashflow_summary_key.b4868fe991
+[0m13:37:50.657449 [debug] [Thread-4 (]: Began executing node test.bain_capital_portfolio_analytics.source_unique_raw_sample_valuations_valuation_id.c2f985557f
+[0m13:37:50.661682 [debug] [Thread-2 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.unique_fact_cashflow_summary_cashflow_summary_key.b4868fe991"
+[0m13:37:50.669955 [debug] [Thread-4 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.source_unique_raw_sample_valuations_valuation_id.c2f985557f"
+[0m13:37:50.673412 [debug] [Thread-2 (]: Began executing node test.bain_capital_portfolio_analytics.unique_fact_cashflow_summary_cashflow_summary_key.b4868fe991
+[0m13:37:50.675646 [debug] [Thread-4 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.source_unique_raw_sample_valuations_valuation_id.c2f985557f"
+[0m13:37:50.684981 [debug] [Thread-2 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.unique_fact_cashflow_summary_cashflow_summary_key.b4868fe991"
+[0m13:37:50.686994 [debug] [Thread-4 (]: On test.bain_capital_portfolio_analytics.source_unique_raw_sample_valuations_valuation_id.c2f985557f: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    valuation_id as unique_field,
+    count(*) as n_records
+
+from BAIN_ANALYTICS.DEV.sample_valuations
+where valuation_id is not null
+group by valuation_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.source_unique_raw_sample_valuations_valuation_id.c2f985557f"} */
+[0m13:37:50.692227 [debug] [Thread-2 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.unique_fact_cashflow_summary_cashflow_summary_key.b4868fe991"
+[0m13:37:50.695916 [debug] [Thread-2 (]: On test.bain_capital_portfolio_analytics.unique_fact_cashflow_summary_cashflow_summary_key.b4868fe991: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    cashflow_summary_key as unique_field,
+    count(*) as n_records
+
+from BAIN_ANALYTICS.DEV.fact_cashflow_summary
+where cashflow_summary_key is not null
+group by cashflow_summary_key
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.unique_fact_cashflow_summary_cashflow_summary_key.b4868fe991"} */
+[0m13:37:50.860213 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.460 seconds
+[0m13:37:50.864724 [info ] [Thread-3 (]: 30 of 35 PASS source_unique_raw_sample_securities_security_id .................. [[32mPASS[0m in 0.49s]
+[0m13:37:50.866726 [debug] [Thread-3 (]: Finished running node test.bain_capital_portfolio_analytics.source_unique_raw_sample_securities_security_id.a3549d9277
+[0m13:37:50.868092 [debug] [Thread-3 (]: Began running node test.bain_capital_portfolio_analytics.unique_stg_cashflows_cashflow_id.359e4f4704
+[0m13:37:50.871109 [info ] [Thread-3 (]: 34 of 35 START test unique_stg_cashflows_cashflow_id ........................... [RUN]
+[0m13:37:50.872108 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.source_unique_raw_sample_securities_security_id.a3549d9277, now test.bain_capital_portfolio_analytics.unique_stg_cashflows_cashflow_id.359e4f4704)
+[0m13:37:50.874296 [debug] [Thread-3 (]: Began compiling node test.bain_capital_portfolio_analytics.unique_stg_cashflows_cashflow_id.359e4f4704
+[0m13:37:50.885724 [debug] [Thread-3 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.unique_stg_cashflows_cashflow_id.359e4f4704"
+[0m13:37:50.887982 [debug] [Thread-3 (]: Began executing node test.bain_capital_portfolio_analytics.unique_stg_cashflows_cashflow_id.359e4f4704
+[0m13:37:50.896895 [debug] [Thread-3 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.unique_stg_cashflows_cashflow_id.359e4f4704"
+[0m13:37:50.900388 [debug] [Thread-3 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.unique_stg_cashflows_cashflow_id.359e4f4704"
+[0m13:37:50.902233 [debug] [Thread-3 (]: On test.bain_capital_portfolio_analytics.unique_stg_cashflows_cashflow_id.359e4f4704: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    cashflow_id as unique_field,
+    count(*) as n_records
+
+from BAIN_ANALYTICS.DEV.stg_cashflows
+where cashflow_id is not null
+group by cashflow_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.unique_stg_cashflows_cashflow_id.359e4f4704"} */
+[0m13:37:51.050756 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.352 seconds
+[0m13:37:51.051504 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.427 seconds
+[0m13:37:51.056953 [info ] [Thread-2 (]: 33 of 35 PASS unique_fact_cashflow_summary_cashflow_summary_key ................ [[32mPASS[0m in 0.41s]
+[0m13:37:51.063548 [info ] [Thread-5 (]: 31 of 35 PASS source_unique_raw_sample_trades_trade_id ......................... [[32mPASS[0m in 0.49s]
+[0m13:37:51.065549 [debug] [Thread-2 (]: Finished running node test.bain_capital_portfolio_analytics.unique_fact_cashflow_summary_cashflow_summary_key.b4868fe991
+[0m13:37:51.066549 [debug] [Thread-5 (]: Finished running node test.bain_capital_portfolio_analytics.source_unique_raw_sample_trades_trade_id.3713acfd5c
+[0m13:37:51.068736 [debug] [Thread-2 (]: Began running node test.bain_capital_portfolio_analytics.unique_stg_portfolios_portfolio_id.aa125b6658
+[0m13:37:51.071723 [info ] [Thread-2 (]: 35 of 35 START test unique_stg_portfolios_portfolio_id ......................... [RUN]
+[0m13:37:51.073717 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.unique_fact_cashflow_summary_cashflow_summary_key.b4868fe991, now test.bain_capital_portfolio_analytics.unique_stg_portfolios_portfolio_id.aa125b6658)
+[0m13:37:51.074716 [debug] [Thread-2 (]: Began compiling node test.bain_capital_portfolio_analytics.unique_stg_portfolios_portfolio_id.aa125b6658
+[0m13:37:51.087999 [debug] [Thread-2 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.unique_stg_portfolios_portfolio_id.aa125b6658"
+[0m13:37:51.090309 [debug] [Thread-2 (]: Began executing node test.bain_capital_portfolio_analytics.unique_stg_portfolios_portfolio_id.aa125b6658
+[0m13:37:51.105247 [debug] [Thread-2 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.unique_stg_portfolios_portfolio_id.aa125b6658"
+[0m13:37:51.107353 [debug] [Thread-2 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.unique_stg_portfolios_portfolio_id.aa125b6658"
+[0m13:37:51.107353 [debug] [Thread-2 (]: On test.bain_capital_portfolio_analytics.unique_stg_portfolios_portfolio_id.aa125b6658: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    portfolio_id as unique_field,
+    count(*) as n_records
+
+from BAIN_ANALYTICS.DEV.stg_portfolios
+where portfolio_id is not null
+group by portfolio_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.unique_stg_portfolios_portfolio_id.aa125b6658"} */
+[0m13:37:51.151407 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.464 seconds
+[0m13:37:51.157252 [info ] [Thread-4 (]: 32 of 35 PASS source_unique_raw_sample_valuations_valuation_id ................. [[32mPASS[0m in 0.54s]
+[0m13:37:51.161091 [debug] [Thread-4 (]: Finished running node test.bain_capital_portfolio_analytics.source_unique_raw_sample_valuations_valuation_id.c2f985557f
+[0m13:37:51.392901 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.489 seconds
+[0m13:37:51.392901 [info ] [Thread-3 (]: 34 of 35 PASS unique_stg_cashflows_cashflow_id ................................. [[32mPASS[0m in 0.52s]
+[0m13:37:51.392901 [debug] [Thread-3 (]: Finished running node test.bain_capital_portfolio_analytics.unique_stg_cashflows_cashflow_id.359e4f4704
+[0m13:37:51.627543 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.516 seconds
+[0m13:37:51.631554 [info ] [Thread-2 (]: 35 of 35 PASS unique_stg_portfolios_portfolio_id ............................... [[32mPASS[0m in 0.56s]
+[0m13:37:51.631554 [debug] [Thread-2 (]: Finished running node test.bain_capital_portfolio_analytics.unique_stg_portfolios_portfolio_id.aa125b6658
+[0m13:37:51.637657 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:37:51.639664 [debug] [MainThread]: Connection 'list_BAIN_ANALYTICS_DEV' was left open.
+[0m13:37:51.639664 [debug] [MainThread]: On list_BAIN_ANALYTICS_DEV: Close
+[0m13:37:52.594781 [debug] [MainThread]: Connection 'test.bain_capital_portfolio_analytics.unique_stg_portfolios_portfolio_id.aa125b6658' was left open.
+[0m13:37:52.594781 [debug] [MainThread]: On test.bain_capital_portfolio_analytics.unique_stg_portfolios_portfolio_id.aa125b6658: Close
+[0m13:37:53.608926 [debug] [MainThread]: Connection 'test.bain_capital_portfolio_analytics.unique_stg_cashflows_cashflow_id.359e4f4704' was left open.
+[0m13:37:53.608926 [debug] [MainThread]: On test.bain_capital_portfolio_analytics.unique_stg_cashflows_cashflow_id.359e4f4704: Close
+[0m13:37:54.617905 [debug] [MainThread]: Connection 'test.bain_capital_portfolio_analytics.source_unique_raw_sample_valuations_valuation_id.c2f985557f' was left open.
+[0m13:37:54.617905 [debug] [MainThread]: On test.bain_capital_portfolio_analytics.source_unique_raw_sample_valuations_valuation_id.c2f985557f: Close
+[0m13:37:55.610927 [debug] [MainThread]: Connection 'test.bain_capital_portfolio_analytics.source_unique_raw_sample_trades_trade_id.3713acfd5c' was left open.
+[0m13:37:55.613117 [debug] [MainThread]: On test.bain_capital_portfolio_analytics.source_unique_raw_sample_trades_trade_id.3713acfd5c: Close
+[0m13:37:56.608450 [info ] [MainThread]: 
+[0m13:37:56.610459 [info ] [MainThread]: Finished running 35 data tests in 0 hours 0 minutes and 14.78 seconds (14.78s).
+[0m13:37:56.619425 [debug] [MainThread]: Command end result
+[0m13:37:56.723427 [debug] [MainThread]: Wrote artifact WritableManifest to I:\dianababaei\dbt\sample-dbt-project\target\manifest.json
+[0m13:37:56.730542 [debug] [MainThread]: Wrote artifact SemanticManifest to I:\dianababaei\dbt\sample-dbt-project\target\semantic_manifest.json
+[0m13:37:56.735318 [debug] [MainThread]: Wrote artifact RunExecutionResult to I:\dianababaei\dbt\sample-dbt-project\target\run_results.json
+[0m13:37:56.747361 [info ] [MainThread]: 
+[0m13:37:56.749370 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:37:56.749370 [info ] [MainThread]: 
+[0m13:37:56.751376 [info ] [MainThread]: Done. PASS=35 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=35
+[0m13:37:56.753383 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingPlusPrefixDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m13:37:56.755389 [debug] [MainThread]: Command `dbt test` succeeded at 13:37:56.755389 after 21.31 seconds
+[0m13:37:56.756817 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C901B58B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C901B4AA90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C901B4B150>]}
+[0m13:37:56.758200 [debug] [MainThread]: Flushing usage events
+[0m13:37:59.593968 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:39:54.881069 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000240F8A93BD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000240F8A2F210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000240F8A2EB50>]}
+
+
+============================== 13:39:54.881069 | 6b64a122-f6f5-4d00-b1ef-3afe4f14bb2a ==============================
+[0m13:39:54.881069 [info ] [MainThread]: Running with dbt=1.11.2
+[0m13:39:54.881069 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'target_path': 'None', 'cache_selected_only': 'False', 'warn_error': 'None', 'empty': 'None', 'debug': 'False', 'static_parser': 'True', 'log_cache_events': 'False', 'profiles_dir': 'I:\\dianababaei\\dbt\\sample-dbt-project', 'log_format': 'default', 'quiet': 'False', 'use_colors': 'True', 'partial_parse': 'True', 'version_check': 'True', 'log_path': 'I:\\dianababaei\\dbt\\sample-dbt-project\\logs', 'introspect': 'True', 'invocation_command': 'dbt test', 'fail_fast': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'write_json': 'True', 'use_experimental_parser': 'False'}
+[0m13:39:56.262567 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m13:39:56.264151 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m13:39:56.265228 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m13:39:56.469399 [warn ] [MainThread]: [[33mWARNING[0m][MissingPlusPrefixDeprecation]: Deprecated functionality
+Missing '+' prefix on `bain_capital_portfolio_analytics` found at
+`bain_capital_portfolio_analytics` in file
+`I:\dianababaei\dbt\sample-dbt-project\dbt_project.yml`. Hierarchical config
+values without a '+' prefix are deprecated in dbt_project.yml.
+[0m13:39:56.471406 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '6b64a122-f6f5-4d00-b1ef-3afe4f14bb2a', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024088B8F210>]}
+[0m13:39:56.779624 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6b64a122-f6f5-4d00-b1ef-3afe4f14bb2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002408AF1F3D0>]}
+[0m13:39:57.041478 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6b64a122-f6f5-4d00-b1ef-3afe4f14bb2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000240F7A1D650>]}
+[0m13:39:57.044176 [info ] [MainThread]: Registered adapter: snowflake=1.11.1
+[0m13:39:57.950408 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m13:39:58.445351 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:39:58.446460 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m13:39:58.447460 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:39:58.578366 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6b64a122-f6f5-4d00-b1ef-3afe4f14bb2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002408B4F4490>]}
+[0m13:39:58.855714 [debug] [MainThread]: Wrote artifact WritableManifest to I:\dianababaei\dbt\sample-dbt-project\target\manifest.json
+[0m13:39:58.859729 [debug] [MainThread]: Wrote artifact SemanticManifest to I:\dianababaei\dbt\sample-dbt-project\target\semantic_manifest.json
+[0m13:39:58.914480 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6b64a122-f6f5-4d00-b1ef-3afe4f14bb2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002408B437990>]}
+[0m13:39:58.919877 [info ] [MainThread]: Found 16 models, 13 seeds, 35 data tests, 12 sources, 638 macros
+[0m13:39:58.919877 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6b64a122-f6f5-4d00-b1ef-3afe4f14bb2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002408B46E310>]}
+[0m13:39:58.922043 [info ] [MainThread]: 
+[0m13:39:58.922043 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m13:39:58.922043 [info ] [MainThread]: 
+[0m13:39:58.931301 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m13:39:58.935527 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_BAIN_ANALYTICS_DEV'
+[0m13:39:59.070780 [debug] [ThreadPool]: Using snowflake connection "list_BAIN_ANALYTICS_DEV"
+[0m13:39:59.070780 [debug] [ThreadPool]: On list_BAIN_ANALYTICS_DEV: show objects in BAIN_ANALYTICS.DEV
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "connection_name": "list_BAIN_ANALYTICS_DEV"} */;
+[0m13:39:59.077597 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:40:02.327489 [debug] [ThreadPool]: SQL status: SUCCESS 34 in 3.251 seconds
+[0m13:40:02.340537 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6b64a122-f6f5-4d00-b1ef-3afe4f14bb2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002408BA42B50>]}
+[0m13:40:02.346278 [debug] [Thread-2 (]: Began running node test.bain_capital_portfolio_analytics.accepted_values_stg_cashflows_cashflow_type__CONTRIBUTION__DISTRIBUTION__DIVIDEND__FEE.d3b48fa192
+[0m13:40:02.346278 [debug] [Thread-3 (]: Began running node test.bain_capital_portfolio_analytics.accepted_values_stg_portfolios_status__ACTIVE__INACTIVE__CLOSED.7c5e49f046
+[0m13:40:02.346278 [debug] [Thread-4 (]: Began running node test.bain_capital_portfolio_analytics.dbt_utils_accepted_range_fact_cashflow_summary_transaction_count__0.4582b1b384
+[0m13:40:02.356589 [debug] [Thread-5 (]: Began running node test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_cashflow_summary_key.eda3fa76d3
+[0m13:40:02.358628 [info ] [Thread-2 (]: 1 of 35 START test accepted_values_stg_cashflows_cashflow_type__CONTRIBUTION__DISTRIBUTION__DIVIDEND__FEE  [RUN]
+[0m13:40:02.359917 [info ] [Thread-3 (]: 2 of 35 START test accepted_values_stg_portfolios_status__ACTIVE__INACTIVE__CLOSED  [RUN]
+[0m13:40:02.359917 [info ] [Thread-4 (]: 3 of 35 START test dbt_utils_accepted_range_fact_cashflow_summary_transaction_count__0  [RUN]
+[0m13:40:02.359917 [info ] [Thread-5 (]: 4 of 35 START test not_null_fact_cashflow_summary_cashflow_summary_key ......... [RUN]
+[0m13:40:02.359917 [debug] [Thread-2 (]: Acquiring new snowflake connection 'test.bain_capital_portfolio_analytics.accepted_values_stg_cashflows_cashflow_type__CONTRIBUTION__DISTRIBUTION__DIVIDEND__FEE.d3b48fa192'
+[0m13:40:02.359917 [debug] [Thread-3 (]: Acquiring new snowflake connection 'test.bain_capital_portfolio_analytics.accepted_values_stg_portfolios_status__ACTIVE__INACTIVE__CLOSED.7c5e49f046'
+[0m13:40:02.370131 [debug] [Thread-4 (]: Acquiring new snowflake connection 'test.bain_capital_portfolio_analytics.dbt_utils_accepted_range_fact_cashflow_summary_transaction_count__0.4582b1b384'
+[0m13:40:02.371468 [debug] [Thread-5 (]: Acquiring new snowflake connection 'test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_cashflow_summary_key.eda3fa76d3'
+[0m13:40:02.372477 [debug] [Thread-2 (]: Began compiling node test.bain_capital_portfolio_analytics.accepted_values_stg_cashflows_cashflow_type__CONTRIBUTION__DISTRIBUTION__DIVIDEND__FEE.d3b48fa192
+[0m13:40:02.374199 [debug] [Thread-3 (]: Began compiling node test.bain_capital_portfolio_analytics.accepted_values_stg_portfolios_status__ACTIVE__INACTIVE__CLOSED.7c5e49f046
+[0m13:40:02.374199 [debug] [Thread-4 (]: Began compiling node test.bain_capital_portfolio_analytics.dbt_utils_accepted_range_fact_cashflow_summary_transaction_count__0.4582b1b384
+[0m13:40:02.374199 [debug] [Thread-5 (]: Began compiling node test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_cashflow_summary_key.eda3fa76d3
+[0m13:40:02.419006 [debug] [Thread-2 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.accepted_values_stg_cashflows_cashflow_type__CONTRIBUTION__DISTRIBUTION__DIVIDEND__FEE.d3b48fa192"
+[0m13:40:02.426536 [debug] [Thread-3 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.accepted_values_stg_portfolios_status__ACTIVE__INACTIVE__CLOSED.7c5e49f046"
+[0m13:40:02.460239 [debug] [Thread-5 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_cashflow_summary_key.eda3fa76d3"
+[0m13:40:02.469746 [debug] [Thread-4 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.dbt_utils_accepted_range_fact_cashflow_summary_transaction_count__0.4582b1b384"
+[0m13:40:02.469746 [debug] [Thread-2 (]: Began executing node test.bain_capital_portfolio_analytics.accepted_values_stg_cashflows_cashflow_type__CONTRIBUTION__DISTRIBUTION__DIVIDEND__FEE.d3b48fa192
+[0m13:40:02.473388 [debug] [Thread-3 (]: Began executing node test.bain_capital_portfolio_analytics.accepted_values_stg_portfolios_status__ACTIVE__INACTIVE__CLOSED.7c5e49f046
+[0m13:40:02.473388 [debug] [Thread-5 (]: Began executing node test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_cashflow_summary_key.eda3fa76d3
+[0m13:40:02.495364 [debug] [Thread-4 (]: Began executing node test.bain_capital_portfolio_analytics.dbt_utils_accepted_range_fact_cashflow_summary_transaction_count__0.4582b1b384
+[0m13:40:02.523064 [debug] [Thread-2 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.accepted_values_stg_cashflows_cashflow_type__CONTRIBUTION__DISTRIBUTION__DIVIDEND__FEE.d3b48fa192"
+[0m13:40:02.528172 [debug] [Thread-3 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.accepted_values_stg_portfolios_status__ACTIVE__INACTIVE__CLOSED.7c5e49f046"
+[0m13:40:02.541141 [debug] [Thread-5 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_cashflow_summary_key.eda3fa76d3"
+[0m13:40:02.552104 [debug] [Thread-4 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.dbt_utils_accepted_range_fact_cashflow_summary_transaction_count__0.4582b1b384"
+[0m13:40:02.558247 [debug] [Thread-2 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.accepted_values_stg_cashflows_cashflow_type__CONTRIBUTION__DISTRIBUTION__DIVIDEND__FEE.d3b48fa192"
+[0m13:40:02.559864 [debug] [Thread-3 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.accepted_values_stg_portfolios_status__ACTIVE__INACTIVE__CLOSED.7c5e49f046"
+[0m13:40:02.563947 [debug] [Thread-5 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_cashflow_summary_key.eda3fa76d3"
+[0m13:40:02.564693 [debug] [Thread-2 (]: On test.bain_capital_portfolio_analytics.accepted_values_stg_cashflows_cashflow_type__CONTRIBUTION__DISTRIBUTION__DIVIDEND__FEE.d3b48fa192: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        cashflow_type as value_field,
+        count(*) as n_records
+
+    from BAIN_ANALYTICS.DEV.stg_cashflows
+    group by cashflow_type
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'CONTRIBUTION','DISTRIBUTION','DIVIDEND','FEE'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.accepted_values_stg_cashflows_cashflow_type__CONTRIBUTION__DISTRIBUTION__DIVIDEND__FEE.d3b48fa192"} */
+[0m13:40:02.751552 [debug] [Thread-4 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.dbt_utils_accepted_range_fact_cashflow_summary_transaction_count__0.4582b1b384"
+[0m13:40:02.751552 [debug] [Thread-3 (]: On test.bain_capital_portfolio_analytics.accepted_values_stg_portfolios_status__ACTIVE__INACTIVE__CLOSED.7c5e49f046: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        status as value_field,
+        count(*) as n_records
+
+    from BAIN_ANALYTICS.DEV.stg_portfolios
+    group by status
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'ACTIVE','INACTIVE','CLOSED'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.accepted_values_stg_portfolios_status__ACTIVE__INACTIVE__CLOSED.7c5e49f046"} */
+[0m13:40:02.751552 [debug] [Thread-5 (]: On test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_cashflow_summary_key.eda3fa76d3: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select cashflow_summary_key
+from BAIN_ANALYTICS.DEV.fact_cashflow_summary
+where cashflow_summary_key is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_cashflow_summary_key.eda3fa76d3"} */
+[0m13:40:02.754846 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:40:02.756854 [debug] [Thread-4 (]: On test.bain_capital_portfolio_analytics.dbt_utils_accepted_range_fact_cashflow_summary_transaction_count__0.4582b1b384: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+
+with meet_condition as(
+  select *
+  from BAIN_ANALYTICS.DEV.fact_cashflow_summary
+),
+
+validation_errors as (
+  select *
+  from meet_condition
+  where
+    -- never true, defaults to an empty result set. Exists to ensure any combo of the `or` clauses below succeeds
+    1 = 2
+    -- records with a value >= min_value are permitted. The `not` flips this to find records that don't meet the rule.
+    or not transaction_count >= 0
+)
+
+select *
+from validation_errors
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.dbt_utils_accepted_range_fact_cashflow_summary_transaction_count__0.4582b1b384"} */
+[0m13:40:02.758861 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m13:40:02.759270 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m13:40:02.762608 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m13:40:04.512507 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 1.755 seconds
+[0m13:40:04.521976 [info ] [Thread-5 (]: 4 of 35 PASS not_null_fact_cashflow_summary_cashflow_summary_key ............... [[32mPASS[0m in 2.15s]
+[0m13:40:04.521976 [debug] [Thread-5 (]: Finished running node test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_cashflow_summary_key.eda3fa76d3
+[0m13:40:04.521976 [debug] [Thread-5 (]: Began running node test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_portfolio_id.625a7cad74
+[0m13:40:04.521976 [info ] [Thread-5 (]: 5 of 35 START test not_null_fact_cashflow_summary_portfolio_id ................. [RUN]
+[0m13:40:04.521976 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_cashflow_summary_key.eda3fa76d3, now test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_portfolio_id.625a7cad74)
+[0m13:40:04.521976 [debug] [Thread-5 (]: Began compiling node test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_portfolio_id.625a7cad74
+[0m13:40:04.540831 [debug] [Thread-5 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_portfolio_id.625a7cad74"
+[0m13:40:04.545804 [debug] [Thread-5 (]: Began executing node test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_portfolio_id.625a7cad74
+[0m13:40:04.545804 [debug] [Thread-5 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_portfolio_id.625a7cad74"
+[0m13:40:04.556058 [debug] [Thread-5 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_portfolio_id.625a7cad74"
+[0m13:40:04.556058 [debug] [Thread-5 (]: On test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_portfolio_id.625a7cad74: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select portfolio_id
+from BAIN_ANALYTICS.DEV.fact_cashflow_summary
+where portfolio_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_portfolio_id.625a7cad74"} */
+[0m13:40:04.677042 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 1.918 seconds
+[0m13:40:04.684669 [info ] [Thread-4 (]: 3 of 35 PASS dbt_utils_accepted_range_fact_cashflow_summary_transaction_count__0  [[32mPASS[0m in 2.32s]
+[0m13:40:04.685290 [debug] [Thread-4 (]: Finished running node test.bain_capital_portfolio_analytics.dbt_utils_accepted_range_fact_cashflow_summary_transaction_count__0.4582b1b384
+[0m13:40:04.685290 [debug] [Thread-4 (]: Began running node test.bain_capital_portfolio_analytics.not_null_report_monthly_cashflows_portfolio_id.dbc5367687
+[0m13:40:04.687369 [info ] [Thread-4 (]: 6 of 35 START test not_null_report_monthly_cashflows_portfolio_id .............. [RUN]
+[0m13:40:04.688130 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.dbt_utils_accepted_range_fact_cashflow_summary_transaction_count__0.4582b1b384, now test.bain_capital_portfolio_analytics.not_null_report_monthly_cashflows_portfolio_id.dbc5367687)
+[0m13:40:04.691396 [debug] [Thread-4 (]: Began compiling node test.bain_capital_portfolio_analytics.not_null_report_monthly_cashflows_portfolio_id.dbc5367687
+[0m13:40:04.691396 [debug] [Thread-4 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.not_null_report_monthly_cashflows_portfolio_id.dbc5367687"
+[0m13:40:04.699344 [debug] [Thread-4 (]: Began executing node test.bain_capital_portfolio_analytics.not_null_report_monthly_cashflows_portfolio_id.dbc5367687
+[0m13:40:04.703350 [debug] [Thread-4 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.not_null_report_monthly_cashflows_portfolio_id.dbc5367687"
+[0m13:40:04.710733 [debug] [Thread-4 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.not_null_report_monthly_cashflows_portfolio_id.dbc5367687"
+[0m13:40:04.713949 [debug] [Thread-4 (]: On test.bain_capital_portfolio_analytics.not_null_report_monthly_cashflows_portfolio_id.dbc5367687: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select portfolio_id
+from BAIN_ANALYTICS.DEV.report_monthly_cashflows
+where portfolio_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.not_null_report_monthly_cashflows_portfolio_id.dbc5367687"} */
+[0m13:40:04.950205 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 2.195 seconds
+[0m13:40:04.953875 [info ] [Thread-2 (]: 1 of 35 PASS accepted_values_stg_cashflows_cashflow_type__CONTRIBUTION__DISTRIBUTION__DIVIDEND__FEE  [[32mPASS[0m in 2.59s]
+[0m13:40:04.955787 [debug] [Thread-2 (]: Finished running node test.bain_capital_portfolio_analytics.accepted_values_stg_cashflows_cashflow_type__CONTRIBUTION__DISTRIBUTION__DIVIDEND__FEE.d3b48fa192
+[0m13:40:04.957956 [debug] [Thread-2 (]: Began running node test.bain_capital_portfolio_analytics.not_null_stg_cashflows_amount.333b517880
+[0m13:40:04.957956 [info ] [Thread-2 (]: 7 of 35 START test not_null_stg_cashflows_amount ............................... [RUN]
+[0m13:40:04.959967 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.accepted_values_stg_cashflows_cashflow_type__CONTRIBUTION__DISTRIBUTION__DIVIDEND__FEE.d3b48fa192, now test.bain_capital_portfolio_analytics.not_null_stg_cashflows_amount.333b517880)
+[0m13:40:04.961975 [debug] [Thread-2 (]: Began compiling node test.bain_capital_portfolio_analytics.not_null_stg_cashflows_amount.333b517880
+[0m13:40:04.969437 [debug] [Thread-2 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.not_null_stg_cashflows_amount.333b517880"
+[0m13:40:04.969437 [debug] [Thread-2 (]: Began executing node test.bain_capital_portfolio_analytics.not_null_stg_cashflows_amount.333b517880
+[0m13:40:04.979452 [debug] [Thread-2 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.not_null_stg_cashflows_amount.333b517880"
+[0m13:40:04.983597 [debug] [Thread-2 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.not_null_stg_cashflows_amount.333b517880"
+[0m13:40:04.983597 [debug] [Thread-2 (]: On test.bain_capital_portfolio_analytics.not_null_stg_cashflows_amount.333b517880: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select amount
+from BAIN_ANALYTICS.DEV.stg_cashflows
+where amount is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.not_null_stg_cashflows_amount.333b517880"} */
+[0m13:40:05.070671 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.510 seconds
+[0m13:40:05.070671 [info ] [Thread-5 (]: 5 of 35 PASS not_null_fact_cashflow_summary_portfolio_id ....................... [[32mPASS[0m in 0.55s]
+[0m13:40:05.070671 [debug] [Thread-5 (]: Finished running node test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_portfolio_id.625a7cad74
+[0m13:40:05.070671 [debug] [Thread-5 (]: Began running node test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_date.d05a251154
+[0m13:40:05.077058 [info ] [Thread-5 (]: 8 of 35 START test not_null_stg_cashflows_cashflow_date ........................ [RUN]
+[0m13:40:05.078207 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.not_null_fact_cashflow_summary_portfolio_id.625a7cad74, now test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_date.d05a251154)
+[0m13:40:05.080217 [debug] [Thread-5 (]: Began compiling node test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_date.d05a251154
+[0m13:40:05.090244 [debug] [Thread-5 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_date.d05a251154"
+[0m13:40:05.090244 [debug] [Thread-5 (]: Began executing node test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_date.d05a251154
+[0m13:40:05.104229 [debug] [Thread-5 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_date.d05a251154"
+[0m13:40:05.107602 [debug] [Thread-5 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_date.d05a251154"
+[0m13:40:05.107602 [debug] [Thread-5 (]: On test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_date.d05a251154: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select cashflow_date
+from BAIN_ANALYTICS.DEV.stg_cashflows
+where cashflow_date is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_date.d05a251154"} */
+[0m13:40:05.205472 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 2.447 seconds
+[0m13:40:05.206561 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.491 seconds
+[0m13:40:05.209234 [info ] [Thread-3 (]: 2 of 35 PASS accepted_values_stg_portfolios_status__ACTIVE__INACTIVE__CLOSED ... [[32mPASS[0m in 2.85s]
+[0m13:40:05.215838 [info ] [Thread-4 (]: 6 of 35 PASS not_null_report_monthly_cashflows_portfolio_id .................... [[32mPASS[0m in 0.53s]
+[0m13:40:05.215838 [debug] [Thread-3 (]: Finished running node test.bain_capital_portfolio_analytics.accepted_values_stg_portfolios_status__ACTIVE__INACTIVE__CLOSED.7c5e49f046
+[0m13:40:05.217844 [debug] [Thread-4 (]: Finished running node test.bain_capital_portfolio_analytics.not_null_report_monthly_cashflows_portfolio_id.dbc5367687
+[0m13:40:05.219747 [debug] [Thread-3 (]: Began running node test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_id.4176024898
+[0m13:40:05.220273 [debug] [Thread-4 (]: Began running node test.bain_capital_portfolio_analytics.not_null_stg_cashflows_portfolio_id.cbd1d93e57
+[0m13:40:05.222282 [info ] [Thread-3 (]: 9 of 35 START test not_null_stg_cashflows_cashflow_id .......................... [RUN]
+[0m13:40:05.224966 [info ] [Thread-4 (]: 10 of 35 START test not_null_stg_cashflows_portfolio_id ........................ [RUN]
+[0m13:40:05.225498 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.accepted_values_stg_portfolios_status__ACTIVE__INACTIVE__CLOSED.7c5e49f046, now test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_id.4176024898)
+[0m13:40:05.225498 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.not_null_report_monthly_cashflows_portfolio_id.dbc5367687, now test.bain_capital_portfolio_analytics.not_null_stg_cashflows_portfolio_id.cbd1d93e57)
+[0m13:40:05.225498 [debug] [Thread-3 (]: Began compiling node test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_id.4176024898
+[0m13:40:05.225498 [debug] [Thread-4 (]: Began compiling node test.bain_capital_portfolio_analytics.not_null_stg_cashflows_portfolio_id.cbd1d93e57
+[0m13:40:05.240713 [debug] [Thread-3 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_id.4176024898"
+[0m13:40:05.250782 [debug] [Thread-4 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.not_null_stg_cashflows_portfolio_id.cbd1d93e57"
+[0m13:40:05.253650 [debug] [Thread-3 (]: Began executing node test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_id.4176024898
+[0m13:40:05.253650 [debug] [Thread-4 (]: Began executing node test.bain_capital_portfolio_analytics.not_null_stg_cashflows_portfolio_id.cbd1d93e57
+[0m13:40:05.255138 [debug] [Thread-3 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_id.4176024898"
+[0m13:40:05.255138 [debug] [Thread-4 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.not_null_stg_cashflows_portfolio_id.cbd1d93e57"
+[0m13:40:05.268408 [debug] [Thread-3 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_id.4176024898"
+[0m13:40:05.268408 [debug] [Thread-3 (]: On test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_id.4176024898: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select cashflow_id
+from BAIN_ANALYTICS.DEV.stg_cashflows
+where cashflow_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_id.4176024898"} */
+[0m13:40:05.268408 [debug] [Thread-4 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.not_null_stg_cashflows_portfolio_id.cbd1d93e57"
+[0m13:40:05.268408 [debug] [Thread-4 (]: On test.bain_capital_portfolio_analytics.not_null_stg_cashflows_portfolio_id.cbd1d93e57: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select portfolio_id
+from BAIN_ANALYTICS.DEV.stg_cashflows
+where portfolio_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.not_null_stg_cashflows_portfolio_id.cbd1d93e57"} */
+[0m13:40:05.490772 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.509 seconds
+[0m13:40:05.500208 [info ] [Thread-2 (]: 7 of 35 PASS not_null_stg_cashflows_amount ..................................... [[32mPASS[0m in 0.54s]
+[0m13:40:05.500208 [debug] [Thread-2 (]: Finished running node test.bain_capital_portfolio_analytics.not_null_stg_cashflows_amount.333b517880
+[0m13:40:05.513245 [debug] [Thread-2 (]: Began running node test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_id.7126a480ec
+[0m13:40:05.513245 [info ] [Thread-2 (]: 11 of 35 START test not_null_stg_portfolios_portfolio_id ....................... [RUN]
+[0m13:40:05.522163 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.not_null_stg_cashflows_amount.333b517880, now test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_id.7126a480ec)
+[0m13:40:05.525514 [debug] [Thread-2 (]: Began compiling node test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_id.7126a480ec
+[0m13:40:05.554651 [debug] [Thread-2 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_id.7126a480ec"
+[0m13:40:05.562170 [debug] [Thread-2 (]: Began executing node test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_id.7126a480ec
+[0m13:40:05.593105 [debug] [Thread-2 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_id.7126a480ec"
+[0m13:40:05.598771 [debug] [Thread-2 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_id.7126a480ec"
+[0m13:40:05.607259 [debug] [Thread-2 (]: On test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_id.7126a480ec: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select portfolio_id
+from BAIN_ANALYTICS.DEV.stg_portfolios
+where portfolio_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_id.7126a480ec"} */
+[0m13:40:05.692315 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.582 seconds
+[0m13:40:05.692315 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.421 seconds
+[0m13:40:05.692315 [info ] [Thread-5 (]: 8 of 35 PASS not_null_stg_cashflows_cashflow_date .............................. [[32mPASS[0m in 0.61s]
+[0m13:40:05.699563 [info ] [Thread-3 (]: 9 of 35 PASS not_null_stg_cashflows_cashflow_id ................................ [[32mPASS[0m in 0.47s]
+[0m13:40:05.700175 [debug] [Thread-5 (]: Finished running node test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_date.d05a251154
+[0m13:40:05.700175 [debug] [Thread-3 (]: Finished running node test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_id.4176024898
+[0m13:40:05.700175 [debug] [Thread-5 (]: Began running node test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_name.667840ac9c
+[0m13:40:05.706273 [debug] [Thread-3 (]: Began running node test.bain_capital_portfolio_analytics.relationships_stg_cashflows_portfolio_id__portfolio_id__ref_stg_portfolios_.9f0a1fd1ba
+[0m13:40:05.706273 [info ] [Thread-5 (]: 12 of 35 START test not_null_stg_portfolios_portfolio_name ..................... [RUN]
+[0m13:40:05.706273 [info ] [Thread-3 (]: 13 of 35 START test relationships_stg_cashflows_portfolio_id__portfolio_id__ref_stg_portfolios_  [RUN]
+[0m13:40:05.706273 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_date.d05a251154, now test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_name.667840ac9c)
+[0m13:40:05.706273 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.not_null_stg_cashflows_cashflow_id.4176024898, now test.bain_capital_portfolio_analytics.relationships_stg_cashflows_portfolio_id__portfolio_id__ref_stg_portfolios_.9f0a1fd1ba)
+[0m13:40:05.710916 [debug] [Thread-5 (]: Began compiling node test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_name.667840ac9c
+[0m13:40:05.711575 [debug] [Thread-3 (]: Began compiling node test.bain_capital_portfolio_analytics.relationships_stg_cashflows_portfolio_id__portfolio_id__ref_stg_portfolios_.9f0a1fd1ba
+[0m13:40:05.718939 [debug] [Thread-5 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_name.667840ac9c"
+[0m13:40:05.735957 [debug] [Thread-3 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.relationships_stg_cashflows_portfolio_id__portfolio_id__ref_stg_portfolios_.9f0a1fd1ba"
+[0m13:40:05.736948 [debug] [Thread-5 (]: Began executing node test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_name.667840ac9c
+[0m13:40:05.745097 [debug] [Thread-5 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_name.667840ac9c"
+[0m13:40:05.747112 [debug] [Thread-3 (]: Began executing node test.bain_capital_portfolio_analytics.relationships_stg_cashflows_portfolio_id__portfolio_id__ref_stg_portfolios_.9f0a1fd1ba
+[0m13:40:05.747112 [debug] [Thread-3 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.relationships_stg_cashflows_portfolio_id__portfolio_id__ref_stg_portfolios_.9f0a1fd1ba"
+[0m13:40:05.757792 [debug] [Thread-5 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_name.667840ac9c"
+[0m13:40:05.757792 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.485 seconds
+[0m13:40:05.757792 [debug] [Thread-5 (]: On test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_name.667840ac9c: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select portfolio_name
+from BAIN_ANALYTICS.DEV.stg_portfolios
+where portfolio_name is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_name.667840ac9c"} */
+[0m13:40:05.757792 [debug] [Thread-3 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.relationships_stg_cashflows_portfolio_id__portfolio_id__ref_stg_portfolios_.9f0a1fd1ba"
+[0m13:40:05.757792 [info ] [Thread-4 (]: 10 of 35 PASS not_null_stg_cashflows_portfolio_id .............................. [[32mPASS[0m in 0.53s]
+[0m13:40:05.767439 [debug] [Thread-3 (]: On test.bain_capital_portfolio_analytics.relationships_stg_cashflows_portfolio_id__portfolio_id__ref_stg_portfolios_.9f0a1fd1ba: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select portfolio_id as from_field
+    from BAIN_ANALYTICS.DEV.stg_cashflows
+    where portfolio_id is not null
+),
+
+parent as (
+    select portfolio_id as to_field
+    from BAIN_ANALYTICS.DEV.stg_portfolios
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.relationships_stg_cashflows_portfolio_id__portfolio_id__ref_stg_portfolios_.9f0a1fd1ba"} */
+[0m13:40:05.767439 [debug] [Thread-4 (]: Finished running node test.bain_capital_portfolio_analytics.not_null_stg_cashflows_portfolio_id.cbd1d93e57
+[0m13:40:05.773662 [debug] [Thread-4 (]: Began running node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_benchmarks_benchmark_id.ef7db0253c
+[0m13:40:05.773662 [info ] [Thread-4 (]: 14 of 35 START test source_not_null_raw_sample_benchmarks_benchmark_id ......... [RUN]
+[0m13:40:05.773662 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.not_null_stg_cashflows_portfolio_id.cbd1d93e57, now test.bain_capital_portfolio_analytics.source_not_null_raw_sample_benchmarks_benchmark_id.ef7db0253c)
+[0m13:40:05.777520 [debug] [Thread-4 (]: Began compiling node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_benchmarks_benchmark_id.ef7db0253c
+[0m13:40:05.788797 [debug] [Thread-4 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_benchmarks_benchmark_id.ef7db0253c"
+[0m13:40:05.793107 [debug] [Thread-4 (]: Began executing node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_benchmarks_benchmark_id.ef7db0253c
+[0m13:40:05.800760 [debug] [Thread-4 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_benchmarks_benchmark_id.ef7db0253c"
+[0m13:40:05.804138 [debug] [Thread-4 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_benchmarks_benchmark_id.ef7db0253c"
+[0m13:40:05.805160 [debug] [Thread-4 (]: On test.bain_capital_portfolio_analytics.source_not_null_raw_sample_benchmarks_benchmark_id.ef7db0253c: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select benchmark_id
+from BAIN_ANALYTICS.DEV.sample_benchmarks
+where benchmark_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_benchmarks_benchmark_id.ef7db0253c"} */
+[0m13:40:06.048001 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.439 seconds
+[0m13:40:06.048001 [info ] [Thread-2 (]: 11 of 35 PASS not_null_stg_portfolios_portfolio_id ............................. [[32mPASS[0m in 0.53s]
+[0m13:40:06.048001 [debug] [Thread-2 (]: Finished running node test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_id.7126a480ec
+[0m13:40:06.048001 [debug] [Thread-2 (]: Began running node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_brokers_broker_id.96e4e75043
+[0m13:40:06.048001 [info ] [Thread-2 (]: 15 of 35 START test source_not_null_raw_sample_brokers_broker_id ............... [RUN]
+[0m13:40:06.054838 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_id.7126a480ec, now test.bain_capital_portfolio_analytics.source_not_null_raw_sample_brokers_broker_id.96e4e75043)
+[0m13:40:06.055885 [debug] [Thread-2 (]: Began compiling node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_brokers_broker_id.96e4e75043
+[0m13:40:06.055885 [debug] [Thread-2 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_brokers_broker_id.96e4e75043"
+[0m13:40:06.055885 [debug] [Thread-2 (]: Began executing node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_brokers_broker_id.96e4e75043
+[0m13:40:06.066576 [debug] [Thread-2 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_brokers_broker_id.96e4e75043"
+[0m13:40:06.066576 [debug] [Thread-2 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_brokers_broker_id.96e4e75043"
+[0m13:40:06.074532 [debug] [Thread-2 (]: On test.bain_capital_portfolio_analytics.source_not_null_raw_sample_brokers_broker_id.96e4e75043: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select broker_id
+from BAIN_ANALYTICS.DEV.sample_brokers
+where broker_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_brokers_broker_id.96e4e75043"} */
+[0m13:40:06.177592 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.414 seconds
+[0m13:40:06.177592 [info ] [Thread-5 (]: 12 of 35 PASS not_null_stg_portfolios_portfolio_name ........................... [[32mPASS[0m in 0.47s]
+[0m13:40:06.177592 [debug] [Thread-5 (]: Finished running node test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_name.667840ac9c
+[0m13:40:06.177592 [debug] [Thread-5 (]: Began running node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_cashflow_id.c1b1e6d773
+[0m13:40:06.177592 [info ] [Thread-5 (]: 16 of 35 START test source_not_null_raw_sample_cashflows_cashflow_id ........... [RUN]
+[0m13:40:06.188499 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.not_null_stg_portfolios_portfolio_name.667840ac9c, now test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_cashflow_id.c1b1e6d773)
+[0m13:40:06.188499 [debug] [Thread-5 (]: Began compiling node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_cashflow_id.c1b1e6d773
+[0m13:40:06.188499 [debug] [Thread-5 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_cashflow_id.c1b1e6d773"
+[0m13:40:06.202130 [debug] [Thread-5 (]: Began executing node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_cashflow_id.c1b1e6d773
+[0m13:40:06.204138 [debug] [Thread-5 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_cashflow_id.c1b1e6d773"
+[0m13:40:06.211951 [debug] [Thread-5 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_cashflow_id.c1b1e6d773"
+[0m13:40:06.213965 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.410 seconds
+[0m13:40:06.213965 [debug] [Thread-5 (]: On test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_cashflow_id.c1b1e6d773: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select cashflow_id
+from BAIN_ANALYTICS.DEV.sample_cashflows
+where cashflow_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_cashflow_id.c1b1e6d773"} */
+[0m13:40:06.213965 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.446 seconds
+[0m13:40:06.224293 [info ] [Thread-4 (]: 14 of 35 PASS source_not_null_raw_sample_benchmarks_benchmark_id ............... [[32mPASS[0m in 0.45s]
+[0m13:40:06.228305 [info ] [Thread-3 (]: 13 of 35 PASS relationships_stg_cashflows_portfolio_id__portfolio_id__ref_stg_portfolios_  [[32mPASS[0m in 0.52s]
+[0m13:40:06.230309 [debug] [Thread-4 (]: Finished running node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_benchmarks_benchmark_id.ef7db0253c
+[0m13:40:06.233451 [debug] [Thread-3 (]: Finished running node test.bain_capital_portfolio_analytics.relationships_stg_cashflows_portfolio_id__portfolio_id__ref_stg_portfolios_.9f0a1fd1ba
+[0m13:40:06.236365 [debug] [Thread-4 (]: Began running node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_portfolio_id.eb72ea03e5
+[0m13:40:06.237871 [debug] [Thread-3 (]: Began running node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_fund_hierarchy_entity_id.1719789752
+[0m13:40:06.238379 [info ] [Thread-4 (]: 17 of 35 START test source_not_null_raw_sample_cashflows_portfolio_id .......... [RUN]
+[0m13:40:06.238379 [info ] [Thread-3 (]: 18 of 35 START test source_not_null_raw_sample_fund_hierarchy_entity_id ........ [RUN]
+[0m13:40:06.238379 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.source_not_null_raw_sample_benchmarks_benchmark_id.ef7db0253c, now test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_portfolio_id.eb72ea03e5)
+[0m13:40:06.238379 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.relationships_stg_cashflows_portfolio_id__portfolio_id__ref_stg_portfolios_.9f0a1fd1ba, now test.bain_capital_portfolio_analytics.source_not_null_raw_sample_fund_hierarchy_entity_id.1719789752)
+[0m13:40:06.238379 [debug] [Thread-4 (]: Began compiling node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_portfolio_id.eb72ea03e5
+[0m13:40:06.244049 [debug] [Thread-3 (]: Began compiling node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_fund_hierarchy_entity_id.1719789752
+[0m13:40:06.252920 [debug] [Thread-4 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_portfolio_id.eb72ea03e5"
+[0m13:40:06.262907 [debug] [Thread-3 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_fund_hierarchy_entity_id.1719789752"
+[0m13:40:06.266301 [debug] [Thread-4 (]: Began executing node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_portfolio_id.eb72ea03e5
+[0m13:40:06.275033 [debug] [Thread-4 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_portfolio_id.eb72ea03e5"
+[0m13:40:06.275033 [debug] [Thread-3 (]: Began executing node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_fund_hierarchy_entity_id.1719789752
+[0m13:40:06.277668 [debug] [Thread-3 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_fund_hierarchy_entity_id.1719789752"
+[0m13:40:06.277668 [debug] [Thread-4 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_portfolio_id.eb72ea03e5"
+[0m13:40:06.290945 [debug] [Thread-3 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_fund_hierarchy_entity_id.1719789752"
+[0m13:40:06.292862 [debug] [Thread-4 (]: On test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_portfolio_id.eb72ea03e5: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select portfolio_id
+from BAIN_ANALYTICS.DEV.sample_cashflows
+where portfolio_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_portfolio_id.eb72ea03e5"} */
+[0m13:40:06.293873 [debug] [Thread-3 (]: On test.bain_capital_portfolio_analytics.source_not_null_raw_sample_fund_hierarchy_entity_id.1719789752: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select entity_id
+from BAIN_ANALYTICS.DEV.sample_fund_hierarchy
+where entity_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_fund_hierarchy_entity_id.1719789752"} */
+[0m13:40:06.599702 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.528 seconds
+[0m13:40:06.599702 [info ] [Thread-2 (]: 15 of 35 PASS source_not_null_raw_sample_brokers_broker_id ..................... [[32mPASS[0m in 0.55s]
+[0m13:40:06.608769 [debug] [Thread-2 (]: Finished running node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_brokers_broker_id.96e4e75043
+[0m13:40:06.608769 [debug] [Thread-2 (]: Began running node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_portfolios_portfolio_id.d6cc8f1cb4
+[0m13:40:06.611480 [info ] [Thread-2 (]: 19 of 35 START test source_not_null_raw_sample_portfolios_portfolio_id ......... [RUN]
+[0m13:40:06.611480 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.source_not_null_raw_sample_brokers_broker_id.96e4e75043, now test.bain_capital_portfolio_analytics.source_not_null_raw_sample_portfolios_portfolio_id.d6cc8f1cb4)
+[0m13:40:06.611480 [debug] [Thread-2 (]: Began compiling node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_portfolios_portfolio_id.d6cc8f1cb4
+[0m13:40:06.621552 [debug] [Thread-2 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_portfolios_portfolio_id.d6cc8f1cb4"
+[0m13:40:06.624543 [debug] [Thread-2 (]: Began executing node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_portfolios_portfolio_id.d6cc8f1cb4
+[0m13:40:06.624543 [debug] [Thread-2 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_portfolios_portfolio_id.d6cc8f1cb4"
+[0m13:40:06.637124 [debug] [Thread-2 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_portfolios_portfolio_id.d6cc8f1cb4"
+[0m13:40:06.637124 [debug] [Thread-2 (]: On test.bain_capital_portfolio_analytics.source_not_null_raw_sample_portfolios_portfolio_id.d6cc8f1cb4: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select portfolio_id
+from BAIN_ANALYTICS.DEV.sample_portfolios
+where portfolio_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_portfolios_portfolio_id.d6cc8f1cb4"} */
+[0m13:40:06.656420 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.433 seconds
+[0m13:40:06.663114 [info ] [Thread-5 (]: 16 of 35 PASS source_not_null_raw_sample_cashflows_cashflow_id ................. [[32mPASS[0m in 0.47s]
+[0m13:40:06.663114 [debug] [Thread-5 (]: Finished running node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_cashflow_id.c1b1e6d773
+[0m13:40:06.665120 [debug] [Thread-5 (]: Began running node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_positions_daily_position_id.72d2d30023
+[0m13:40:06.668568 [info ] [Thread-5 (]: 20 of 35 START test source_not_null_raw_sample_positions_daily_position_id ..... [RUN]
+[0m13:40:06.670573 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_cashflow_id.c1b1e6d773, now test.bain_capital_portfolio_analytics.source_not_null_raw_sample_positions_daily_position_id.72d2d30023)
+[0m13:40:06.671513 [debug] [Thread-5 (]: Began compiling node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_positions_daily_position_id.72d2d30023
+[0m13:40:06.691340 [debug] [Thread-5 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_positions_daily_position_id.72d2d30023"
+[0m13:40:06.694344 [debug] [Thread-5 (]: Began executing node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_positions_daily_position_id.72d2d30023
+[0m13:40:06.705918 [debug] [Thread-5 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_positions_daily_position_id.72d2d30023"
+[0m13:40:06.708914 [debug] [Thread-5 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_positions_daily_position_id.72d2d30023"
+[0m13:40:06.712498 [debug] [Thread-5 (]: On test.bain_capital_portfolio_analytics.source_not_null_raw_sample_positions_daily_position_id.72d2d30023: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select position_id
+from BAIN_ANALYTICS.DEV.sample_positions_daily
+where position_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_positions_daily_position_id.72d2d30023"} */
+[0m13:40:06.860733 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.567 seconds
+[0m13:40:06.862742 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.567 seconds
+[0m13:40:06.868932 [info ] [Thread-4 (]: 17 of 35 PASS source_not_null_raw_sample_cashflows_portfolio_id ................ [[32mPASS[0m in 0.63s]
+[0m13:40:06.870613 [info ] [Thread-3 (]: 18 of 35 PASS source_not_null_raw_sample_fund_hierarchy_entity_id .............. [[32mPASS[0m in 0.63s]
+[0m13:40:06.877062 [debug] [Thread-4 (]: Finished running node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_portfolio_id.eb72ea03e5
+[0m13:40:06.880283 [debug] [Thread-3 (]: Finished running node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_fund_hierarchy_entity_id.1719789752
+[0m13:40:06.881765 [debug] [Thread-4 (]: Began running node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_securities_security_id.2b1abce5fb
+[0m13:40:06.881765 [debug] [Thread-3 (]: Began running node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_trades_trade_id.87413071f5
+[0m13:40:06.881765 [info ] [Thread-4 (]: 21 of 35 START test source_not_null_raw_sample_securities_security_id .......... [RUN]
+[0m13:40:06.881765 [info ] [Thread-3 (]: 22 of 35 START test source_not_null_raw_sample_trades_trade_id ................. [RUN]
+[0m13:40:06.881765 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.source_not_null_raw_sample_cashflows_portfolio_id.eb72ea03e5, now test.bain_capital_portfolio_analytics.source_not_null_raw_sample_securities_security_id.2b1abce5fb)
+[0m13:40:06.888218 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.source_not_null_raw_sample_fund_hierarchy_entity_id.1719789752, now test.bain_capital_portfolio_analytics.source_not_null_raw_sample_trades_trade_id.87413071f5)
+[0m13:40:06.891418 [debug] [Thread-4 (]: Began compiling node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_securities_security_id.2b1abce5fb
+[0m13:40:06.892759 [debug] [Thread-3 (]: Began compiling node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_trades_trade_id.87413071f5
+[0m13:40:06.904271 [debug] [Thread-4 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_securities_security_id.2b1abce5fb"
+[0m13:40:06.915429 [debug] [Thread-3 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_trades_trade_id.87413071f5"
+[0m13:40:06.915429 [debug] [Thread-4 (]: Began executing node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_securities_security_id.2b1abce5fb
+[0m13:40:06.915429 [debug] [Thread-3 (]: Began executing node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_trades_trade_id.87413071f5
+[0m13:40:06.926304 [debug] [Thread-4 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_securities_security_id.2b1abce5fb"
+[0m13:40:06.940307 [debug] [Thread-3 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_trades_trade_id.87413071f5"
+[0m13:40:06.942305 [debug] [Thread-4 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_securities_security_id.2b1abce5fb"
+[0m13:40:06.943653 [debug] [Thread-4 (]: On test.bain_capital_portfolio_analytics.source_not_null_raw_sample_securities_security_id.2b1abce5fb: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select security_id
+from BAIN_ANALYTICS.DEV.sample_securities
+where security_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_securities_security_id.2b1abce5fb"} */
+[0m13:40:06.946409 [debug] [Thread-3 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_trades_trade_id.87413071f5"
+[0m13:40:06.948403 [debug] [Thread-3 (]: On test.bain_capital_portfolio_analytics.source_not_null_raw_sample_trades_trade_id.87413071f5: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select trade_id
+from BAIN_ANALYTICS.DEV.sample_trades
+where trade_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_trades_trade_id.87413071f5"} */
+[0m13:40:07.103774 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.462 seconds
+[0m13:40:07.107774 [info ] [Thread-2 (]: 19 of 35 PASS source_not_null_raw_sample_portfolios_portfolio_id ............... [[32mPASS[0m in 0.50s]
+[0m13:40:07.110682 [debug] [Thread-2 (]: Finished running node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_portfolios_portfolio_id.d6cc8f1cb4
+[0m13:40:07.113666 [debug] [Thread-2 (]: Began running node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_valuations_valuation_id.8e2a190042
+[0m13:40:07.114662 [info ] [Thread-2 (]: 23 of 35 START test source_not_null_raw_sample_valuations_valuation_id ......... [RUN]
+[0m13:40:07.114662 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.source_not_null_raw_sample_portfolios_portfolio_id.d6cc8f1cb4, now test.bain_capital_portfolio_analytics.source_not_null_raw_sample_valuations_valuation_id.8e2a190042)
+[0m13:40:07.119177 [debug] [Thread-2 (]: Began compiling node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_valuations_valuation_id.8e2a190042
+[0m13:40:07.132066 [debug] [Thread-2 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_valuations_valuation_id.8e2a190042"
+[0m13:40:07.136974 [debug] [Thread-2 (]: Began executing node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_valuations_valuation_id.8e2a190042
+[0m13:40:07.147905 [debug] [Thread-2 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_valuations_valuation_id.8e2a190042"
+[0m13:40:07.150906 [debug] [Thread-2 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_valuations_valuation_id.8e2a190042"
+[0m13:40:07.151906 [debug] [Thread-2 (]: On test.bain_capital_portfolio_analytics.source_not_null_raw_sample_valuations_valuation_id.8e2a190042: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select valuation_id
+from BAIN_ANALYTICS.DEV.sample_valuations
+where valuation_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.source_not_null_raw_sample_valuations_valuation_id.8e2a190042"} */
+[0m13:40:07.314674 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.599 seconds
+[0m13:40:07.318884 [info ] [Thread-5 (]: 20 of 35 PASS source_not_null_raw_sample_positions_daily_position_id ........... [[32mPASS[0m in 0.65s]
+[0m13:40:07.320879 [debug] [Thread-5 (]: Finished running node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_positions_daily_position_id.72d2d30023
+[0m13:40:07.322229 [debug] [Thread-5 (]: Began running node test.bain_capital_portfolio_analytics.source_unique_raw_sample_benchmarks_benchmark_id.41406c78b4
+[0m13:40:07.325124 [info ] [Thread-5 (]: 24 of 35 START test source_unique_raw_sample_benchmarks_benchmark_id ........... [RUN]
+[0m13:40:07.327120 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.source_not_null_raw_sample_positions_daily_position_id.72d2d30023, now test.bain_capital_portfolio_analytics.source_unique_raw_sample_benchmarks_benchmark_id.41406c78b4)
+[0m13:40:07.328120 [debug] [Thread-5 (]: Began compiling node test.bain_capital_portfolio_analytics.source_unique_raw_sample_benchmarks_benchmark_id.41406c78b4
+[0m13:40:07.341564 [debug] [Thread-5 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.source_unique_raw_sample_benchmarks_benchmark_id.41406c78b4"
+[0m13:40:07.344450 [debug] [Thread-5 (]: Began executing node test.bain_capital_portfolio_analytics.source_unique_raw_sample_benchmarks_benchmark_id.41406c78b4
+[0m13:40:07.352723 [debug] [Thread-5 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.source_unique_raw_sample_benchmarks_benchmark_id.41406c78b4"
+[0m13:40:07.358831 [debug] [Thread-5 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.source_unique_raw_sample_benchmarks_benchmark_id.41406c78b4"
+[0m13:40:07.360832 [debug] [Thread-5 (]: On test.bain_capital_portfolio_analytics.source_unique_raw_sample_benchmarks_benchmark_id.41406c78b4: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    benchmark_id as unique_field,
+    count(*) as n_records
+
+from BAIN_ANALYTICS.DEV.sample_benchmarks
+where benchmark_id is not null
+group by benchmark_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.source_unique_raw_sample_benchmarks_benchmark_id.41406c78b4"} */
+[0m13:40:07.393024 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.445 seconds
+[0m13:40:07.395037 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.444 seconds
+[0m13:40:07.399443 [info ] [Thread-4 (]: 21 of 35 PASS source_not_null_raw_sample_securities_security_id ................ [[32mPASS[0m in 0.52s]
+[0m13:40:07.406371 [info ] [Thread-3 (]: 22 of 35 PASS source_not_null_raw_sample_trades_trade_id ....................... [[32mPASS[0m in 0.52s]
+[0m13:40:07.407371 [debug] [Thread-4 (]: Finished running node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_securities_security_id.2b1abce5fb
+[0m13:40:07.409375 [debug] [Thread-3 (]: Finished running node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_trades_trade_id.87413071f5
+[0m13:40:07.412422 [debug] [Thread-4 (]: Began running node test.bain_capital_portfolio_analytics.source_unique_raw_sample_brokers_broker_id.636249ebce
+[0m13:40:07.414865 [debug] [Thread-3 (]: Began running node test.bain_capital_portfolio_analytics.source_unique_raw_sample_cashflows_cashflow_id.b558db5773
+[0m13:40:07.416865 [info ] [Thread-4 (]: 25 of 35 START test source_unique_raw_sample_brokers_broker_id ................. [RUN]
+[0m13:40:07.418256 [info ] [Thread-3 (]: 26 of 35 START test source_unique_raw_sample_cashflows_cashflow_id ............. [RUN]
+[0m13:40:07.419259 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.source_not_null_raw_sample_securities_security_id.2b1abce5fb, now test.bain_capital_portfolio_analytics.source_unique_raw_sample_brokers_broker_id.636249ebce)
+[0m13:40:07.421760 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.source_not_null_raw_sample_trades_trade_id.87413071f5, now test.bain_capital_portfolio_analytics.source_unique_raw_sample_cashflows_cashflow_id.b558db5773)
+[0m13:40:07.425411 [debug] [Thread-4 (]: Began compiling node test.bain_capital_portfolio_analytics.source_unique_raw_sample_brokers_broker_id.636249ebce
+[0m13:40:07.426410 [debug] [Thread-3 (]: Began compiling node test.bain_capital_portfolio_analytics.source_unique_raw_sample_cashflows_cashflow_id.b558db5773
+[0m13:40:07.440697 [debug] [Thread-4 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.source_unique_raw_sample_brokers_broker_id.636249ebce"
+[0m13:40:07.454019 [debug] [Thread-3 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.source_unique_raw_sample_cashflows_cashflow_id.b558db5773"
+[0m13:40:07.458717 [debug] [Thread-4 (]: Began executing node test.bain_capital_portfolio_analytics.source_unique_raw_sample_brokers_broker_id.636249ebce
+[0m13:40:07.459978 [debug] [Thread-3 (]: Began executing node test.bain_capital_portfolio_analytics.source_unique_raw_sample_cashflows_cashflow_id.b558db5773
+[0m13:40:07.464884 [debug] [Thread-4 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.source_unique_raw_sample_brokers_broker_id.636249ebce"
+[0m13:40:07.474708 [debug] [Thread-3 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.source_unique_raw_sample_cashflows_cashflow_id.b558db5773"
+[0m13:40:07.481088 [debug] [Thread-4 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.source_unique_raw_sample_brokers_broker_id.636249ebce"
+[0m13:40:07.482836 [debug] [Thread-3 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.source_unique_raw_sample_cashflows_cashflow_id.b558db5773"
+[0m13:40:07.483932 [debug] [Thread-4 (]: On test.bain_capital_portfolio_analytics.source_unique_raw_sample_brokers_broker_id.636249ebce: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    broker_id as unique_field,
+    count(*) as n_records
+
+from BAIN_ANALYTICS.DEV.sample_brokers
+where broker_id is not null
+group by broker_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.source_unique_raw_sample_brokers_broker_id.636249ebce"} */
+[0m13:40:07.484997 [debug] [Thread-3 (]: On test.bain_capital_portfolio_analytics.source_unique_raw_sample_cashflows_cashflow_id.b558db5773: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    cashflow_id as unique_field,
+    count(*) as n_records
+
+from BAIN_ANALYTICS.DEV.sample_cashflows
+where cashflow_id is not null
+group by cashflow_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.source_unique_raw_sample_cashflows_cashflow_id.b558db5773"} */
+[0m13:40:07.646819 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.493 seconds
+[0m13:40:07.650496 [info ] [Thread-2 (]: 23 of 35 PASS source_not_null_raw_sample_valuations_valuation_id ............... [[32mPASS[0m in 0.54s]
+[0m13:40:07.656225 [debug] [Thread-2 (]: Finished running node test.bain_capital_portfolio_analytics.source_not_null_raw_sample_valuations_valuation_id.8e2a190042
+[0m13:40:07.658619 [debug] [Thread-2 (]: Began running node test.bain_capital_portfolio_analytics.source_unique_raw_sample_fund_hierarchy_entity_id.a9746eaae1
+[0m13:40:07.659329 [info ] [Thread-2 (]: 27 of 35 START test source_unique_raw_sample_fund_hierarchy_entity_id .......... [RUN]
+[0m13:40:07.659329 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.source_not_null_raw_sample_valuations_valuation_id.8e2a190042, now test.bain_capital_portfolio_analytics.source_unique_raw_sample_fund_hierarchy_entity_id.a9746eaae1)
+[0m13:40:07.659329 [debug] [Thread-2 (]: Began compiling node test.bain_capital_portfolio_analytics.source_unique_raw_sample_fund_hierarchy_entity_id.a9746eaae1
+[0m13:40:07.670672 [debug] [Thread-2 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.source_unique_raw_sample_fund_hierarchy_entity_id.a9746eaae1"
+[0m13:40:07.670672 [debug] [Thread-2 (]: Began executing node test.bain_capital_portfolio_analytics.source_unique_raw_sample_fund_hierarchy_entity_id.a9746eaae1
+[0m13:40:07.685879 [debug] [Thread-2 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.source_unique_raw_sample_fund_hierarchy_entity_id.a9746eaae1"
+[0m13:40:07.686698 [debug] [Thread-2 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.source_unique_raw_sample_fund_hierarchy_entity_id.a9746eaae1"
+[0m13:40:07.691380 [debug] [Thread-2 (]: On test.bain_capital_portfolio_analytics.source_unique_raw_sample_fund_hierarchy_entity_id.a9746eaae1: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    entity_id as unique_field,
+    count(*) as n_records
+
+from BAIN_ANALYTICS.DEV.sample_fund_hierarchy
+where entity_id is not null
+group by entity_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.source_unique_raw_sample_fund_hierarchy_entity_id.a9746eaae1"} */
+[0m13:40:07.875627 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.513 seconds
+[0m13:40:07.881671 [info ] [Thread-5 (]: 24 of 35 PASS source_unique_raw_sample_benchmarks_benchmark_id ................. [[32mPASS[0m in 0.56s]
+[0m13:40:07.881671 [debug] [Thread-5 (]: Finished running node test.bain_capital_portfolio_analytics.source_unique_raw_sample_benchmarks_benchmark_id.41406c78b4
+[0m13:40:07.881671 [debug] [Thread-5 (]: Began running node test.bain_capital_portfolio_analytics.source_unique_raw_sample_portfolios_portfolio_id.b1809722d7
+[0m13:40:07.888251 [info ] [Thread-5 (]: 28 of 35 START test source_unique_raw_sample_portfolios_portfolio_id ........... [RUN]
+[0m13:40:07.891250 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.source_unique_raw_sample_benchmarks_benchmark_id.41406c78b4, now test.bain_capital_portfolio_analytics.source_unique_raw_sample_portfolios_portfolio_id.b1809722d7)
+[0m13:40:07.893244 [debug] [Thread-5 (]: Began compiling node test.bain_capital_portfolio_analytics.source_unique_raw_sample_portfolios_portfolio_id.b1809722d7
+[0m13:40:07.908536 [debug] [Thread-5 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.source_unique_raw_sample_portfolios_portfolio_id.b1809722d7"
+[0m13:40:07.913242 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.427 seconds
+[0m13:40:07.913242 [info ] [Thread-3 (]: 26 of 35 PASS source_unique_raw_sample_cashflows_cashflow_id ................... [[32mPASS[0m in 0.49s]
+[0m13:40:07.913242 [debug] [Thread-5 (]: Began executing node test.bain_capital_portfolio_analytics.source_unique_raw_sample_portfolios_portfolio_id.b1809722d7
+[0m13:40:07.923521 [debug] [Thread-3 (]: Finished running node test.bain_capital_portfolio_analytics.source_unique_raw_sample_cashflows_cashflow_id.b558db5773
+[0m13:40:07.927221 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.441 seconds
+[0m13:40:07.933522 [debug] [Thread-5 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.source_unique_raw_sample_portfolios_portfolio_id.b1809722d7"
+[0m13:40:07.936325 [debug] [Thread-3 (]: Began running node test.bain_capital_portfolio_analytics.source_unique_raw_sample_positions_daily_position_id.550530e19d
+[0m13:40:07.936325 [info ] [Thread-4 (]: 25 of 35 PASS source_unique_raw_sample_brokers_broker_id ....................... [[32mPASS[0m in 0.52s]
+[0m13:40:07.936325 [info ] [Thread-3 (]: 29 of 35 START test source_unique_raw_sample_positions_daily_position_id ....... [RUN]
+[0m13:40:07.945849 [debug] [Thread-5 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.source_unique_raw_sample_portfolios_portfolio_id.b1809722d7"
+[0m13:40:07.947841 [debug] [Thread-4 (]: Finished running node test.bain_capital_portfolio_analytics.source_unique_raw_sample_brokers_broker_id.636249ebce
+[0m13:40:07.948841 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.source_unique_raw_sample_cashflows_cashflow_id.b558db5773, now test.bain_capital_portfolio_analytics.source_unique_raw_sample_positions_daily_position_id.550530e19d)
+[0m13:40:07.950841 [debug] [Thread-5 (]: On test.bain_capital_portfolio_analytics.source_unique_raw_sample_portfolios_portfolio_id.b1809722d7: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    portfolio_id as unique_field,
+    count(*) as n_records
+
+from BAIN_ANALYTICS.DEV.sample_portfolios
+where portfolio_id is not null
+group by portfolio_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.source_unique_raw_sample_portfolios_portfolio_id.b1809722d7"} */
+[0m13:40:07.951841 [debug] [Thread-4 (]: Began running node test.bain_capital_portfolio_analytics.source_unique_raw_sample_securities_security_id.a3549d9277
+[0m13:40:07.952916 [debug] [Thread-3 (]: Began compiling node test.bain_capital_portfolio_analytics.source_unique_raw_sample_positions_daily_position_id.550530e19d
+[0m13:40:07.954843 [info ] [Thread-4 (]: 30 of 35 START test source_unique_raw_sample_securities_security_id ............ [RUN]
+[0m13:40:07.965311 [debug] [Thread-3 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.source_unique_raw_sample_positions_daily_position_id.550530e19d"
+[0m13:40:07.969830 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.source_unique_raw_sample_brokers_broker_id.636249ebce, now test.bain_capital_portfolio_analytics.source_unique_raw_sample_securities_security_id.a3549d9277)
+[0m13:40:07.972039 [debug] [Thread-4 (]: Began compiling node test.bain_capital_portfolio_analytics.source_unique_raw_sample_securities_security_id.a3549d9277
+[0m13:40:07.973083 [debug] [Thread-3 (]: Began executing node test.bain_capital_portfolio_analytics.source_unique_raw_sample_positions_daily_position_id.550530e19d
+[0m13:40:07.982097 [debug] [Thread-4 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.source_unique_raw_sample_securities_security_id.a3549d9277"
+[0m13:40:07.986274 [debug] [Thread-3 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.source_unique_raw_sample_positions_daily_position_id.550530e19d"
+[0m13:40:07.987984 [debug] [Thread-4 (]: Began executing node test.bain_capital_portfolio_analytics.source_unique_raw_sample_securities_security_id.a3549d9277
+[0m13:40:07.990164 [debug] [Thread-3 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.source_unique_raw_sample_positions_daily_position_id.550530e19d"
+[0m13:40:07.997218 [debug] [Thread-4 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.source_unique_raw_sample_securities_security_id.a3549d9277"
+[0m13:40:07.998217 [debug] [Thread-3 (]: On test.bain_capital_portfolio_analytics.source_unique_raw_sample_positions_daily_position_id.550530e19d: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    position_id as unique_field,
+    count(*) as n_records
+
+from BAIN_ANALYTICS.DEV.sample_positions_daily
+where position_id is not null
+group by position_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.source_unique_raw_sample_positions_daily_position_id.550530e19d"} */
+[0m13:40:08.003282 [debug] [Thread-4 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.source_unique_raw_sample_securities_security_id.a3549d9277"
+[0m13:40:08.005196 [debug] [Thread-4 (]: On test.bain_capital_portfolio_analytics.source_unique_raw_sample_securities_security_id.a3549d9277: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    security_id as unique_field,
+    count(*) as n_records
+
+from BAIN_ANALYTICS.DEV.sample_securities
+where security_id is not null
+group by security_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.source_unique_raw_sample_securities_security_id.a3549d9277"} */
+[0m13:40:08.160046 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.466 seconds
+[0m13:40:08.160046 [info ] [Thread-2 (]: 27 of 35 PASS source_unique_raw_sample_fund_hierarchy_entity_id ................ [[32mPASS[0m in 0.50s]
+[0m13:40:08.160046 [debug] [Thread-2 (]: Finished running node test.bain_capital_portfolio_analytics.source_unique_raw_sample_fund_hierarchy_entity_id.a9746eaae1
+[0m13:40:08.168507 [debug] [Thread-2 (]: Began running node test.bain_capital_portfolio_analytics.source_unique_raw_sample_trades_trade_id.3713acfd5c
+[0m13:40:08.168507 [info ] [Thread-2 (]: 31 of 35 START test source_unique_raw_sample_trades_trade_id ................... [RUN]
+[0m13:40:08.168507 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.source_unique_raw_sample_fund_hierarchy_entity_id.a9746eaae1, now test.bain_capital_portfolio_analytics.source_unique_raw_sample_trades_trade_id.3713acfd5c)
+[0m13:40:08.168507 [debug] [Thread-2 (]: Began compiling node test.bain_capital_portfolio_analytics.source_unique_raw_sample_trades_trade_id.3713acfd5c
+[0m13:40:08.178797 [debug] [Thread-2 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.source_unique_raw_sample_trades_trade_id.3713acfd5c"
+[0m13:40:08.178797 [debug] [Thread-2 (]: Began executing node test.bain_capital_portfolio_analytics.source_unique_raw_sample_trades_trade_id.3713acfd5c
+[0m13:40:08.191426 [debug] [Thread-2 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.source_unique_raw_sample_trades_trade_id.3713acfd5c"
+[0m13:40:08.191426 [debug] [Thread-2 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.source_unique_raw_sample_trades_trade_id.3713acfd5c"
+[0m13:40:08.201270 [debug] [Thread-2 (]: On test.bain_capital_portfolio_analytics.source_unique_raw_sample_trades_trade_id.3713acfd5c: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    trade_id as unique_field,
+    count(*) as n_records
+
+from BAIN_ANALYTICS.DEV.sample_trades
+where trade_id is not null
+group by trade_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.source_unique_raw_sample_trades_trade_id.3713acfd5c"} */
+[0m13:40:08.382472 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.430 seconds
+[0m13:40:08.382472 [info ] [Thread-5 (]: 28 of 35 PASS source_unique_raw_sample_portfolios_portfolio_id ................. [[32mPASS[0m in 0.49s]
+[0m13:40:08.389610 [debug] [Thread-5 (]: Finished running node test.bain_capital_portfolio_analytics.source_unique_raw_sample_portfolios_portfolio_id.b1809722d7
+[0m13:40:08.392693 [debug] [Thread-5 (]: Began running node test.bain_capital_portfolio_analytics.source_unique_raw_sample_valuations_valuation_id.c2f985557f
+[0m13:40:08.392693 [info ] [Thread-5 (]: 32 of 35 START test source_unique_raw_sample_valuations_valuation_id ........... [RUN]
+[0m13:40:08.392693 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.source_unique_raw_sample_portfolios_portfolio_id.b1809722d7, now test.bain_capital_portfolio_analytics.source_unique_raw_sample_valuations_valuation_id.c2f985557f)
+[0m13:40:08.392693 [debug] [Thread-5 (]: Began compiling node test.bain_capital_portfolio_analytics.source_unique_raw_sample_valuations_valuation_id.c2f985557f
+[0m13:40:08.403449 [debug] [Thread-5 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.source_unique_raw_sample_valuations_valuation_id.c2f985557f"
+[0m13:40:08.414454 [debug] [Thread-5 (]: Began executing node test.bain_capital_portfolio_analytics.source_unique_raw_sample_valuations_valuation_id.c2f985557f
+[0m13:40:08.422070 [debug] [Thread-5 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.source_unique_raw_sample_valuations_valuation_id.c2f985557f"
+[0m13:40:08.427178 [debug] [Thread-5 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.source_unique_raw_sample_valuations_valuation_id.c2f985557f"
+[0m13:40:08.427178 [debug] [Thread-5 (]: On test.bain_capital_portfolio_analytics.source_unique_raw_sample_valuations_valuation_id.c2f985557f: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    valuation_id as unique_field,
+    count(*) as n_records
+
+from BAIN_ANALYTICS.DEV.sample_valuations
+where valuation_id is not null
+group by valuation_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.source_unique_raw_sample_valuations_valuation_id.c2f985557f"} */
+[0m13:40:08.448108 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.448 seconds
+[0m13:40:08.451109 [info ] [Thread-3 (]: 29 of 35 PASS source_unique_raw_sample_positions_daily_position_id ............. [[32mPASS[0m in 0.50s]
+[0m13:40:08.452110 [debug] [Thread-3 (]: Finished running node test.bain_capital_portfolio_analytics.source_unique_raw_sample_positions_daily_position_id.550530e19d
+[0m13:40:08.453110 [debug] [Thread-3 (]: Began running node test.bain_capital_portfolio_analytics.unique_fact_cashflow_summary_cashflow_summary_key.b4868fe991
+[0m13:40:08.454109 [info ] [Thread-3 (]: 33 of 35 START test unique_fact_cashflow_summary_cashflow_summary_key .......... [RUN]
+[0m13:40:08.455416 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.source_unique_raw_sample_positions_daily_position_id.550530e19d, now test.bain_capital_portfolio_analytics.unique_fact_cashflow_summary_cashflow_summary_key.b4868fe991)
+[0m13:40:08.457346 [debug] [Thread-3 (]: Began compiling node test.bain_capital_portfolio_analytics.unique_fact_cashflow_summary_cashflow_summary_key.b4868fe991
+[0m13:40:08.460981 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.454 seconds
+[0m13:40:08.468749 [debug] [Thread-3 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.unique_fact_cashflow_summary_cashflow_summary_key.b4868fe991"
+[0m13:40:08.474597 [info ] [Thread-4 (]: 30 of 35 PASS source_unique_raw_sample_securities_security_id .................. [[32mPASS[0m in 0.50s]
+[0m13:40:08.476977 [debug] [Thread-4 (]: Finished running node test.bain_capital_portfolio_analytics.source_unique_raw_sample_securities_security_id.a3549d9277
+[0m13:40:08.480599 [debug] [Thread-4 (]: Began running node test.bain_capital_portfolio_analytics.unique_stg_cashflows_cashflow_id.359e4f4704
+[0m13:40:08.480599 [debug] [Thread-3 (]: Began executing node test.bain_capital_portfolio_analytics.unique_fact_cashflow_summary_cashflow_summary_key.b4868fe991
+[0m13:40:08.480599 [info ] [Thread-4 (]: 34 of 35 START test unique_stg_cashflows_cashflow_id ........................... [RUN]
+[0m13:40:08.490926 [debug] [Thread-3 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.unique_fact_cashflow_summary_cashflow_summary_key.b4868fe991"
+[0m13:40:08.493582 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.source_unique_raw_sample_securities_security_id.a3549d9277, now test.bain_capital_portfolio_analytics.unique_stg_cashflows_cashflow_id.359e4f4704)
+[0m13:40:08.495567 [debug] [Thread-4 (]: Began compiling node test.bain_capital_portfolio_analytics.unique_stg_cashflows_cashflow_id.359e4f4704
+[0m13:40:08.497048 [debug] [Thread-3 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.unique_fact_cashflow_summary_cashflow_summary_key.b4868fe991"
+[0m13:40:08.502311 [debug] [Thread-4 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.unique_stg_cashflows_cashflow_id.359e4f4704"
+[0m13:40:08.502311 [debug] [Thread-3 (]: On test.bain_capital_portfolio_analytics.unique_fact_cashflow_summary_cashflow_summary_key.b4868fe991: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    cashflow_summary_key as unique_field,
+    count(*) as n_records
+
+from BAIN_ANALYTICS.DEV.fact_cashflow_summary
+where cashflow_summary_key is not null
+group by cashflow_summary_key
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.unique_fact_cashflow_summary_cashflow_summary_key.b4868fe991"} */
+[0m13:40:08.513194 [debug] [Thread-4 (]: Began executing node test.bain_capital_portfolio_analytics.unique_stg_cashflows_cashflow_id.359e4f4704
+[0m13:40:08.523155 [debug] [Thread-4 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.unique_stg_cashflows_cashflow_id.359e4f4704"
+[0m13:40:08.530518 [debug] [Thread-4 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.unique_stg_cashflows_cashflow_id.359e4f4704"
+[0m13:40:08.530518 [debug] [Thread-4 (]: On test.bain_capital_portfolio_analytics.unique_stg_cashflows_cashflow_id.359e4f4704: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    cashflow_id as unique_field,
+    count(*) as n_records
+
+from BAIN_ANALYTICS.DEV.stg_cashflows
+where cashflow_id is not null
+group by cashflow_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.unique_stg_cashflows_cashflow_id.359e4f4704"} */
+[0m13:40:08.737689 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.534 seconds
+[0m13:40:08.741687 [info ] [Thread-2 (]: 31 of 35 PASS source_unique_raw_sample_trades_trade_id ......................... [[32mPASS[0m in 0.57s]
+[0m13:40:08.744705 [debug] [Thread-2 (]: Finished running node test.bain_capital_portfolio_analytics.source_unique_raw_sample_trades_trade_id.3713acfd5c
+[0m13:40:08.747405 [debug] [Thread-2 (]: Began running node test.bain_capital_portfolio_analytics.unique_stg_portfolios_portfolio_id.aa125b6658
+[0m13:40:08.747405 [info ] [Thread-2 (]: 35 of 35 START test unique_stg_portfolios_portfolio_id ......................... [RUN]
+[0m13:40:08.747405 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.bain_capital_portfolio_analytics.source_unique_raw_sample_trades_trade_id.3713acfd5c, now test.bain_capital_portfolio_analytics.unique_stg_portfolios_portfolio_id.aa125b6658)
+[0m13:40:08.747405 [debug] [Thread-2 (]: Began compiling node test.bain_capital_portfolio_analytics.unique_stg_portfolios_portfolio_id.aa125b6658
+[0m13:40:08.757620 [debug] [Thread-2 (]: Writing injected SQL for node "test.bain_capital_portfolio_analytics.unique_stg_portfolios_portfolio_id.aa125b6658"
+[0m13:40:08.757620 [debug] [Thread-2 (]: Began executing node test.bain_capital_portfolio_analytics.unique_stg_portfolios_portfolio_id.aa125b6658
+[0m13:40:08.769462 [debug] [Thread-2 (]: Writing runtime sql for node "test.bain_capital_portfolio_analytics.unique_stg_portfolios_portfolio_id.aa125b6658"
+[0m13:40:08.779957 [debug] [Thread-2 (]: Using snowflake connection "test.bain_capital_portfolio_analytics.unique_stg_portfolios_portfolio_id.aa125b6658"
+[0m13:40:08.781885 [debug] [Thread-2 (]: On test.bain_capital_portfolio_analytics.unique_stg_portfolios_portfolio_id.aa125b6658: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    portfolio_id as unique_field,
+    count(*) as n_records
+
+from BAIN_ANALYTICS.DEV.stg_portfolios
+where portfolio_id is not null
+group by portfolio_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "bain_capital", "target_name": "dev", "node_id": "test.bain_capital_portfolio_analytics.unique_stg_portfolios_portfolio_id.aa125b6658"} */
+[0m13:40:08.870921 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.440 seconds
+[0m13:40:08.877148 [info ] [Thread-5 (]: 32 of 35 PASS source_unique_raw_sample_valuations_valuation_id ................. [[32mPASS[0m in 0.48s]
+[0m13:40:08.879743 [debug] [Thread-5 (]: Finished running node test.bain_capital_portfolio_analytics.source_unique_raw_sample_valuations_valuation_id.c2f985557f
+[0m13:40:08.947482 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.436 seconds
+[0m13:40:08.955924 [info ] [Thread-3 (]: 33 of 35 PASS unique_fact_cashflow_summary_cashflow_summary_key ................ [[32mPASS[0m in 0.50s]
+[0m13:40:08.957873 [debug] [Thread-3 (]: Finished running node test.bain_capital_portfolio_analytics.unique_fact_cashflow_summary_cashflow_summary_key.b4868fe991
+[0m13:40:09.048091 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.515 seconds
+[0m13:40:09.048091 [info ] [Thread-4 (]: 34 of 35 PASS unique_stg_cashflows_cashflow_id ................................. [[32mPASS[0m in 0.56s]
+[0m13:40:09.048091 [debug] [Thread-4 (]: Finished running node test.bain_capital_portfolio_analytics.unique_stg_cashflows_cashflow_id.359e4f4704
+[0m13:40:09.325625 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.541 seconds
+[0m13:40:09.328267 [info ] [Thread-2 (]: 35 of 35 PASS unique_stg_portfolios_portfolio_id ............................... [[32mPASS[0m in 0.58s]
+[0m13:40:09.332922 [debug] [Thread-2 (]: Finished running node test.bain_capital_portfolio_analytics.unique_stg_portfolios_portfolio_id.aa125b6658
+[0m13:40:09.336808 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:40:09.336808 [debug] [MainThread]: Connection 'list_BAIN_ANALYTICS_DEV' was left open.
+[0m13:40:09.336808 [debug] [MainThread]: On list_BAIN_ANALYTICS_DEV: Close
+[0m13:40:10.301433 [debug] [MainThread]: Connection 'test.bain_capital_portfolio_analytics.unique_stg_portfolios_portfolio_id.aa125b6658' was left open.
+[0m13:40:10.303486 [debug] [MainThread]: On test.bain_capital_portfolio_analytics.unique_stg_portfolios_portfolio_id.aa125b6658: Close
+[0m13:40:11.284685 [debug] [MainThread]: Connection 'test.bain_capital_portfolio_analytics.unique_fact_cashflow_summary_cashflow_summary_key.b4868fe991' was left open.
+[0m13:40:11.285696 [debug] [MainThread]: On test.bain_capital_portfolio_analytics.unique_fact_cashflow_summary_cashflow_summary_key.b4868fe991: Close
+[0m13:40:12.324740 [debug] [MainThread]: Connection 'test.bain_capital_portfolio_analytics.unique_stg_cashflows_cashflow_id.359e4f4704' was left open.
+[0m13:40:12.325783 [debug] [MainThread]: On test.bain_capital_portfolio_analytics.unique_stg_cashflows_cashflow_id.359e4f4704: Close
+[0m13:40:13.371007 [debug] [MainThread]: Connection 'test.bain_capital_portfolio_analytics.source_unique_raw_sample_valuations_valuation_id.c2f985557f' was left open.
+[0m13:40:13.371007 [debug] [MainThread]: On test.bain_capital_portfolio_analytics.source_unique_raw_sample_valuations_valuation_id.c2f985557f: Close
+[0m13:40:14.360890 [info ] [MainThread]: 
+[0m13:40:14.362895 [info ] [MainThread]: Finished running 35 data tests in 0 hours 0 minutes and 15.43 seconds (15.43s).
+[0m13:40:14.370340 [debug] [MainThread]: Command end result
+[0m13:40:14.464317 [debug] [MainThread]: Wrote artifact WritableManifest to I:\dianababaei\dbt\sample-dbt-project\target\manifest.json
+[0m13:40:14.471208 [debug] [MainThread]: Wrote artifact SemanticManifest to I:\dianababaei\dbt\sample-dbt-project\target\semantic_manifest.json
+[0m13:40:14.485821 [debug] [MainThread]: Wrote artifact RunExecutionResult to I:\dianababaei\dbt\sample-dbt-project\target\run_results.json
+[0m13:40:14.487832 [info ] [MainThread]: 
+[0m13:40:14.490028 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:40:14.492027 [info ] [MainThread]: 
+[0m13:40:14.493029 [info ] [MainThread]: Done. PASS=35 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=35
+[0m13:40:14.494983 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingPlusPrefixDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m13:40:14.495298 [debug] [MainThread]: Command `dbt test` succeeded at 13:40:14.495298 after 19.75 seconds
+[0m13:40:14.497534 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000240F1F9AF50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000240F1E67D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000240F87D1F90>]}
+[0m13:40:14.499382 [debug] [MainThread]: Flushing usage events
+[0m13:40:17.496258 [debug] [MainThread]: An error was encountered while trying to flush usage events

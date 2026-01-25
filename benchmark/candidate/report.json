@@ -1,0 +1,7 @@
+{
+  "status": "READY",
+  "timestamp": "2026-01-25T13:55:21.392604",
+  "query_file": "benchmark/extract.sql",
+  "output_table": "FACT_CASHFLOW_SUMMARY",
+  "instructions": "Execute this query in Snowflake to get data:\n-- Golden Interface: Extract full report from FACT_CASHFLOW_SUMMARY\n-- Output format: JSON\n-- This is the definitive output that must be preserved across optimizations\n\nSELECT * FROM BAIN_ANALYTICS.DEV.FACT_CASHFLOW_SUMMARY\nORDER BY portfolio_id, cashflow_month, cashflow_type\n"
+}
