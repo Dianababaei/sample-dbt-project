@@ -1,12 +1,24 @@
 {
   "metadata": {
-    "timestamp": "2026-01-25T14:46:40.264149",
-    "row_count": 49,
-    "table": "FACT_CASHFLOW_SUMMARY",
-    "schema": "DEV",
-    "database": "BAIN_ANALYTICS",
-    "query_execution_time_seconds": 4.1703,
-    "rows_affected": 49
+    "timestamp": "2026-01-26T03:05:26.179152",
+    "pipeline": "dbt sample project",
+    "target_table": "FACT_CASHFLOW_SUMMARY",
+    "kpi_1_execution": {
+      "runtime_seconds": 4.5464,
+      "description": "End-to-end query execution time"
+    },
+    "kpi_2_work_metrics": {
+      "rows_returned": 49,
+      "description": "Rows in final output (correlates with Snowflake cost)"
+    },
+    "kpi_3_output_validation": {
+      "row_count": 49,
+      "output_hash": "7bcdd71ce8b45f11d148825c315b9641a2f494de946539438dd8ddc4b7f866c6",
+      "description": "SHA256 hash for output equivalence checking"
+    },
+    "kpi_4_complexity": {
+      "description": "Query structure complexity (check dbt graph)"
+    }
   },
   "data": [
     {
