@@ -1,15 +1,16 @@
 {
   "metadata": {
-    "timestamp": "2026-01-26T03:05:26.179152",
+    "timestamp": "2026-01-27T01:39:44.811164",
     "pipeline": "dbt sample project",
     "target_table": "FACT_CASHFLOW_SUMMARY",
     "kpi_1_execution": {
-      "runtime_seconds": 4.5464,
+      "runtime_seconds": 2.0267,
       "description": "End-to-end query execution time"
     },
     "kpi_2_work_metrics": {
       "rows_returned": 49,
-      "description": "Rows in final output (correlates with Snowflake cost)"
+      "bytes_scanned": 50176,
+      "description": "Rows and bytes scanned (direct from Snowflake QUERY_PROFILE)"
     },
     "kpi_3_output_validation": {
       "row_count": 49,
@@ -17,7 +18,17 @@
       "description": "SHA256 hash for output equivalence checking"
     },
     "kpi_4_complexity": {
-      "description": "Query structure complexity (check dbt graph)"
+      "num_joins": 0,
+      "num_ctes": 0,
+      "num_window_functions": 0,
+      "num_subqueries": 0,
+      "complexity_score": 1.0,
+      "description": "Query complexity: 0 joins, 0 CTEs, 0 window functions"
+    },
+    "kpi_5_cost_estimation": {
+      "credits_estimated": 5e-08,
+      "bytes_scanned": 50176,
+      "description": "Estimated credits based on bytes scanned (1 credit per 1 TB), no waiting for async billing"
     }
   },
   "data": [

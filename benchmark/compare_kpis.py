@@ -65,7 +65,7 @@ def main():
     print(f"  Baseline:  {baseline_runtime:.4f}s")
     print(f"  Optimized: {candidate_runtime:.4f}s")
     if improvement is not None:
-        sign = "↓" if improvement > 0 else "↑"
+        sign = "DOWN" if improvement > 0 else "UP"
         print(f"  Change:    {sign} {abs(improvement):.1f}%")
     print()
 
@@ -79,7 +79,7 @@ def main():
     print(f"  Baseline:  {baseline_rows} rows")
     print(f"  Optimized: {candidate_rows} rows")
     if improvement is not None:
-        sign = "↓" if improvement > 0 else "↑"
+        sign = "DOWN" if improvement > 0 else "UP"
         print(f"  Change:    {sign} {abs(improvement):.1f}%")
     print()
 
@@ -96,10 +96,52 @@ def main():
     print(f"  Optimized rows: {candidate_count}")
 
     if baseline_hash == candidate_hash and baseline_count == candidate_count:
-        print(f"  Status: ✅ IDENTICAL (output equivalence guaranteed)")
+        print(f"  Status: [OK] IDENTICAL (output equivalence guaranteed)")
     else:
-        print(f"  Status: ❌ DIFFERENT (output changed - optimization invalid)")
+        print(f"  Status: [FAIL] DIFFERENT (output changed - optimization invalid)")
         return 1
+    print()
+
+    print("KPI 4: QUERY COMPLEXITY (Structure Analysis)")
+    print("-" * 70)
+    if 'kpi_4_complexity' in baseline_meta and baseline_meta['kpi_4_complexity']:
+        baseline_complexity = baseline_meta['kpi_4_complexity'].get('complexity_score', 'N/A')
+        candidate_complexity = candidate_meta['kpi_4_complexity'].get('complexity_score', 'N/A')
+        baseline_joins = baseline_meta['kpi_4_complexity'].get('num_joins', 'N/A')
+        candidate_joins = candidate_meta['kpi_4_complexity'].get('num_joins', 'N/A')
+
+        print(f"  Baseline complexity:  {baseline_complexity}/10 ({baseline_joins} joins)")
+        print(f"  Optimized complexity: {candidate_complexity}/10 ({candidate_joins} joins)")
+
+        if isinstance(baseline_complexity, (int, float)) and isinstance(candidate_complexity, (int, float)):
+            if candidate_complexity < baseline_complexity:
+                improvement = ((baseline_complexity - candidate_complexity) / baseline_complexity) * 100
+                print(f"  Change:               - {improvement:.1f}% simpler")
+            elif candidate_complexity > baseline_complexity:
+                increase = ((candidate_complexity - baseline_complexity) / baseline_complexity) * 100
+                print(f"  Change:               + {increase:.1f}% more complex")
+            else:
+                print(f"  Change:               No change in complexity")
+    print()
+
+    print("KPI 5: COST ESTIMATION (Bytes Scanned -> Credits)")
+    print("-" * 70)
+    baseline_credits = baseline_meta.get('kpi_5_cost_estimation', {}).get('credits_estimated', 0)
+    candidate_credits = candidate_meta.get('kpi_5_cost_estimation', {}).get('credits_estimated', 0)
+    baseline_bytes = baseline_meta.get('kpi_5_cost_estimation', {}).get('bytes_scanned', 0)
+    candidate_bytes = candidate_meta.get('kpi_5_cost_estimation', {}).get('bytes_scanned', 0)
+
+    print(f"  Baseline:  {baseline_credits:.8f} credits ({baseline_bytes:,} bytes)")
+    print(f"  Optimized: {candidate_credits:.8f} credits ({candidate_bytes:,} bytes)")
+
+    if baseline_credits > 0:
+        cost_improvement = ((baseline_credits - candidate_credits) / baseline_credits) * 100
+        if cost_improvement > 0:
+            print(f"  Change:    - {cost_improvement:.1f}% fewer credits")
+        elif cost_improvement < 0:
+            print(f"  Change:    + {abs(cost_improvement):.1f}% more credits")
+        else:
+            print(f"  Change:    No change in cost")
     print()
 
     print("=" * 70)
@@ -120,7 +162,21 @@ def main():
         improvements.append(f"  • Work reduced: {rows_improvement:.1f}% fewer rows processed")
 
     if baseline_hash == candidate_hash:
-        improvements.append(f"  • Output validation: ✅ Guaranteed identical")
+        improvements.append(f"  • Output validation: [OK] Guaranteed identical")
+
+    if baseline_credits > 0 and cost_improvement is not None and cost_improvement > 0:
+        improvements.append(f"  • Cost reduced: {cost_improvement:.1f}% fewer credits")
+
+    try:
+        baseline_complexity = baseline_meta.get('kpi_4_complexity', {}).get('complexity_score')
+        candidate_complexity = candidate_meta.get('kpi_4_complexity', {}).get('complexity_score')
+        if (isinstance(baseline_complexity, (int, float)) and
+            isinstance(candidate_complexity, (int, float)) and
+            candidate_complexity < baseline_complexity):
+            complexity_improvement = ((baseline_complexity - candidate_complexity) / baseline_complexity) * 100
+            improvements.append(f"  • Complexity reduced: {complexity_improvement:.1f}% simpler query")
+    except:
+        pass
 
     if improvements:
         for imp in improvements:

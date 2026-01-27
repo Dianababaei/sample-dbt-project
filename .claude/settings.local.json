@@ -6,7 +6,14 @@
       "Bash(python -m pip:*)",
       "Bash(python:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(git remote set-url:*)",
+      "Bash(git config:*)",
+      "Bash(gh auth logout:*)",
+      "Bash(gh auth login:*)",
+      "Bash(gh auth:*)",
+      "Bash(git push)",
+      "Bash(bash:*)"
     ]
   }
 }

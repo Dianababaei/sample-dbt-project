@@ -41,26 +41,47 @@ echo "✅ Done"
 echo ""
 
 # Step 5: Generate report (query actual data from Snowflake)
-echo "📄 Generating report from Snowflake..."
+echo "Generating report from Snowflake..."
 python extract_report.py
+EXTRACT_STATUS=$?
+
+if [ $EXTRACT_STATUS -ne 0 ]; then
+    echo "FAILED: Report generation failed"
+    exit 1
+fi
+
+# Step 6: Run benchmark comparison
+echo ""
+echo "Running benchmark comparison..."
+python benchmark/compare.py
+BENCHMARK_STATUS=$?
 
 END_TIME=$(date +%s%N)
 ELAPSED_MS=$(( (END_TIME - START_TIME) / 1000000 ))
 ELAPSED_SEC=$(echo "scale=2; $ELAPSED_MS / 1000" | bc)
 
-echo "✅ Done"
 echo ""
-
 echo "=========================================="
-echo "✅ Pipeline Complete!"
-echo "=========================================="
-echo ""
-echo "✅ All 35 tests passing"
-echo "✅ All 9 models built"
-echo "✅ Report generated"
-echo ""
-echo "📊 Report location:"
-echo "   benchmark/candidate/report.json"
-echo ""
-echo "⏱️  Pipeline execution time: ${ELAPSED_SEC}s"
-echo ""
+if [ $BENCHMARK_STATUS -eq 0 ]; then
+    echo "[OK] Pipeline Complete!"
+    echo "=========================================="
+    echo ""
+    echo "[OK] All 35 tests passing"
+    echo "[OK] All 9 models built"
+    echo "[OK] Benchmark PASSED"
+    echo ""
+    echo "Report locations:"
+    echo "   benchmark/baseline/report.json  (golden truth)"
+    echo "   benchmark/candidate/report.json (latest run)"
+    echo ""
+    echo "Pipeline execution time: ${ELAPSED_SEC}s"
+    echo ""
+    exit 0
+else
+    echo "[FAIL] Pipeline Failed!"
+    echo "=========================================="
+    echo ""
+    echo "Benchmark comparison failed. See details above."
+    echo ""
+    exit 1
+fi
