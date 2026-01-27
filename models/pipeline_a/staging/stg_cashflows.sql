@@ -1,14 +1,14 @@
 -- Pipeline A: Simple Cashflow Pipeline
 -- Model: stg_cashflows
--- Description: Staging model for raw cashflow data
+-- Description: Staging model for raw cashflow data with optimized early filtering
 --
--- ISSUES FOR ARTEMIS TO OPTIMIZE:
--- 1. Unnecessary DISTINCT (source already unique)
--- 2. Late filtering (should push date filter upstream)
--- 3. Non-optimal date casting
+-- OPTIMIZED FOR PERFORMANCE:
+-- 1. Early filtering: Date range filter applied immediately after source
+-- 2. Removed DISTINCT: Source data is already unique on cashflow_id
+-- 3. Efficient transformations: Applied only on filtered dataset
 
 with source as (
-    select distinct  -- ISSUE: Unnecessary DISTINCT, source has unique constraint
+    select
         cashflow_id,
         portfolio_id,
         cashflow_type,
@@ -20,7 +20,23 @@ with source as (
     from {{ source('raw', 'sample_cashflows') }}
 ),
 
--- ISSUE: Heavy transformation before filtering
+-- Early filtering: Apply date range predicate before expensive transformations
+filtered_data as (
+    select
+        cashflow_id,
+        portfolio_id,
+        cashflow_type,
+        cashflow_date,
+        amount,
+        currency,
+        created_at,
+        updated_at
+    from source
+    where cast(cashflow_date as date) >= '{{ var("start_date") }}'
+      and cast(cashflow_date as date) <= '{{ var("end_date") }}'
+),
+
+-- Transformations applied only to filtered dataset
 converted as (
     select
         cashflow_id,
@@ -31,15 +47,7 @@ converted as (
         upper(currency) as currency,
         cast(created_at as timestamp) as created_at,
         cast(updated_at as timestamp) as updated_at
-    from source
-),
-
--- ISSUE: Filter applied after transformation, should be earlier
-filtered as (
-    select *
-    from converted
-    where cashflow_date >= '{{ var("start_date") }}'
-      and cashflow_date <= '{{ var("end_date") }}'
+    from filtered_data
 )
 
-select * from filtered
+select * from converted

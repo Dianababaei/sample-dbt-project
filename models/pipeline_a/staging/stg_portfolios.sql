@@ -1,10 +1,8 @@
 -- Pipeline A: Simple Cashflow Pipeline
 -- Model: stg_portfolios
 -- Description: Staging model for portfolio master data
---
--- ISSUES FOR ARTEMIS TO OPTIMIZE:
--- 1. Subquery for deduplication instead of QUALIFY
--- 2. Multiple passes over data
+-- Optimization: Single-pass filtering with source constraint on portfolio_id (primary key)
+-- No deduplication needed; applied status filter directly in source CTE
 
 with source as (
     select
@@ -15,12 +13,7 @@ with source as (
         status,
         aum_usd
     from {{ source('raw', 'sample_portfolios') }}
-),
-
-active_only as (
-    select *
-    from source
     where status = 'ACTIVE'
 )
 
-select * from active_only
+select * from source
