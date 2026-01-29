@@ -10,19 +10,23 @@ Staging: stg_portfolios, stg_cashflows
 Intermediate: int_portfolio_attributes, int_cashflow_aggregated
 ```
 
-**Pipeline B (Medium):** 9 models
+**Pipeline B (Medium):** 12 models
 ```
 Staging: stg_trades, stg_securities, stg_market_prices, stg_brokers
-Intermediate: int_trades_enriched, int_trade_metrics, int_trade_summary
-Marts: fact_trades, report_trading_performance
+Intermediate: int_trades_enriched, int_trade_metrics, int_trade_summary, int_security_performance, int_trade_execution_analysis
+Marts: fact_trades, report_trading_performance, report_trade_performance
 ```
 
-**Pipeline C (Complex):** 16 models
+**Pipeline C (Complex):** 26 models
 ```
 Staging: stg_positions_daily, stg_valuations, stg_benchmarks, stg_benchmark_returns, stg_portfolio_benchmarks
-Intermediate: int_position_enriched, int_position_returns, int_portfolio_returns,
-             int_benchmark_metrics, int_relative_performance, int_sector_allocation, int_risk_metrics
-Marts: fact_portfolio_performance, fact_position_snapshot, fact_sector_performance, report_portfolio_analytics
+Intermediate: int_position_enriched, int_position_returns, int_portfolio_returns, int_risk_metrics,
+             int_sector_allocation, int_portfolio_analysis_advanced, int_position_risk_decomposition,
+             int_sector_rotation_analysis, int_performance_attribution_detailed, int_portfolio_drawdown,
+             int_rolling_volatility, int_position_attribution, int_sector_performance_attribution
+Marts: fact_portfolio_performance, fact_position_snapshot, fact_sector_performance,
+       report_executive_summary, report_performance_drivers, report_portfolio_risk_analysis,
+       report_position_attribution, report_sector_analysis
 ```
 
 ## Characteristics
@@ -85,54 +89,57 @@ The project includes benchmarking support for testing optimizations across 3 pip
 ### Benchmark Workflow
 
 ```bash
-# 1. Capture baseline metrics (unoptimized)
-python extract_report.py --pipeline a --output benchmark/pipeline_a/baseline/report.json
-python extract_report.py --pipeline b --output benchmark/pipeline_b/baseline/report.json
-python extract_report.py --pipeline c --output benchmark/pipeline_c/baseline/report.json
+# 1. Single pipeline benchmark (compiles, runs, and generates report)
+cd benchmark
+python gen_report_b.py              # Run Pipeline B
+python gen_report_a.py              # Run Pipeline A
+python gen_report_c.py              # Run Pipeline C
 
-# 2. Apply optimizations to models
+# Or run all pipelines at once:
+python run_all_benchmarks.py
+
+# 2. View results
+cat pipeline_b/candidate/report.json
+
+# 3. Apply optimizations to models
 # (Edit models in models/pipeline_*/intermediate or models/pipeline_*/marts)
 
-# 3. Capture candidate metrics (optimized)
-python extract_report.py --pipeline a --output benchmark/pipeline_a/candidate/report.json
-python extract_report.py --pipeline b --output benchmark/pipeline_b/candidate/report.json
-python extract_report.py --pipeline c --output benchmark/pipeline_c/candidate/report.json
+# 4. Re-run benchmark to measure improvements
+python gen_report_b.py
 
-# 4. Compare baseline vs candidate
-python benchmark/compare_kpis.py
+# 5. Compare metrics with previous run
+cat pipeline_b/candidate/report.json
 ```
 
 ### Benchmark Directory Structure
 
 ```
 benchmark/
+├── gen_report_a.py             # Pipeline A benchmark script
+├── gen_report_b.py             # Pipeline B benchmark script
+├── gen_report_c.py             # Pipeline C benchmark script
+├── run_all_benchmarks.py       # Master script (runs all 3)
+├── compare_kpis.py             # KPI comparison tool
+├── README.md                   # Benchmarking documentation
+├── QUICK_START.md              # Quick reference guide
 ├── pipeline_a/
-│   ├── baseline/
-│   │   └── report.json         # Baseline metrics
-│   ├── candidate/
-│   │   └── report.json         # Optimized metrics
-│   └── pipeline.yaml           # Pipeline configuration
+│   ├── baseline/report.json    # Baseline metrics
+│   └── candidate/report.json   # Latest run results
 ├── pipeline_b/
-│   ├── baseline/
-│   │   └── report.json
-│   ├── candidate/
-│   │   └── report.json
-│   └── pipeline.yaml
-├── pipeline_c/
-│   ├── baseline/
-│   │   └── report.json
-│   ├── candidate/
-│   │   └── report.json
-│   └── pipeline.yaml
-├── compare.py                  # Legacy comparison script
-├── compare_kpis.py            # KPI comparison tool
-└── extract.sql                # Helper queries
+│   ├── baseline/report.json
+│   └── candidate/report.json
+└── pipeline_c/
+    ├── baseline/report.json
+    └── candidate/report.json
 ```
 
 ## Total Models
 
 - **Staging:** 11 models (stg_*)
-- **Intermediate:** 12 models (int_*)
-- **Marts:** 6 models (fact_*, report_*)
+  - Pipeline A: 2 | Pipeline B: 4 | Pipeline C: 5
+- **Intermediate:** 20 models (int_*)
+  - Pipeline A: 2 | Pipeline B: 5 | Pipeline C: 13
+- **Marts:** 11 models (fact_*, report_*)
+  - Pipeline A: 0 | Pipeline B: 3 | Pipeline C: 8
 
-**Total:** 29 models across 3 pipelines
+**Total:** 42 models across 3 pipelines
