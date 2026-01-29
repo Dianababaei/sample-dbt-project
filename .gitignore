@@ -24,3 +24,7 @@ __pycache__/
 *.egg-info/
 .env
 .env.local
+
+# dbt configuration (contains environment-specific settings)
+profiles.yml
+dbt_project.local.yml
