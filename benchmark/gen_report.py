@@ -30,12 +30,12 @@ PIPELINE_CONFIG = {
         'description': 'Cashflow Analytics Benchmark',
         'code': 'A',
         'complexity_level': 'LOW',
-        'target_table': 'FACT_CASHFLOW_SUMMARY',
+        'target_table': 'INT_CASHFLOW_AGGREGATED',
         'model_count': 4,
         'models': [
             'stg_cashflows', 'stg_portfolios',
-            'int_portfolio_cashflows',
-            'fact_cashflow_summary'
+            'int_cashflow_aggregated',
+            'int_portfolio_attributes'
         ],
         'kpi_4_complexity': {
             'num_joins': 2,
