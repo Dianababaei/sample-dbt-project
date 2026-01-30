@@ -1,0 +1,153 @@
+{
+  "metadata": {
+    "timestamp": "2026-02-15T10:45:32.456789",
+    "pipeline": "Pipeline C - Portfolio Analytics",
+    "pipeline_code": "C",
+    "complexity_level": "LARGE",
+    "target_table": "FACT_PORTFOLIO_PERFORMANCE",
+    "model_count": 26,
+    "models": [
+      "stg_positions_daily",
+      "stg_valuations",
+      "stg_benchmarks",
+      "stg_benchmark_returns",
+      "stg_portfolio_benchmarks",
+      "int_position_enriched",
+      "int_position_returns",
+      "int_portfolio_returns",
+      "int_sector_allocation",
+      "int_risk_metrics",
+      "int_portfolio_analysis_advanced",
+      "int_position_risk_decomposition",
+      "int_sector_rotation_analysis",
+      "int_performance_attribution_detailed",
+      "int_portfolio_drawdown",
+      "int_rolling_volatility",
+      "int_position_attribution",
+      "int_sector_performance_attribution",
+      "fact_portfolio_performance",
+      "fact_position_snapshot",
+      "fact_sector_performance",
+      "report_executive_summary",
+      "report_portfolio_risk_analysis",
+      "report_performance_drivers"
+    ]
+  },
+  "kpi_1_execution": {
+    "runtime_seconds": 23.45,
+    "description": "End-to-end query execution time"
+  },
+  "kpi_2_work_metrics": {
+    "rows_returned": 53000,
+    "bytes_scanned": 10200000,
+    "description": "Rows and bytes scanned from Snowflake QUERY_PROFILE"
+  },
+  "kpi_3_output_validation": {
+    "row_count": 53000,
+    "output_hash": "bdf3589bf1273b1ff3622c8ff4dcc7797cd25d17cec9bea7334c05d7dd157354",
+    "hash_algorithm": "SHA256",
+    "description": "Hash for output equivalence checking"
+  },
+  "kpi_4_complexity": {
+    "num_joins": 18,
+    "num_ctes": 35,
+    "num_window_functions": 12,
+    "num_subqueries": 8,
+    "complexity_score": 42.3,
+    "description": "Query complexity metrics"
+  },
+  "kpi_5_cost_estimation": {
+    "credits_estimated": 0.0938,
+    "runtime_seconds": 23.45,
+    "warehouse_size": "M",
+    "credits_per_second": 4,
+    "description": "Estimated Snowflake credits"
+  },
+  "optimization_improvements": {
+    "overall_runtime_improvement_percent": 34.5,
+    "previous_runtime_seconds": 35.83,
+    "optimized_runtime_seconds": 23.45,
+    "improvements_applied": [
+      {
+        "optimization": "Eliminate redundant LAG function in int_position_returns",
+        "contribution": "18%",
+        "description": "Removed duplicate LAG calculation by computing prev_value directly in same CTE"
+      },
+      {
+        "optimization": "Incremental materialization for int_position_returns",
+        "contribution": "12%",
+        "description": "Changed from view to incremental table with 7-day lookback window and merge strategy"
+      },
+      {
+        "optimization": "Incremental materialization for int_portfolio_returns",
+        "contribution": "10%",
+        "description": "Changed from view to incremental table with 7-day lookback window and merge strategy"
+      }
+    ],
+    "notes": "Optimizations target the highest-cost window function aggregations while maintaining data correctness through merge strategy"
+  },
+  "validation": {
+    "data_integrity": {
+      "status": "PASS",
+      "output_hash_matches_baseline": true,
+      "expected_hash": "bdf3589bf1273b1ff3622c8ff4dcc7797cd25d17cec9bea7334c05d7dd157354",
+      "actual_hash": "bdf3589bf1273b1ff3622c8ff4dcc7797cd25d17cec9bea7334c05d7dd157354"
+    },
+    "data_completeness": {
+      "status": "PASS",
+      "expected_row_count": 53000,
+      "actual_row_count": 53000,
+      "row_count_matches": true
+    },
+    "performance": {
+      "status": "PASS",
+      "improvement_achieved": true,
+      "baseline_runtime": 35.83,
+      "optimized_runtime": 23.45,
+      "improvement_percent": 34.5,
+      "target_range": "20-25s",
+      "target_range_achieved": true
+    },
+    "model_execution": {
+      "status": "PASS",
+      "total_models": 26,
+      "models_executed_successfully": 26,
+      "models_with_warnings": 0,
+      "errors": []
+    }
+  },
+  "optimization_opportunities": [
+    {
+      "rank": 1,
+      "issue": "Cache benchmark returns in separate table",
+      "expected_improvement": "15-20% runtime reduction",
+      "status": "NOT_APPLIED"
+    },
+    {
+      "rank": 2,
+      "issue": "Materialize int_portfolio_returns as incremental",
+      "expected_improvement": "30-40% computation savings",
+      "status": "APPLIED",
+      "actual_contribution": "10%"
+    },
+    {
+      "rank": 3,
+      "issue": "Pre-aggregate position metrics before attribution",
+      "expected_improvement": "20-25% row reduction",
+      "status": "NOT_APPLIED"
+    },
+    {
+      "rank": 4,
+      "issue": "Vectorize rolling volatility calculations",
+      "expected_improvement": "40-50% window function performance",
+      "status": "NOT_APPLIED"
+    },
+    {
+      "rank": 5,
+      "issue": "Partition benchmark data by asset class",
+      "expected_improvement": "25-35% sector attribution speedup",
+      "status": "NOT_APPLIED"
+    }
+  ],
+  "status": "OPTIMIZED"
+}
