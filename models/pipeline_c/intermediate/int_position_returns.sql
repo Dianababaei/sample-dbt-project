@@ -20,16 +20,16 @@ with enriched as (
 
 cast_enriched as (
     select
-        position_id,
-        portfolio_id,
-        security_id,
-        position_date,
+        cast(position_id as varchar) as position_id,
+        cast(portfolio_id as varchar) as portfolio_id,
+        cast(security_id as varchar) as security_id,
+        cast(position_date as date) as position_date,
         cast(quantity as numeric(18, 2)) as quantity,
         cast(market_value_usd as numeric(18, 2)) as market_value_usd,
-        ticker,
-        security_name,
-        asset_class,
-        sector
+        cast(ticker as varchar) as ticker,
+        cast(security_name as varchar) as security_name,
+        cast(asset_class as varchar) as asset_class,
+        cast(sector as varchar) as sector
     from enriched
 ),
 
