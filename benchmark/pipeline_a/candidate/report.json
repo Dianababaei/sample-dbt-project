@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "timestamp": "2026-02-02T12:44:21.804208",
+    "timestamp": "2026-02-02T18:12:46.185047",
     "pipeline": "Pipeline A - Cashflow Analytics",
     "pipeline_code": "A",
     "complexity_level": "LOW",
@@ -14,7 +14,7 @@
     ]
   },
   "kpi_1_execution": {
-    "runtime_seconds": 9.37,
+    "runtime_seconds": 9.92,
     "description": "End-to-end query execution time"
   },
   "kpi_2_work_metrics": {
@@ -37,8 +37,8 @@
     "description": "Query complexity metrics"
   },
   "kpi_5_cost_estimation": {
-    "credits_estimated": 0.03748,
-    "runtime_seconds": 9.37,
+    "credits_estimated": 0.03968,
+    "runtime_seconds": 9.92,
     "warehouse_size": "M",
     "credits_per_second": 4,
     "description": "Estimated Snowflake credits"

@@ -63,32 +63,5 @@
     "credits_per_second": 4,
     "description": "Estimated Snowflake credits"
   },
-  "optimization_opportunities": [
-    {
-      "rank": 1,
-      "issue": "Cache benchmark returns in separate table",
-      "expected_improvement": "15-20% runtime reduction"
-    },
-    {
-      "rank": 2,
-      "issue": "Materialize int_portfolio_returns as incremental",
-      "expected_improvement": "30-40% computation savings"
-    },
-    {
-      "rank": 3,
-      "issue": "Pre-aggregate position metrics before attribution",
-      "expected_improvement": "20-25% row reduction"
-    },
-    {
-      "rank": 4,
-      "issue": "Vectorize rolling volatility calculations",
-      "expected_improvement": "40-50% window function performance"
-    },
-    {
-      "rank": 5,
-      "issue": "Partition benchmark data by asset class",
-      "expected_improvement": "25-35% sector attribution speedup"
-    }
-  ],
   "status": "CANDIDATE"
 }
