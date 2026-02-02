@@ -25,14 +25,8 @@ sector_metrics as (
     group by 1, 2, 3
 ),
 
-port_totals as (
-    select
-        portfolio_id,
-        position_date,
-        sum(market_value_usd) as total_portfolio_value,
-        sum(daily_pnl) as total_portfolio_pnl
-    from pos_perf
-    group by 1, 2
+portfolio_totals as (
+    select * from {{ ref('int_portfolio_totals') }}
 )
 
 select
@@ -50,6 +44,6 @@ select
     round(sm.sector_pnl / nullif(pt.total_portfolio_value, 0), 8) as sector_contribution_to_portfolio,
     round(100 * sm.sector_pnl / nullif(pt.total_portfolio_pnl, 0), 4) as sector_pnl_contribution_pct
 from sector_metrics sm
-join port_totals pt
+left join portfolio_totals pt
     on sm.portfolio_id = pt.portfolio_id
     and sm.position_date = pt.position_date
