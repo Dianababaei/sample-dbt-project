@@ -21,12 +21,7 @@ with sector_daily as (
 ),
 
 port_totals as (
-    select
-        portfolio_id,
-        position_date,
-        sum(market_value_usd) as total_value
-    from {{ ref('int_position_returns') }}
-    group by 1, 2
+    select * from {{ ref('int_portfolio_totals') }}
 ),
 
 with_weights as (
@@ -36,17 +31,17 @@ with_weights as (
         sd.sector,
         sd.sector_value,
         sd.position_count,
-        round(sd.sector_value / nullif(pt.total_value, 0), 8) as current_weight,
-        lag(sd.sector_value / nullif(pt.total_value, 0)) over (
+        round(sd.sector_value / nullif(pt.total_portfolio_value, 0), 8) as current_weight,
+        lag(sd.sector_value / nullif(pt.total_portfolio_value, 0)) over (
             partition by sd.portfolio_id, sd.sector
             order by sd.position_date
         ) as prior_weight,
-        lead(sd.sector_value / nullif(pt.total_value, 0)) over (
+        lead(sd.sector_value / nullif(pt.total_portfolio_value, 0)) over (
             partition by sd.portfolio_id, sd.sector
             order by sd.position_date
         ) as next_weight,
         sd.sector_pnl,
-        pt.total_value
+        pt.total_portfolio_value
     from sector_daily sd
     join port_totals pt
         on sd.portfolio_id = pt.portfolio_id
@@ -63,7 +58,7 @@ select
     round(100 * prior_weight, 4) as prior_weight_pct,
     round(100 * (current_weight - nullif(prior_weight, 0)), 4) as weight_change_pct,
     sector_pnl,
-    round(sector_pnl / nullif(total_value, 0), 8) as sector_contribution,
+    round(sector_pnl / nullif(total_portfolio_value, 0), 8) as sector_contribution,
     case
         when current_weight > nullif(prior_weight, current_weight) then 'INCREASED'
         when current_weight < nullif(prior_weight, current_weight) then 'DECREASED'
