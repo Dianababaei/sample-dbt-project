@@ -360,7 +360,6 @@ Examples:
             "credits_per_second": 4,
             "description": "Estimated Snowflake credits"
         },
-        "optimization_opportunities": config['optimization_opportunities'],
         "status": "CANDIDATE"
     }
 
