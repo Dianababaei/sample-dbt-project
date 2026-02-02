@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "timestamp": "2026-01-30T10:45:30.234567",
+    "timestamp": "2026-02-02T18:01:31.001403",
     "pipeline": "Pipeline C - Portfolio Analytics",
     "pipeline_code": "C",
     "complexity_level": "LARGE",
@@ -34,12 +34,12 @@
     ]
   },
   "kpi_1_execution": {
-    "runtime_seconds": 33.14,
+    "runtime_seconds": 28.09,
     "description": "End-to-end query execution time"
   },
   "kpi_2_work_metrics": {
     "rows_returned": 53000,
-    "bytes_scanned": 9996000,
+    "bytes_scanned": 10200000,
     "description": "Rows and bytes scanned from Snowflake QUERY_PROFILE"
   },
   "kpi_3_output_validation": {
@@ -57,28 +57,11 @@
     "description": "Query complexity metrics"
   },
   "kpi_5_cost_estimation": {
-    "credits_estimated": 0.13256,
-    "runtime_seconds": 33.14,
+    "credits_estimated": 0.11236,
+    "runtime_seconds": 28.09,
     "warehouse_size": "M",
     "credits_per_second": 4,
     "description": "Estimated Snowflake credits"
-  },
-  "optimization_summary": {
-    "models_optimized": [
-      "int_portfolio_returns.sql",
-      "int_position_returns.sql",
-      "int_sector_allocation.sql"
-    ],
-    "optimizations_applied": [
-      "Materialized int_portfolio_returns computations for incremental builds",
-      "Pre-aggregated position metrics before attribution calculations",
-      "Optimized sector allocation calculations with efficient joins"
-    ],
-    "expected_improvements": [
-      "15-20% runtime reduction from materialization",
-      "30-40% computation savings on portfolio returns",
-      "20-25% row reduction in attribution pipeline"
-    ]
   },
   "status": "CANDIDATE"
 }
