@@ -9,12 +9,8 @@
     meta={'pipeline': 'a', 'layer': 'intermediate'}
 ) }}
 
-with cashflows as (
-    select * from {{ ref('stg_cashflows') }}
-),
-
 -- Pre-aggregate at source to reduce rows before fact table join
-monthly_aggregated as (
+with monthly_aggregated as (
     select
         portfolio_id,
         date_trunc('month', cashflow_date) as cashflow_month,
@@ -25,7 +21,7 @@ monthly_aggregated as (
         avg(amount) as avg_amount,
         min(amount) as min_amount,
         max(amount) as max_amount
-    from cashflows
+    from {{ ref('stg_cashflows') }}
     group by portfolio_id, date_trunc('month', cashflow_date), cashflow_type, currency
 )
 
