@@ -2,7 +2,7 @@
 -- int_position_enriched.sql
 
 {{ config(
-    materialized='view',
+    materialized='table',
     tags=['intermediate', 'pipeline_c'],
     meta={'pipeline': 'c', 'layer': 'intermediate'}
 ) }}
