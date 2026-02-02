@@ -8,7 +8,12 @@
     meta={'pipeline': 'c', 'layer': 'intermediate'}
 ) }}
 
-with sector_daily as (
+with position_returns as (
+    select *
+    from {{ ref('int_position_returns') }}
+),
+
+sector_daily as (
     select
         portfolio_id,
         position_date,
@@ -16,7 +21,7 @@ with sector_daily as (
         sum(market_value_usd) as sector_value,
         sum(daily_pnl) as sector_pnl,
         count(distinct position_id) as position_count
-    from {{ ref('int_position_returns') }}
+    from position_returns
     group by 1, 2, 3
 ),
 
@@ -25,7 +30,7 @@ port_totals as (
         portfolio_id,
         position_date,
         sum(market_value_usd) as total_value
-    from {{ ref('int_position_returns') }}
+    from position_returns
     group by 1, 2
 ),
 

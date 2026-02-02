@@ -2,7 +2,7 @@
 -- int_position_returns.sql
 
 {{ config(
-    materialized='view',
+    materialized='table',
     tags=['intermediate', 'pipeline_c'],
     meta={'pipeline': 'c', 'layer': 'intermediate'}
 ) }}
@@ -38,11 +38,12 @@ returns as (
         security_name,
         asset_class,
         sector,
-        lag(market_value_usd) over (partition by security_id order by position_date) as prev_value,
-        market_value_usd - lag(market_value_usd) over (partition by security_id order by position_date) as daily_pnl,
+        lag(market_value_usd) over (partition by security_id order by position_date) as prev_market_value_usd,
+        prev_market_value_usd as prev_value,
+        market_value_usd - prev_market_value_usd as daily_pnl,
         case
-            when lag(market_value_usd) over (partition by security_id order by position_date) > 0
-            then (market_value_usd - lag(market_value_usd) over (partition by security_id order by position_date)) / lag(market_value_usd) over (partition by security_id order by position_date)
+            when prev_market_value_usd > 0
+            then (market_value_usd - prev_market_value_usd) / prev_market_value_usd
             else 0
         end as daily_return_pct
     from cast_enriched
