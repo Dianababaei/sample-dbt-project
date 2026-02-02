@@ -2,7 +2,7 @@
 -- fact_sector_performance.sql
 
 {{ config(
-    materialized='view',
+    materialized='table',
     tags=['marts', 'fact', 'pipeline_c'],
     meta={'pipeline': 'c', 'layer': 'marts', 'table_type': 'fact'}
 ) }}
