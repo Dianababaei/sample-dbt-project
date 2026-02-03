@@ -36,13 +36,6 @@ Marts: fact_portfolio_performance, fact_position_snapshot, fact_sector_performan
 - **Portable Design:** Focus on maintainability over early optimization
 - **Snowflake Target:** Optimized for Snowflake with window functions, CTEs, and advanced analytics
 
-## Key Optimization Opportunities
-
-These patterns demonstrate typical challenges companies face:
-- Heavy joins at fact layer (can be pushed upstream)
-- Redundant window function calculations
-- Late aggregation (pre-aggregate in intermediate layer)
-- Repeated calculations across pipelines
 
 ## Quick Start
 
