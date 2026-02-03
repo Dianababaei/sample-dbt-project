@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "timestamp": "2026-01-30T02:26:04.104209",
+    "timestamp": "2026-02-04T01:38:14.129278",
     "pipeline": "Pipeline C - Portfolio Analytics",
     "pipeline_code": "C",
     "complexity_level": "LARGE",
@@ -34,7 +34,7 @@
     ]
   },
   "kpi_1_execution": {
-    "runtime_seconds": 35.83,
+    "runtime_seconds": 36.61,
     "description": "End-to-end query execution time"
   },
   "kpi_2_work_metrics": {
@@ -48,20 +48,10 @@
     "hash_algorithm": "SHA256",
     "description": "Hash for output equivalence checking"
   },
-  "kpi_4_complexity": {
-    "num_joins": 18,
-    "num_ctes": 35,
-    "num_window_functions": 12,
-    "num_subqueries": 8,
-    "complexity_score": 42.3,
-    "description": "Query complexity metrics"
+  "kpi_4_cost_estimation": {
+    "total_credits_estimated": 0.04068,
+    "estimated_cost_usd": 0.0814,
+    "description": "Official Snowflake formula: (runtime_seconds / 3600) * 4 credits_per_hour"
   },
-  "kpi_5_cost_estimation": {
-    "credits_estimated": 0.14332,
-    "runtime_seconds": 35.83,
-    "warehouse_size": "M",
-    "credits_per_second": 4,
-    "description": "Estimated Snowflake credits"
-  },
-  "status": "CANDIDATE"
+  "status": "REPORT"
 }

@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "timestamp": "2026-02-02T18:12:46.185047",
+    "timestamp": "2026-02-04T03:01:33.277800",
     "pipeline": "Pipeline A - Cashflow Analytics",
     "pipeline_code": "A",
     "complexity_level": "LOW",
@@ -14,7 +14,7 @@
     ]
   },
   "kpi_1_execution": {
-    "runtime_seconds": 9.92,
+    "runtime_seconds": 10.04,
     "description": "End-to-end query execution time"
   },
   "kpi_2_work_metrics": {
@@ -28,20 +28,10 @@
     "hash_algorithm": "SHA256",
     "description": "Hash for output equivalence checking"
   },
-  "kpi_4_complexity": {
-    "num_joins": 2,
-    "num_ctes": 5,
-    "num_window_functions": 1,
-    "num_subqueries": 1,
-    "complexity_score": 8.3,
-    "description": "Query complexity metrics"
+  "kpi_4_cost_estimation": {
+    "total_credits_estimated": 0.01116,
+    "estimated_cost_usd": 0.0223,
+    "description": "Official Snowflake formula: (runtime_seconds / 3600) * 4 credits_per_hour"
   },
-  "kpi_5_cost_estimation": {
-    "credits_estimated": 0.03968,
-    "runtime_seconds": 9.92,
-    "warehouse_size": "M",
-    "credits_per_second": 4,
-    "description": "Estimated Snowflake credits"
-  },
-  "status": "CANDIDATE"
+  "status": "REPORT"
 }

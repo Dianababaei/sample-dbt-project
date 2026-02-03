@@ -96,30 +96,7 @@ Examples:
     print(f"  Rows processed: {baseline_rows} (unchanged)")
     print()
 
-    print("KPI 3: QUERY COMPLEXITY (Structure)")
-    print("-" * 70)
-    baseline_complexity = baseline['kpi_4_complexity'].get('complexity_score', 'N/A')
-    candidate_complexity = candidate['kpi_4_complexity'].get('complexity_score', 'N/A')
-    baseline_joins = baseline['kpi_4_complexity'].get('num_joins', 'N/A')
-    candidate_joins = candidate['kpi_4_complexity'].get('num_joins', 'N/A')
-    baseline_ctes = baseline['kpi_4_complexity'].get('num_ctes', 'N/A')
-    candidate_ctes = candidate['kpi_4_complexity'].get('num_ctes', 'N/A')
-
-    print(f"  Baseline:  Score {baseline_complexity}/10 ({baseline_joins} joins, {baseline_ctes} CTEs)")
-    print(f"  Optimized: Score {candidate_complexity}/10 ({candidate_joins} joins, {candidate_ctes} CTEs)")
-
-    if isinstance(baseline_complexity, (int, float)) and isinstance(candidate_complexity, (int, float)):
-        if candidate_complexity < baseline_complexity:
-            improvement = ((baseline_complexity - candidate_complexity) / baseline_complexity) * 100
-            print(f"  Change:    - {improvement:.1f}% simpler")
-        elif candidate_complexity > baseline_complexity:
-            increase = ((candidate_complexity - baseline_complexity) / baseline_complexity) * 100
-            print(f"  Change:    + {increase:.1f}% more complex")
-        else:
-            print(f"  Change:    No change")
-    print()
-
-    print("KPI 4: OUTPUT VALIDATION (Equivalence Check)")
+    print("KPI 3: OUTPUT VALIDATION (Equivalence Check)")
     print("-" * 70)
     baseline_hash = baseline['kpi_3_output_validation']['output_hash']
     candidate_hash = candidate['kpi_3_output_validation']['output_hash']
@@ -139,10 +116,11 @@ Examples:
         return 1
     print()
 
-    print("KPI 5: COST ESTIMATION")
+    print("KPI 4: COST ESTIMATION")
     print("-" * 70)
-    baseline_cost = baseline.get('kpi_5_cost_estimation', {})
-    candidate_cost = candidate.get('kpi_5_cost_estimation', {})
+    # Handle both old schema (kpi_5_cost_estimation) and new schema (kpi_4_cost_estimation)
+    baseline_cost = baseline.get('kpi_4_cost_estimation') or baseline.get('kpi_5_cost_estimation', {})
+    candidate_cost = candidate.get('kpi_4_cost_estimation') or candidate.get('kpi_5_cost_estimation', {})
 
     baseline_total = baseline_cost.get('total_credits_estimated', 0)
     candidate_total = candidate_cost.get('total_credits_estimated', 0)
@@ -152,6 +130,7 @@ Examples:
     print(f"  Baseline:  {baseline_total:.8f} credits (${baseline_usd:.4f})")
     print(f"  Optimized: {candidate_total:.8f} credits (${candidate_usd:.4f})")
 
+    cost_improvement = None
     if baseline_total > 0:
         cost_improvement = ((baseline_total - candidate_total) / baseline_total) * 100
         if cost_improvement > 0:
@@ -176,7 +155,7 @@ Examples:
         if runtime_increased:
             runtime_regression = ((candidate_runtime - baseline_runtime) / baseline_runtime) * 100
             print(f"    • Runtime: {runtime_regression:.1f}% SLOWER")
-        if cost_increased:
+        if cost_increased and baseline_total > 0:
             cost_regression = ((candidate_total - baseline_total) / baseline_total) * 100
             print(f"    • Cost: {cost_regression:.1f}% MORE EXPENSIVE")
         return 1
@@ -214,17 +193,6 @@ Examples:
 
     if baseline_total > 0 and cost_improvement is not None and cost_improvement > 0:
         improvements.append(f"  • Cost reduced: {cost_improvement:.1f}% fewer credits")
-
-    try:
-        baseline_complexity = baseline.get('kpi_4_complexity', {}).get('complexity_score')
-        candidate_complexity = candidate.get('kpi_4_complexity', {}).get('complexity_score')
-        if (isinstance(baseline_complexity, (int, float)) and
-            isinstance(candidate_complexity, (int, float)) and
-            candidate_complexity < baseline_complexity):
-            complexity_improvement = ((baseline_complexity - candidate_complexity) / baseline_complexity) * 100
-            improvements.append(f"  • Complexity reduced: {complexity_improvement:.1f}% simpler query")
-    except:
-        pass
 
     if improvements:
         for imp in improvements:
